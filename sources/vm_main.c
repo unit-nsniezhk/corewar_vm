@@ -13,7 +13,22 @@
 #include "libft.h"
 #include "vm.h"
 
-int		main(int argc, char **argv)
+static void	static_introduction(t_parse *parse)
+{
+	unsigned int	i;
+
+	ft_printf("Introducing contestants...\n");
+	i = 0;
+	while (i < parse->n_champs)
+	{
+		ft_printf("* Player %u, weighing %u bytes, \"%s\" (\"%s\") !",
+		parse->champs[i].id, parse->champs[i].code_size, parse->champs[i].name,
+		parse->champs[i].comment);
+		++i;
+	}
+}
+
+int			main(int argc, char **argv)
 {
 	t_parse		parse;
 	t_game_data	data;
@@ -24,11 +39,12 @@ int		main(int argc, char **argv)
 		return (0);
 	}
 	//TODO add switch to sdl2 visualisation
+	static_introduction(&parse);
 	corewar_game(&data, &parse);
 	return (0);
 }
 
-void	corewar_dump(unsigned char *arena)
+void		corewar_dump(unsigned char *arena)
 {
 	unsigned int	i;
 

@@ -6,65 +6,80 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 16:59:53 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/01 20:36:16 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include "vm.h"
 
-static int	static_valid_register(t_game_data *data, t_carriage *carriage)
+void		corewar_game_read_arg(t_game_data *data, unsigned int *arg_value,
+			unsigned char arg_size, unsigned int arg_pos)
 {
-	unsigned int	reg;
 	unsigned int	i;
 
-	reg = 0;
+	*arg_value = 0;
 	i = 0;
-	while (i < REG_SIZE)
+	while (i < arg_size)
 	{
-		reg = reg << 8 | data->arena[(carriage->delta_pos + i) % ARENA_SIZE];
+		*arg_value = *arg_value << 8
+		| data->arena[(arg_pos + i) % ARENA_SIZE];
 		++i;
 	}
-	if (!reg || reg > REGISTERS)
-		return (0);
-	return (1);
+}
+
+void		corewar_game_write_arg(t_game_data *data, unsigned int arg_value,
+			unsigned char arg_size, unsigned int arg_pos)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (i < arg_size)
+	{
+		data->arena[(arg_pos + i) % ARENA_SIZE] =
+		(unsigned char)(arg_value >> (8 * (arg_size - i - 1)));
+		++i;
+	}
 }
 
 static int	static_valid_argument(t_game_data *data, t_carriage *carriage,
 			t_operation *operation, unsigned int i)
 {
-	unsigned char	arg;
 	unsigned char	arg_size;
+	unsigned int	ret;
 
+	ret = 1;
 	if (operation->args_types)
 	{
-		arg = data->arena[(carriage->pos + OPERATION_SIZE) % ARENA_SIZE] >>
-		(8 - ((i + 1) * 2));
-		if (!(operation->arguments[i] & arg))
-			return (0);
+		carriage->args_types[i] = data->arena[(carriage->pos + OPERATION_SIZE)
+		% ARENA_SIZE] >> (8 - ((i + 1) * 2));
+		if (!(operation->arguments[i] & carriage->args_types[i]))
+			ret = 0;
 	}
 	else
-		arg = operation->arguments[i];
-	if (arg == T_DIR)
+		carriage->args_types[i] = operation->arguments[i];
+	if (carriage->args_types[i] == T_DIR)
 		arg_size = operation->t_dir_size;
-	else if (arg == T_IND)
+	else if (carriage->args_types[i] == T_IND)
 		arg_size = IND_SIZE;
 	else
-	{
 		arg_size = REG_SIZE;
-		if (!static_valid_register(data, carriage))
-			return (0);
-	}
+	corewar_game_read_arg(data, &(carriage->args_values[i]), arg_size,
+	carriage->pos + carriage->delta_pos);
+	if (ret && carriage->args_types[i] == T_REG
+	&& (!carriage->args_values[i] || carriage->args_values[i] > REGISTERS))
+		ret = 0;
 	carriage->delta_pos += arg_size;
-	return (1);
+	return (ret);
 }
 
-static int	static_valid_operation(t_game_data *data, t_carriage *carriage)
+static int	static_valid_operation(t_game_data *data, t_carriage *carriage,
+			t_operation *operation)
 {
-	t_operation		*operation;
+	unsigned int	ret;
 	unsigned int	i;
 
-	operation = (t_operation*)&g_table[carriage->operation];
+	ret = 1;
 	if (data->arena[carriage->pos % ARENA_SIZE] > 0
 	&& data->arena[carriage->pos % ARENA_SIZE] <= 16)
 	{
@@ -74,38 +89,40 @@ static int	static_valid_operation(t_game_data *data, t_carriage *carriage)
 		while (i < operation->n_arguments)
 		{
 			if (!static_valid_argument(data, carriage, operation, i))
-				return (0);
+				ret = 0;
 			++i;
 		}
 	}
-	return (1);
+	return (ret);
 }
 
 static void	static_carriage(t_game_data *data, t_carriage *carriage)
 {
+	t_operation		*operation;
+
+	operation = NULL;
 	if (carriage->cycle_timeout == 0)
 	{
 		carriage->operation = data->arena[carriage->pos % ARENA_SIZE];
 		if (carriage->operation > 0 && carriage->operation <= OPERATIONS)
-			carriage->cycle_timeout =
-			g_table[carriage->operation].cycle_timeout;
+		{
+			operation = (t_operation*)&g_table[carriage->operation - 1];
+			carriage->cycle_timeout = operation->cycle_timeout;
+		}
 		carriage->delta_pos = OPERATION_SIZE;
 	}
 	if (carriage->cycle_timeout)
 		--carriage->cycle_timeout;
 	if (!carriage->cycle_timeout)
 	{
-		if (static_valid_operation(data, carriage))
-		{
-			;//TODO operation[] array of pointers to operations
-			carriage->pos += carriage->delta_pos;
-		}
-		else
-			carriage->pos += OPERATION_SIZE;
+		if (operation && static_valid_operation(
+		data, carriage, operation))
+			operation->function(data, carriage);
+		carriage->pos += carriage->delta_pos;
 	}
 }
 
-static int	corewar_game_loop(t_game_data *data)
+int			corewar_game_loop(t_game_data *data)
 {
 	unsigned int	i;
 	t_carriage		*carriage_tmp;

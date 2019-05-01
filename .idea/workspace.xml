@@ -11,7 +11,18 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c503ae59-01a7-48c9-939c-ef18f30cc05b" name="Default Changelist" comment="" />
+    <list default="true" id="c503ae59-01a7-48c9-939c-ef18f30cc05b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/includes/vm_operations.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/corewar_vm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/corewar_vm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm_defines.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm_defines.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_game_loop.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_game_loop.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_operations_1to5.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_operations_1to5.c" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,14 +32,17 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.50584793">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/vm_main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="12" column="18" selection-start-line="12" selection-end-line="13" />
+                <state relative-caret-position="630">
+                  <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
+                  <folding>
+                    <element signature="e#892#910#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -36,8 +50,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/sources/vm_operations_1to5.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="225">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                <state relative-caret-position="733">
+                  <caret line="224" column="1" lean-forward="true" selection-start-line="224" selection-start-column="1" selection-end-line="224" selection-end-column="1" />
                   <folding>
                     <element signature="e#892#910#0" expanded="true" />
                   </folding>
@@ -46,24 +60,24 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vm_game.c">
+            <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="435">
-                  <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+                <state relative-caret-position="-780">
+                  <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="57" />
                   <folding>
-                    <element signature="e#892#944#0" expanded="true" />
+                    <element signature="e#892#911#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
+            <entry file="file://$PROJECT_DIR$/sources/vm_game.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1008">
-                  <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
+                <state relative-caret-position="1110">
+                  <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
                   <folding>
-                    <element signature="e#892#911#0" expanded="true" />
+                    <element signature="e#892#944#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -72,7 +86,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
@@ -82,11 +96,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/vm.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+                <state relative-caret-position="375">
+                  <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
                   <folding>
                     <element signature="e#921#945#0" expanded="true" />
                   </folding>
@@ -97,8 +111,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/vm_defines.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="169">
-                  <caret line="15" selection-start-line="15" selection-end-line="15" />
+                <state relative-caret-position="756">
+                  <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+                  <folding>
+                    <element signature="e#937#962#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/includes/vm_operations.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="450">
+                  <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
                 </state>
               </provider>
             </entry>
@@ -106,8 +132,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/vm_settings.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="780">
-                  <caret line="52" column="18" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="18" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
                 </state>
               </provider>
             </entry>
@@ -117,12 +143,11 @@
     </splitter>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/libft" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/libft/ft_gnl/includes/ft_gnl_typedefs.h" />
         <option value="$PROJECT_DIR$/srcs/parse_champ.c" />
         <option value="$PROJECT_DIR$/srcs/parse_args.c" />
         <option value="$PROJECT_DIR$/incs/corewar.h" />
@@ -164,41 +189,33 @@
         <option value="$PROJECT_DIR$/sources/parse/vm_parse_options.c" />
         <option value="$PROJECT_DIR$/sources/parse/vm_parse.c" />
         <option value="$PROJECT_DIR$/sources/parse/vm_parse_champion.c" />
-        <option value="$PROJECT_DIR$/includes/vm_defines.h" />
         <option value="$PROJECT_DIR$/sources/vm_init_game.c" />
-        <option value="$PROJECT_DIR$/sources/vm_game_loop.c" />
-        <option value="$PROJECT_DIR$/sources/vm_game.c" />
         <option value="$PROJECT_DIR$/includes/vm_settings.h" />
-        <option value="$PROJECT_DIR$/includes/vm.h" />
         <option value="$PROJECT_DIR$/sources/vm_dump.c" />
+        <option value="$PROJECT_DIR$/sources/vm_game.c" />
         <option value="$PROJECT_DIR$/sources/vm_main.c" />
+        <option value="$PROJECT_DIR$/sources/vm_game_loop.c" />
+        <option value="$PROJECT_DIR$/includes/vm_defines.h" />
+        <option value="$PROJECT_DIR$/includes/vm.h" />
+        <option value="$PROJECT_DIR$/includes/vm_operations.h" />
         <option value="$PROJECT_DIR$/sources/vm_operations_1to5.c" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="702" />
+    <option name="x" value="1054" />
     <option name="y" value="23" />
-    <option name="width" value="1858" />
+    <option name="width" value="1506" />
     <option name="height" value="1417" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="corewar_vm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -211,10 +228,16 @@
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
               <item name="includes" type="462c0819:PsiDirectoryNode" />
             </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
             <path>
-              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="corewar_vm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -281,16 +304,18 @@
       <workItem from="1556656138889" duration="166000" />
       <workItem from="1556697266760" duration="203000" />
       <workItem from="1556697593202" duration="20430000" />
+      <workItem from="1556720434876" duration="14410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93220000" />
+    <option name="totallyTimeSpent" value="107630000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="702" y="23" width="1858" height="1417" extended-state="0" />
+    <frame x="1054" y="23" width="1506" height="1417" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14977974" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.13056037" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -302,7 +327,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32981133" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4581132" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.16" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.26037735" />
@@ -382,7 +407,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libft/ft_printf.h" />
     <entry file="file://$PROJECT_DIR$/libft/Libft_funcs/ft_isstrnum.c" />
     <entry file="file://$PROJECT_DIR$/libft/includes/libft_defines.h" />
     <entry file="file://$PROJECT_DIR$/../vm/libft/ft_gnl/includes/ft_gnl_typedefs.h" />
@@ -414,37 +438,9 @@
     <entry file="file://$PROJECT_DIR$/../vm/sources/vm_main.c" />
     <entry file="file://$PROJECT_DIR$/../vm/sources/vm_game.c" />
     <entry file="file://$PROJECT_DIR$/../vm/CMakeLists.txt" />
-    <entry file="file://$PROJECT_DIR$/m.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-          <folding>
-            <element signature="e#1#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_defines.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_errors.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="16" selection-start-line="16" selection-start-column="2" selection-end-line="43" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_block.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/m.c" />
+    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_errors.h" />
+    <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_block.c" />
     <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_options.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1140">
@@ -462,13 +458,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -483,88 +472,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_init_game.c">
+    <entry file="file://$PROJECT_DIR$/sources/vm_init_game.c" />
+    <entry file="file://$PROJECT_DIR$/includes/vm_messages.h" />
+    <entry file="file://$PROJECT_DIR$/sources/vm_dump.c" />
+    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_defines.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="435">
+          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vm_main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="25" selection-start-line="42" selection-start-column="25" selection-end-line="42" selection-end-column="25" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm_messages.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="73" lean-forward="true" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm_defines.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/vm_settings.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="18" selection-start-line="52" selection-start-column="9" selection-end-line="52" selection-end-column="18" />
+        <state relative-caret-position="240">
+          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/vm.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+        <state relative-caret-position="375">
+          <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
           <folding>
             <element signature="e#921#945#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/vm_defines.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="756">
+          <caret line="60" column="37" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+          <folding>
+            <element signature="e#937#962#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-780">
+          <caret line="30" selection-start-line="30" selection-end-line="31" selection-end-column="57" />
+          <folding>
+            <element signature="e#892#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/vm_game.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="10" selection-start-line="29" selection-start-column="10" selection-end-line="29" selection-end-column="10" />
+        <state relative-caret-position="1110">
+          <caret line="74" column="44" selection-start-line="74" selection-start-column="44" selection-end-line="74" selection-end-column="44" />
           <folding>
             <element signature="e#892#944#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_dump.c">
+    <entry file="file://$PROJECT_DIR$/includes/vm_operations.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-end-line="13" />
+        <state relative-caret-position="450">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/vm_operations_1to5.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="733">
+          <caret line="224" column="1" lean-forward="true" selection-start-line="224" selection-start-column="1" selection-end-line="224" selection-end-column="1" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>

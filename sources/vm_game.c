@@ -6,33 +6,35 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 16:59:53 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/01 19:46:31 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"//TODO check if possible to remove
+#include "libft.h"
 #include "vm.h"
 
-static void	static_init_carriage(t_game_data *data, t_player *player)
+static void	static_init_carriage(t_game_data *data, unsigned int pos,
+			unsigned int id)
 {
 	t_carriage		*carriage_tmp;
 	unsigned int	i;
 
 	carriage_tmp = ft_memalloc(sizeof(t_carriage));
-	carriage_tmp->id = player->id;
+	carriage_tmp->id = id;
 	carriage_tmp->carry = 0;
 	carriage_tmp->zjmp_mode = 0;
 	carriage_tmp->operation = 0;
 	carriage_tmp->cycle_live = 0;
 	carriage_tmp->cycle_timeout = 0;
-	carriage_tmp->pos = player->pos;
+	carriage_tmp->pos = pos;
 	carriage_tmp->delta_pos = 0;
-	i = 1;
-	while (i < REGISTERS)
+	i = 0;
+	while (i < REGISTERS + 1)
 	{
 		carriage_tmp->registers[i] = 0;
 		++i;
 	}
+	carriage_tmp->registers[1] = id;
 	if (data->carriage)
 		carriage_tmp->next = data->carriage;
 	else
@@ -55,8 +57,9 @@ static void	static_init_data(t_game_data *data, t_parse *parse)
 	i = 0;
 	while (i < parse->n_champs)
 	{
-		data->players[i].id = parse->champs[i].id;
 		data->players[i].pos = ARENA_SIZE / parse->n_champs * i;
+		data->players[i].name = parse->champs[i].name;
+		data->players[i].comment = parse->champs[i].comment;
 		code_i = 0;
 		while (code_i < parse->champs[i].code_size)
 		{
@@ -64,22 +67,7 @@ static void	static_init_data(t_game_data *data, t_parse *parse)
 			parse->champs[i].code[code_i];
 			++code_i;
 		}
-		static_init_carriage(data, &(data->players[i]));
-		++i;
-	}
-}
-
-static void	static_introduction(t_game_data *data, t_parse *parse)
-{
-	unsigned int	i;
-
-	ft_printf("Introducing contestants...\n");
-	i = 0;
-	while (i < data->n_players)
-	{
-		ft_printf("* Player %u, weighing %u bytes, \"%s\" (\"%s\") !",
-		data->players[i].id, parse->champs[i].code_size, parse->champs[i].name,
-		parse->champs[i].comment);
+		static_init_carriage(data, data->players[i].pos, parse->champs[i].id);
 		++i;
 	}
 }
@@ -114,7 +102,6 @@ void	corewar_game(t_game_data *data, t_parse *parse)
 	unsigned int	check;
 
 	static_init_data(data, parse);
-	static_introduction(data, parse);
 	check = 0;
 	while (data->carriage->next != NULL)
 	{
