@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm_parse_options.c                                 :+:      :+:    :+:   */
+/*   corewar_parse_options.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 19:02:55 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/04/30 23:23:15 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 22:20:17 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "vm_parse.h"
+#include "corewar_parse.h"
 
 static int	static_option_n(t_parse *parse, const char *value)
 {

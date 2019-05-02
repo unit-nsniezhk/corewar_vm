@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/dderevyn/CLionProjects/corewar_vm/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/parse -I/Users/dderevyn/CLionProjects/corewar_vm/libft/includes 
+C_INCLUDES = -I/Users/dderevyn/CLionProjects/corewar_vm/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/parse -I/Users/dderevyn/CLionProjects/corewar_vm/libft/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/op 
 

@@ -6,16 +6,18 @@ set(CMAKE_C_STANDARD 99)
 
 AUX_SOURCE_DIRECTORY(sources SRCS)
 AUX_SOURCE_DIRECTORY(sources/parse SRCSP)
+AUX_SOURCE_DIRECTORY(sources/op LSRCS)
 
 add_executable(corewar
         ${SRCS}
-#        ${LSRCS}
+        ${LSRCS}
         ${SRCSP})
 
 target_include_directories(corewar
         PUBLIC includes
         PUBLIC includes/parse
-        PUBLIC libft/includes)
+        PUBLIC libft/includes
+        PUBLIC includes/op)
 
 target_link_directories(corewar
         PUBLIC libft)

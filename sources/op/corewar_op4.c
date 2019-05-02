@@ -1,22 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm_parse.h                                         :+:      :+:    :+:   */
+/*   corewar_op4.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/04/29 18:36:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 13:39:24 by dderevyn         ###   ########.fr       */
+/*   Created: 2019/05/02 23:34:03 by dderevyn          #+#    #+#             */
+/*   Updated: 2019/05/02 23:53:12 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef VM_PARSE_H
+#include "corewar_op_def.h"
 
-# define VM_PARSE_H
+void	corewar_op_ld(t_data *data, t_carriage *carr)
+{
+	int	arg;
+	int arg1;
 
-# include "vm_parse_defines.h"
-
-int	corewar_parse_options(t_parse *parse, const char **argv, unsigned int i);
-int	corewar_parse_champion(t_parse *parse, const char *file);
-
-#endif
+	corewar_op_arg(data, carr, 0, &arg);
+	corewar_op_arg(data, carr, 1, &arg1);
+	carr->regs[arg1] = arg;
+	if (!arg)
+		carr->carry = 1;
+	else
+		carr->carry = 0;
+}

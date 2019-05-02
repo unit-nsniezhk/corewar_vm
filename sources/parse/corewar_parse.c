@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm_parse.c                                         :+:      :+:    :+:   */
+/*   corewar_parse.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 15:34:32 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 13:39:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 00:04:54 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include "vm_parse.h"
+#include "corewar_parse.h"
 
 static int	static_extension(const char *file)
 {
@@ -52,7 +52,7 @@ static int	static_valid(t_parse *parse)
 	return (1);
 }
 
-static int static_pos(t_parse *parse)
+static int	static_pos(t_parse *parse)
 {
 	unsigned int i;
 
@@ -120,12 +120,9 @@ int			corewar_parse(t_parse *parse, unsigned int argc, const char **argv)
 				ft_printf("[yellowFile %s~]\n", argv[i]);
 				return (0);
 			}
-			parse->pos = 0;
 			parse->n_champs++;
 		}
 		++i;
 	}
-	if (!static_valid(parse))
-		return (0);
-	return (1);
+	return (static_valid(parse));
 }

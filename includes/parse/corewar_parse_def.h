@@ -1,20 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm_parse_defines.h                                 :+:      :+:    :+:   */
+/*   corewar_parse_def.h                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:29:37 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 12:40:03 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 22:54:10 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef VM_PARSE_DEFINES_H
+#ifndef COREWAR_PARSE_DEF_H
 
-# define VM_PARSE_DEFINES_H
+# define COREWAR_PARSE_DEF_H
 
-# include "vm_settings.h"
+# include "corewar_settings.h"
 
 # define MODE_MAGIC_HEADER 1
 # define MODE_NAME 2
@@ -25,8 +25,8 @@
 typedef struct		s_champ
 {
 	unsigned int	id;
-	char			name[CHAMPION_NAME_LENGTH + 1];
-	char			comment[CHAMPION_COMMENT_LENGTH + 1];
+	char			name[NAME_LENGTH + 1];
+	char			comment[COMMENT_LENGTH + 1];
 	unsigned int	code_size;
 	unsigned char	*code;
 }					t_champ;

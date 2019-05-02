@@ -47,6 +47,7 @@
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes"/>
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes/parse"/>
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/libft/includes"/>
+					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes/op"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -72,6 +73,7 @@
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes"/>
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes/parse"/>
 					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/libft/includes"/>
+					<Add directory="/Users/dderevyn/CLionProjects/corewar_vm/includes/op"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -88,25 +90,40 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_champion.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_options.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game_loop.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vm_main.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vm_operations_1to5.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_champion.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/CMakeLists.txt">

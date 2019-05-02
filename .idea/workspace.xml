@@ -12,21 +12,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c503ae59-01a7-48c9-939c-ef18f30cc05b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/helltrain2.cor" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/corewar_def.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/op/corewar_op_def.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/corewar_cycles.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/corewar_utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/op/corewar_op2.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/op/corewar_op3.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/op/corewar_op4.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/op/corewar_op_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/parse/vm_parse.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/parse/vm_parse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vm_defines.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm_defines.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vm_operations.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm_operations.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vm_settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vm_settings.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/parse/vm_parse_champion.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/parse/vm_parse_champion.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vm_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_game.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vm_game_loop.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_game_loop.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vm_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vm_operations_1to5.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vm_operations_1to5.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/parse/vm_parse.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/parse/corewar_parse.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/parse/vm_parse_defines.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/parse/corewar_parse_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/corewar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm_defines.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm_operations.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/op/corewar_op.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/vm_settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/corewar_settings.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/parse/vm_parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/parse/corewar_parse.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/parse/vm_parse_champion.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/parse/corewar_parse_champion.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/parse/vm_parse_options.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/parse/corewar_parse_options.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_game.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/corewar_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_game_loop.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_main.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/corewar.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vm_operations_1to5.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/op/corewar_op.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,38 +55,14 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.47560322">
+    <splitter split-orientation="horizontal" split-proportion="0.5022472">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vm_main.c">
+            <entry file="file://$PROJECT_DIR$/sources/corewar.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="42" selection-start-line="42" selection-end-line="42" />
-                  <folding>
-                    <element signature="e#892#910#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="540">
-                  <caret line="117" selection-start-line="117" selection-end-line="117" />
-                  <folding>
-                    <element signature="e#892#910#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_champion.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="570">
-                  <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
+                <state relative-caret-position="210">
+                  <caret line="14" selection-start-line="14" selection-end-line="14" />
                   <folding>
                     <element signature="e#892#910#0" expanded="true" />
                   </folding>
@@ -77,10 +71,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sources/vm_operations_1to5.c">
+            <entry file="file://$PROJECT_DIR$/sources/corewar_vm.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="484">
-                  <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+                <state>
+                  <caret selection-end-line="10" selection-end-column="80" />
                   <folding>
                     <element signature="e#892#910#0" expanded="true" />
                   </folding>
@@ -89,10 +83,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
+            <entry file="file://$PROJECT_DIR$/sources/corewar_cycles.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="237">
-                  <caret line="116" selection-start-line="116" selection-end-line="116" />
+                <state relative-caret-position="-298">
+                  <caret line="16" column="63" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="63" />
                   <folding>
                     <element signature="e#892#911#0" expanded="true" />
                   </folding>
@@ -101,10 +95,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vm_game.c">
+            <entry file="file://$PROJECT_DIR$/sources/corewar_utils.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="110" selection-start-line="110" selection-end-line="110" />
+                <state relative-caret-position="315">
+                  <caret line="21" selection-start-line="21" selection-end-line="21" />
                 </state>
               </provider>
             </entry>
@@ -116,59 +110,56 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/vm.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-                  <folding>
-                    <element signature="e#921#945#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/vm_defines.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="690">
-                  <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-                  <folding>
-                    <element signature="e#937#962#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="135">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/includes/vm_settings.h">
+            <entry file="file://$PROJECT_DIR$/includes/corewar.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="444">
-                  <caret line="46" column="46" lean-forward="true" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+                  <folding>
+                    <element signature="e#921#950#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/vm_operations.h">
+            <entry file="file://$PROJECT_DIR$/includes/corewar_def.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="323">
-                  <caret line="27" selection-start-line="27" selection-end-line="27" />
+                <state relative-caret-position="525">
+                  <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse.h">
+            <entry file="file://$PROJECT_DIR$/includes/op/corewar_op_def.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" selection-start-line="17" selection-end-line="17" />
+                <state relative-caret-position="330">
+                  <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/includes/corewar_settings.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="540">
+                  <caret line="36" column="20" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/includes/op/corewar_op.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
                 </state>
               </provider>
             </entry>
@@ -183,34 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/srcs/parse_champ.c" />
-        <option value="$PROJECT_DIR$/srcs/parse_args.c" />
-        <option value="$PROJECT_DIR$/incs/corewar.h" />
-        <option value="$PROJECT_DIR$/incs/defines.h" />
-        <option value="$PROJECT_DIR$/libft/srcs/ft_atoibase.c" />
-        <option value="$PROJECT_DIR$/srcs/parse_champion.c" />
-        <option value="$PROJECT_DIR$/srcs/parse_champion_loop.c" />
-        <option value="$PROJECT_DIR$/srcs/parse.c" />
-        <option value="$PROJECT_DIR$/srcs/corewar_parse_champion_loop.c" />
-        <option value="$PROJECT_DIR$/includes/corewar_parse.h" />
-        <option value="$PROJECT_DIR$/srcs/corewar_parse_options.c" />
-        <option value="$PROJECT_DIR$/includes/corewar_errors.h" />
-        <option value="$PROJECT_DIR$/srcs/corewar.c" />
-        <option value="$PROJECT_DIR$/srcs/corewar_parse.c" />
-        <option value="$PROJECT_DIR$/srcs/corewar_parse_champion.c" />
-        <option value="$PROJECT_DIR$/srcs/corewar_parse_line.c" />
-        <option value="$PROJECT_DIR$/includes/corewar_parse_defines.h" />
-        <option value="$PROJECT_DIR$/includes/text.h" />
-        <option value="$PROJECT_DIR$/includes/corewar.h" />
-        <option value="$PROJECT_DIR$/srcs/main.c" />
-        <option value="$PROJECT_DIR$/srcs/init_game.c" />
-        <option value="$PROJECT_DIR$/includes/settings.h" />
-        <option value="$PROJECT_DIR$/includes/corewar_settings.h" />
-        <option value="$PROJECT_DIR$/includes/corewar_defines.h" />
-        <option value="$PROJECT_DIR$/srcs/game.c" />
-        <option value="$PROJECT_DIR$/srcs/parse/parse_champion.c" />
-        <option value="$PROJECT_DIR$/libft/includes/libft.h" />
-        <option value="$PROJECT_DIR$/includes/vm_messages.h" />
         <option value="$PROJECT_DIR$/corewar_settings.h" />
         <option value="$PROJECT_DIR$/sources/parse/vm_parse_line.c" />
         <option value="$PROJECT_DIR$/../vm/sources/vm_game.c" />
@@ -225,7 +188,6 @@
         <option value="$PROJECT_DIR$/sources/vm_dump.c" />
         <option value="$PROJECT_DIR$/includes/vm.h" />
         <option value="$PROJECT_DIR$/includes/vm_operations.h" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/includes/parse/vm_parse.h" />
         <option value="$PROJECT_DIR$/sources/parse/vm_parse_champion.c" />
         <option value="$PROJECT_DIR$/sources/vm_main.c" />
@@ -233,10 +195,40 @@
         <option value="$PROJECT_DIR$/includes/vm_defines.h" />
         <option value="$PROJECT_DIR$/sources/vm_game_loop.c" />
         <option value="$PROJECT_DIR$/includes/vm_settings.h" />
+        <option value="$PROJECT_DIR$/sources/parse/corewar_parse.c" />
+        <option value="$PROJECT_DIR$/sources/parse/corewar_parse_champion.c" />
+        <option value="$PROJECT_DIR$/sources/parse/corewar_parse_options.c" />
+        <option value="$PROJECT_DIR$/includes/parse/corewar_parse_prototypes.h" />
+        <option value="$PROJECT_DIR$/includes/parse/corewar_parse_defines.h" />
+        <option value="$PROJECT_DIR$/includes/corewar_operations.h" />
+        <option value="$PROJECT_DIR$/includes/corewar_op.h" />
+        <option value="$PROJECT_DIR$/includes/corewar_defines.h" />
+        <option value="$PROJECT_DIR$/includes/operations/corewar_op_defines.h" />
         <option value="$PROJECT_DIR$/sources/vm_operations_1to5.c" />
+        <option value="$PROJECT_DIR$/includes/parse/corewar_parse.h" />
+        <option value="$PROJECT_DIR$/includes/parse/corewar_parse_def.h" />
+        <option value="$PROJECT_DIR$/includes/corewar_settings.h" />
+        <option value="$PROJECT_DIR$/includes/op/corewar_op_def.h" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/sources/corewar_utils.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op_utils.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op2.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op_3.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op4.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_game_loop.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_main.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_game.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_checks.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_cycles.c" />
+        <option value="$PROJECT_DIR$/includes/corewar_def.h" />
+        <option value="$PROJECT_DIR$/includes/corewar.h" />
+        <option value="$PROJECT_DIR$/includes/op/corewar_op.h" />
+        <option value="$PROJECT_DIR$/sources/corewar_vm.c" />
       </list>
     </option>
   </component>
+  <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="x" value="427" />
     <option name="y" value="23" />
@@ -257,17 +249,6 @@
             <path>
               <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="includes" type="462c0819:PsiDirectoryNode" />
-              <item name="parse" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
@@ -300,11 +281,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sources/op" />
+      <recent name="$PROJECT_DIR$/includes/op" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/libft/includes/ft_printf" />
       <recent name="$PROJECT_DIR$/includes/parser" />
-      <recent name="$PROJECT_DIR$/srcs/parse" />
-      <recent name="$PROJECT_DIR$/incs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -353,24 +334,24 @@
       <workItem from="1556697593202" duration="20430000" />
       <workItem from="1556720434876" duration="16712000" />
       <workItem from="1556807404683" duration="3351000" />
-      <workItem from="1556810879459" duration="12332000" />
+      <workItem from="1556810879459" duration="18410000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125615000" />
+    <option name="totallyTimeSpent" value="131693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="427" y="23" width="2133" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10808226" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14873266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981133" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.4045283" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.42566037" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5033962" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -387,21 +368,21 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.107125774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14873266" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32981133" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.45056602" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32981133" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.4045283" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.5033962" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
       <window_info anchor="bottom" id="Messages" order="8" weight="0.32981133" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.071698114" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.26792452" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32981133" />
       <window_info anchor="bottom" id="CMake" order="12" weight="0.26037735" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,13 +408,8 @@
           <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/sources/vm_game.c</url>
-          <line>12</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/sources/vm_operations_1to5.c</url>
-          <line>88</line>
+          <url>file://$PROJECT_DIR$/sources/op/corewar_op.c</url>
+          <line>89</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
@@ -496,12 +472,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/libft/includes/libft_defines.h" />
-    <entry file="file://$PROJECT_DIR$/../vm/libft/ft_gnl/includes/ft_gnl_typedefs.h" />
-    <entry file="file://$PROJECT_DIR$/libft/includes/ft_printf/ft_printf_defines.h" />
-    <entry file="file://$PROJECT_DIR$/srcs/parse_champion2.c" />
-    <entry file="file://$PROJECT_DIR$/../vm/vm_champs/champs/Gagnant.cor" />
-    <entry file="file://$PROJECT_DIR$/../vm/vm_champs/champs/ex.s" />
     <entry file="file://$PROJECT_DIR$/../vm/vm_champs/champs/42.cor" />
     <entry file="file://$PROJECT_DIR$/Car.cor" />
     <entry file="file://$PROJECT_DIR$/../vm/cmake-build-debug/Car.cor" />
@@ -529,40 +499,9 @@
     <entry file="file://$PROJECT_DIR$/m.c" />
     <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_errors.h" />
     <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_block.c" />
-    <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_options.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1140">
-          <caret line="77" column="8" lean-forward="true" selection-start-line="77" selection-start-column="8" selection-end-line="77" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sources/vm_init_game.c" />
     <entry file="file://$PROJECT_DIR$/includes/vm_messages.h" />
     <entry file="file://$PROJECT_DIR$/sources/vm_dump.c" />
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="50" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-          <folding>
-            <element signature="e#921#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse_defines.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="30" lean-forward="true" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helltrain2.cor">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -570,88 +509,167 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_main.c">
+    <entry file="file://$PROJECT_DIR$/sources/parse/corewar_parse_options.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
+        <state relative-caret-position="150">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse.c">
+    <entry file="file://$PROJECT_DIR$/sources/parse/corewar_parse_champion.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        <state>
+          <caret selection-end-line="11" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/parse/vm_parse_champion.c">
+    <entry file="file://$PROJECT_DIR$/includes/parse/corewar_parse_def.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="117" column="33" selection-start-line="117" selection-start-column="33" selection-end-line="117" selection-end-column="33" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_game.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="110" selection-start-line="110" selection-end-line="110" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm_defines.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="54" selection-start-line="46" selection-start-column="54" selection-end-line="46" selection-end-column="54" />
-          <folding>
-            <element signature="e#937#962#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/parse/vm_parse.h">
+    <entry file="file://$PROJECT_DIR$/includes/parse/corewar_parse.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm_operations.h">
+    <entry file="file://$PROJECT_DIR$/sources/parse/corewar_parse.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
+        <state relative-caret-position="-880">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="71" selection-start-line="71" selection-end-line="71" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="66" column="8" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op4.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_game_loop.c">
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
+        <state relative-caret-position="647">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#892#912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/corewar_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/op/corewar_op.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="54" lean-forward="true" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/corewar_settings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/op/corewar_op_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/corewar_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="41" lean-forward="true" selection-start-line="35" selection-start-column="41" selection-end-line="35" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/corewar.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding>
+            <element signature="e#921#950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/corewar_cycles.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-298">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="63" />
           <folding>
             <element signature="e#892#911#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vm_settings.h">
+    <entry file="file://$PROJECT_DIR$/sources/corewar.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="46" column="46" lean-forward="true" selection-start-line="46" selection-start-column="46" selection-end-line="46" selection-end-column="46" />
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vm_operations_1to5.c">
+    <entry file="file://$PROJECT_DIR$/sources/corewar_vm.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="110" column="1" lean-forward="true" selection-start-line="110" selection-start-column="1" selection-end-line="110" selection-end-column="1" />
+        <state>
+          <caret selection-end-line="10" selection-end-column="80" />
           <folding>
             <element signature="e#892#910#0" expanded="true" />
           </folding>

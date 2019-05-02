@@ -57,120 +57,195 @@ include CMakeFiles/corewar.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/corewar.dir/flags.make
 
-CMakeFiles/corewar.dir/sources/vm_game.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/vm_game.c.o: ../sources/vm_game.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/corewar.dir/sources/vm_game.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vm_game.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game.c
+CMakeFiles/corewar.dir/sources/corewar_game.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/corewar_game.c.o: ../sources/corewar_game.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/corewar.dir/sources/corewar_game.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/corewar_game.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c
 
-CMakeFiles/corewar.dir/sources/vm_game.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vm_game.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game.c > CMakeFiles/corewar.dir/sources/vm_game.c.i
+CMakeFiles/corewar.dir/sources/corewar_game.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/corewar_game.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c > CMakeFiles/corewar.dir/sources/corewar_game.c.i
 
-CMakeFiles/corewar.dir/sources/vm_game.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vm_game.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game.c -o CMakeFiles/corewar.dir/sources/vm_game.c.s
+CMakeFiles/corewar.dir/sources/corewar_game.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/corewar_game.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c -o CMakeFiles/corewar.dir/sources/corewar_game.c.s
 
-CMakeFiles/corewar.dir/sources/vm_game_loop.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/vm_game_loop.c.o: ../sources/vm_game_loop.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/corewar.dir/sources/vm_game_loop.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vm_game_loop.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game_loop.c
+CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o: ../sources/corewar_game_loop.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c
 
-CMakeFiles/corewar.dir/sources/vm_game_loop.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vm_game_loop.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game_loop.c > CMakeFiles/corewar.dir/sources/vm_game_loop.c.i
+CMakeFiles/corewar.dir/sources/corewar_game_loop.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/corewar_game_loop.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c > CMakeFiles/corewar.dir/sources/corewar_game_loop.c.i
 
-CMakeFiles/corewar.dir/sources/vm_game_loop.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vm_game_loop.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_game_loop.c -o CMakeFiles/corewar.dir/sources/vm_game_loop.c.s
+CMakeFiles/corewar.dir/sources/corewar_game_loop.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/corewar_game_loop.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c -o CMakeFiles/corewar.dir/sources/corewar_game_loop.c.s
 
-CMakeFiles/corewar.dir/sources/vm_main.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/vm_main.c.o: ../sources/vm_main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/corewar.dir/sources/vm_main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vm_main.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_main.c
+CMakeFiles/corewar.dir/sources/corewar_main.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/corewar_main.c.o: ../sources/corewar_main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/corewar.dir/sources/corewar_main.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/corewar_main.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c
 
-CMakeFiles/corewar.dir/sources/vm_main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vm_main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_main.c > CMakeFiles/corewar.dir/sources/vm_main.c.i
+CMakeFiles/corewar.dir/sources/corewar_main.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/corewar_main.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c > CMakeFiles/corewar.dir/sources/corewar_main.c.i
 
-CMakeFiles/corewar.dir/sources/vm_main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vm_main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_main.c -o CMakeFiles/corewar.dir/sources/vm_main.c.s
+CMakeFiles/corewar.dir/sources/corewar_main.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/corewar_main.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c -o CMakeFiles/corewar.dir/sources/corewar_main.c.s
 
-CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o: ../sources/vm_operations_1to5.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_operations_1to5.c
+CMakeFiles/corewar.dir/sources/corewar_utils.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/corewar_utils.c.o: ../sources/corewar_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/corewar.dir/sources/corewar_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/corewar_utils.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c
 
-CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_operations_1to5.c > CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.i
+CMakeFiles/corewar.dir/sources/corewar_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/corewar_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c > CMakeFiles/corewar.dir/sources/corewar_utils.c.i
 
-CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vm_operations_1to5.c -o CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.s
+CMakeFiles/corewar.dir/sources/corewar_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/corewar_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c -o CMakeFiles/corewar.dir/sources/corewar_utils.c.s
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o: ../sources/parse/vm_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse.c
+CMakeFiles/corewar.dir/sources/op/corewar_op.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/op/corewar_op.c.o: ../sources/op/corewar_op.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/corewar.dir/sources/op/corewar_op.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/op/corewar_op.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/vm_parse.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse.c > CMakeFiles/corewar.dir/sources/parse/vm_parse.c.i
+CMakeFiles/corewar.dir/sources/op/corewar_op.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/op/corewar_op.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c > CMakeFiles/corewar.dir/sources/op/corewar_op.c.i
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/vm_parse.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse.c -o CMakeFiles/corewar.dir/sources/parse/vm_parse.c.s
+CMakeFiles/corewar.dir/sources/op/corewar_op.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/op/corewar_op.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c -o CMakeFiles/corewar.dir/sources/op/corewar_op.c.s
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o: ../sources/parse/vm_parse_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_champion.c
+CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o: ../sources/op/corewar_op2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_champion.c > CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.i
+CMakeFiles/corewar.dir/sources/op/corewar_op2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/op/corewar_op2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c > CMakeFiles/corewar.dir/sources/op/corewar_op2.c.i
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_champion.c -o CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.s
+CMakeFiles/corewar.dir/sources/op/corewar_op2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/op/corewar_op2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c -o CMakeFiles/corewar.dir/sources/op/corewar_op2.c.s
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o: ../sources/parse/vm_parse_options.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_options.c
+CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o: ../sources/op/corewar_op3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_options.c > CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.i
+CMakeFiles/corewar.dir/sources/op/corewar_op3.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/op/corewar_op3.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c > CMakeFiles/corewar.dir/sources/op/corewar_op3.c.i
 
-CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/vm_parse_options.c -o CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.s
+CMakeFiles/corewar.dir/sources/op/corewar_op3.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/op/corewar_op3.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c -o CMakeFiles/corewar.dir/sources/op/corewar_op3.c.s
+
+CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o: ../sources/op/corewar_op4.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c
+
+CMakeFiles/corewar.dir/sources/op/corewar_op4.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/op/corewar_op4.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c > CMakeFiles/corewar.dir/sources/op/corewar_op4.c.i
+
+CMakeFiles/corewar.dir/sources/op/corewar_op4.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/op/corewar_op4.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c -o CMakeFiles/corewar.dir/sources/op/corewar_op4.c.s
+
+CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o: ../sources/op/corewar_op_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c
+
+CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c > CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.i
+
+CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c -o CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.s
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o: ../sources/parse/corewar_parse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse.c
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse.c > CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.i
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse.c -o CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.s
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o: ../sources/parse/corewar_parse_champion.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_champion.c
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_champion.c > CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.i
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_champion.c -o CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.s
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o: ../sources/parse/corewar_parse_options.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c > CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.i
+
+CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c -o CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.s
 
 # Object files for target corewar
 corewar_OBJECTS = \
-"CMakeFiles/corewar.dir/sources/vm_game.c.o" \
-"CMakeFiles/corewar.dir/sources/vm_game_loop.c.o" \
-"CMakeFiles/corewar.dir/sources/vm_main.c.o" \
-"CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o" \
-"CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o" \
-"CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o" \
-"CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o"
+"CMakeFiles/corewar.dir/sources/corewar_game.c.o" \
+"CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o" \
+"CMakeFiles/corewar.dir/sources/corewar_main.c.o" \
+"CMakeFiles/corewar.dir/sources/corewar_utils.c.o" \
+"CMakeFiles/corewar.dir/sources/op/corewar_op.c.o" \
+"CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o" \
+"CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o" \
+"CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o" \
+"CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o" \
+"CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o" \
+"CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o" \
+"CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o"
 
 # External object files for target corewar
 corewar_EXTERNAL_OBJECTS =
 
-corewar: CMakeFiles/corewar.dir/sources/vm_game.c.o
-corewar: CMakeFiles/corewar.dir/sources/vm_game_loop.c.o
-corewar: CMakeFiles/corewar.dir/sources/vm_main.c.o
-corewar: CMakeFiles/corewar.dir/sources/vm_operations_1to5.c.o
-corewar: CMakeFiles/corewar.dir/sources/parse/vm_parse.c.o
-corewar: CMakeFiles/corewar.dir/sources/parse/vm_parse_champion.c.o
-corewar: CMakeFiles/corewar.dir/sources/parse/vm_parse_options.c.o
+corewar: CMakeFiles/corewar.dir/sources/corewar_game.c.o
+corewar: CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o
+corewar: CMakeFiles/corewar.dir/sources/corewar_main.c.o
+corewar: CMakeFiles/corewar.dir/sources/corewar_utils.c.o
+corewar: CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
+corewar: CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o
+corewar: CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o
+corewar: CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o
+corewar: CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o
+corewar: CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o
+corewar: CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o
+corewar: CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

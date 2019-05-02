@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   vm_parse_champion.c                                :+:      :+:    :+:   */
+/*   corewar_parse_champion.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 17:15:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 13:39:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 22:54:35 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fcntl.h"
 #include "libft.h"
-#include "vm_parse.h"
+#include "corewar_parse.h"
 
 static int	static_parse_mode(t_parse *parse, const unsigned char *buff,
 			char mode, unsigned int length)
@@ -30,7 +30,7 @@ static int	static_parse_mode(t_parse *parse, const unsigned char *buff,
 		else if (mode == MODE_NULL
 		&& ((MAGIC_NULL >> (8 * (length - i - 1))) & 255) != buff[i])
 			return (0);
-		else if (mode == CHAMPION_CODE_SIZE_LENGTH)
+		else if (mode == CODE_SIZE_LENGTH)
 			parse->champs[parse->pos - 1].code_size =
 			parse->champs[parse->pos - 1].code_size << 8
 			| (unsigned int)buff[i];
@@ -44,7 +44,7 @@ static int	static_parse_mode(t_parse *parse, const unsigned char *buff,
 static int	static_parse(t_parse *parse, int fd)
 {
 	unsigned char	buff[MAGIC_HEADER_LENGTH];
-	unsigned char	buff2[CHAMPION_NAME_LENGTH];
+	unsigned char	buff2[NAME_LENGTH];
 
 	if (read(fd, &buff, MAGIC_HEADER_LENGTH) != MAGIC_HEADER_LENGTH
 	|| !static_parse_mode(
@@ -53,8 +53,8 @@ static int	static_parse(t_parse *parse, int fd)
 		ft_printf("[redError:~] Magic Header is invalid ");
 		return (0);
 	}
-	if (read(fd, buff2, CHAMPION_NAME_LENGTH) != CHAMPION_NAME_LENGTH
-	|| !static_parse_mode(parse, buff2, MODE_NAME, CHAMPION_NAME_LENGTH))
+	if (read(fd, buff2, NAME_LENGTH) != NAME_LENGTH
+	|| !static_parse_mode(parse, buff2, MODE_NAME, NAME_LENGTH))
 	{
 		ft_printf("[redError:~] Champion's name is invalid ");
 		return (0);
@@ -65,7 +65,7 @@ static int	static_parse(t_parse *parse, int fd)
 static int	static_parse2(t_parse *parse, int fd)
 {
 	unsigned char	buff[MAGIC_NULL_LENGTH];
-	unsigned char	buff2[CHAMPION_CODE_SIZE_LENGTH];
+	unsigned char	buff2[CODE_SIZE_LENGTH];
 
 	if (read(fd, buff, MAGIC_NULL_LENGTH) != MAGIC_NULL_LENGTH
 	|| !static_parse_mode(parse, buff, MODE_NULL, MAGIC_NULL_LENGTH))
@@ -73,10 +73,10 @@ static int	static_parse2(t_parse *parse, int fd)
 		ft_printf("[redError:~] Magic Null after the name is invalid ");
 		return (0);
 	}
-	if (read(fd, buff2, CHAMPION_CODE_SIZE_LENGTH) != CHAMPION_CODE_SIZE_LENGTH
+	if (read(fd, buff2, CODE_SIZE_LENGTH) != CODE_SIZE_LENGTH
 	|| !static_parse_mode(
-	parse, buff2, MODE_CODE_SIZE, CHAMPION_CODE_SIZE_LENGTH)
-	|| parse->champs[parse->pos - 1].code_size > CHAMPION_CODE_LENGTH)
+	parse, buff2, MODE_CODE_SIZE, CODE_SIZE_LENGTH)
+	|| parse->champs[parse->pos - 1].code_size > CODE_LENGTH)
 	{
 		ft_printf("[redError:~] Champion's code size is invalid ");
 		return (0);
@@ -86,11 +86,11 @@ static int	static_parse2(t_parse *parse, int fd)
 
 static int	static_parse3(t_parse *parse, int fd)
 {
-	unsigned char	buff[CHAMPION_COMMENT_LENGTH];
+	unsigned char	buff[COMMENT_LENGTH];
 	unsigned char	buff2[MAGIC_NULL_LENGTH];
 
-	if (read(fd, buff, CHAMPION_COMMENT_LENGTH) != CHAMPION_COMMENT_LENGTH
-	|| !static_parse_mode(parse, buff, MODE_COMMENT, CHAMPION_COMMENT_LENGTH))
+	if (read(fd, buff, COMMENT_LENGTH) != COMMENT_LENGTH
+	|| !static_parse_mode(parse, buff, MODE_COMMENT, COMMENT_LENGTH))
 	{
 		ft_printf("[redError:~] Champion's comment is invalid ");
 		return (0);
@@ -125,5 +125,6 @@ int			corewar_parse_champion(t_parse *parse, const char *file)
 		return (0);
 	}
 	champ->code[champ->code_size] = '\0';
+	parse->pos = 0;
 	return (1);
 }
