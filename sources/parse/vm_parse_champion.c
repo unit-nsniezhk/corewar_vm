@@ -114,7 +114,7 @@ int			corewar_parse_champion(t_parse *parse, const char *file)
 		ft_printf("[redError:~] Can't open a file ");
 		return (0);
 	}
-	if (static_parse(parse, fd) || !static_parse2(parse, fd)
+	if (!static_parse(parse, fd) || !static_parse2(parse, fd)
 	|| !static_parse3(parse, fd))
 		return (0);
 	champ = &parse->champs[parse->pos - 1];

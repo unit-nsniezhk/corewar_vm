@@ -6,15 +6,15 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 20:36:16 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 21:30:16 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stddef.h>
 #include "vm.h"
 
-void		corewar_game_read_arg(t_game_data *data, unsigned int *arg_value,
-			unsigned char arg_size, unsigned int arg_pos)
+void		corewar_game_read_arg(t_game_data *data, int *arg_value,
+			unsigned char arg_size, int arg_pos)
 {
 	unsigned int	i;
 
@@ -22,22 +22,21 @@ void		corewar_game_read_arg(t_game_data *data, unsigned int *arg_value,
 	i = 0;
 	while (i < arg_size)
 	{
-		*arg_value = *arg_value << 8
-		| data->arena[(arg_pos + i) % ARENA_SIZE];
+		*arg_value = *arg_value << 8 | data->arena[corewar_loop_mem(arg_pos + i)];
 		++i;
 	}
 }
 
-void		corewar_game_write_arg(t_game_data *data, unsigned int arg_value,
-			unsigned char arg_size, unsigned int arg_pos)
+void		corewar_game_write_arg(t_game_data *data, int arg_value,
+			unsigned char arg_size, int arg_pos)
 {
 	unsigned int	i;
 
 	i = 0;
 	while (i < arg_size)
 	{
-		data->arena[(arg_pos + i) % ARENA_SIZE] =
-		(unsigned char)(arg_value >> (8 * (arg_size - i - 1)));
+		data->arena[corewar_loop_mem(arg_pos + i)] =
+		(char)(arg_value >> (8 * (arg_size - i - 1)));
 		++i;
 	}
 }
@@ -51,8 +50,8 @@ static int	static_valid_argument(t_game_data *data, t_carriage *carriage,
 	ret = 1;
 	if (operation->args_types)
 	{
-		carriage->args_types[i] = data->arena[(carriage->pos + OPERATION_SIZE)
-		% ARENA_SIZE] >> (8 - ((i + 1) * 2));
+		carriage->args_types[i] = (char)(data->arena[corewar_loop_mem(
+		carriage->pos + OPERATION_SIZE)] >> (8 - ((i + 1) * 2)) & T_SIZE);//TODO move to separate func
 		if (!(operation->arguments[i] & carriage->args_types[i]))
 			ret = 0;
 	}
@@ -63,7 +62,7 @@ static int	static_valid_argument(t_game_data *data, t_carriage *carriage,
 	else if (carriage->args_types[i] == T_IND)
 		arg_size = IND_SIZE;
 	else
-		arg_size = REG_SIZE;
+		arg_size = REG_LINK_SIZE;
 	corewar_game_read_arg(data, &(carriage->args_values[i]), arg_size,
 	carriage->pos + carriage->delta_pos);
 	if (ret && carriage->args_types[i] == T_REG
@@ -76,13 +75,14 @@ static int	static_valid_argument(t_game_data *data, t_carriage *carriage,
 static int	static_valid_operation(t_game_data *data, t_carriage *carriage,
 			t_operation *operation)
 {
-	unsigned int	ret;
 	unsigned int	i;
+	unsigned int	ret;
 
-	ret = 1;
-	if (data->arena[carriage->pos % ARENA_SIZE] > 0
-	&& data->arena[carriage->pos % ARENA_SIZE] <= 16)
+	ret = 0;
+	if (data->arena[carriage->pos] > 0
+	&& data->arena[carriage->pos] <= OPERATIONS)
 	{
+		ret = 1;
 		if (operation->args_types)
 			carriage->delta_pos += ARGS_TYPES_SIZE;
 		i = 0;
@@ -98,16 +98,13 @@ static int	static_valid_operation(t_game_data *data, t_carriage *carriage,
 
 static void	static_carriage(t_game_data *data, t_carriage *carriage)
 {
-	t_operation		*operation;
-
-	operation = NULL;
-	if (carriage->cycle_timeout == 0)
+	if (!carriage->cycle_timeout)
 	{
-		carriage->operation = data->arena[carriage->pos % ARENA_SIZE];
+		carriage->operation = data->arena[corewar_loop_mem(carriage->pos)];
 		if (carriage->operation > 0 && carriage->operation <= OPERATIONS)
 		{
-			operation = (t_operation*)&g_table[carriage->operation - 1];
-			carriage->cycle_timeout = operation->cycle_timeout;
+			carriage->cycle_timeout =
+					g_table[carriage->operation - 1].cycle_timeout;
 		}
 		carriage->delta_pos = OPERATION_SIZE;
 	}
@@ -115,10 +112,10 @@ static void	static_carriage(t_game_data *data, t_carriage *carriage)
 		--carriage->cycle_timeout;
 	if (!carriage->cycle_timeout)
 	{
-		if (operation && static_valid_operation(
-		data, carriage, operation))
-			operation->function(data, carriage);
-		carriage->pos += carriage->delta_pos;
+		if (static_valid_operation(data, carriage,
+		(t_operation*)(&g_table[carriage->operation - 1])))
+			g_table[carriage->operation - 1].function(data, carriage);
+		carriage->pos = corewar_loop_mem(carriage->pos + carriage->delta_pos);
 	}
 }
 
@@ -128,9 +125,9 @@ int			corewar_game_loop(t_game_data *data)
 	t_carriage		*carriage_tmp;
 
 	i = 0;
-	carriage_tmp = data->carriage;
 	while (i < data->cycles_to_die)
 	{
+		carriage_tmp = data->carriage;
 		if (data->dump && data->cycle == data->dump)
 		{
 			corewar_dump(data->arena);

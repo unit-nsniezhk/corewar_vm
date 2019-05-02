@@ -6,17 +6,25 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:17:41 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 22:44:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 21:54:09 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "vm.h"
 
+int		corewar_loop_mem(int pos)
+{
+	pos %= ARENA_SIZE;
+	if (pos < 0)
+		pos += ARENA_SIZE;
+	return (pos);
+}
+
 static void	static_get_argument(t_game_data *data, t_carriage *carriage,
 			unsigned int n, int *arg)
 {
-	unsigned int	pos;
+	int	pos;
 
 	if (carriage->args_types[n] == T_REG)
 		*arg = carriage->registers[carriage->args_values[0]];
@@ -24,16 +32,16 @@ static void	static_get_argument(t_game_data *data, t_carriage *carriage,
 		*arg = carriage->args_values[n];
 	else
 	{
-		pos = carriage->pos + (carriage->args_values[n] % IDX_MOD);
+		pos = carriage->pos + (carriage->args_values[n] % IDX_MOD);//TODO write module function for IDX_MOD
 		corewar_game_read_arg(
-		data, arg, T_REG, data->arena[pos % ARENA_SIZE]);
+		data, arg, T_REG, data->arena[corewar_loop_mem(pos)]);
 	}
 }
 
 static void	static_get_long_argument(t_game_data *data, t_carriage *carriage,
 			unsigned int n, int *arg)
 {
-	unsigned int	pos;
+	int	pos;
 
 	if (carriage->args_types[n] == T_REG)
 		*arg = carriage->registers[carriage->args_values[0]];
@@ -43,20 +51,19 @@ static void	static_get_long_argument(t_game_data *data, t_carriage *carriage,
 	{
 		pos = carriage->pos + carriage->args_values[n];
 		corewar_game_read_arg(
-				data, arg, T_REG, data->arena[pos % ARENA_SIZE]);
+				data, arg, T_REG, data->arena[corewar_loop_mem(pos)]);
 	}
 }
 
-static void	static_coppy_carriage(t_game_data *data, t_carriage *carriage_src,
-			int pos)
+static void	static_clone_carriage(t_game_data *data, t_carriage *carriage_src,
+									 int pos)
 {
 	t_carriage		*carriage_new;
 	unsigned int	i;
 
 	carriage_new = ft_memalloc(sizeof(t_carriage));
-	carriage_new->id = carriage_src->id;
+	carriage_new->id = data->n_carriage;
 	carriage_new->carry = carriage_src->carry;
-	carriage_new->zjmp_mode = carriage_src->zjmp_mode;//TODO
 	carriage_new->operation = 0;
 	carriage_new->cycle_live = carriage_src->cycle_live;
 	carriage_new->cycle_live = 0;
@@ -68,16 +75,24 @@ static void	static_coppy_carriage(t_game_data *data, t_carriage *carriage_src,
 		carriage_new->registers[i] = carriage_src->registers[i];
 		++i;
 	}
+	carriage_new->registers[1] = carriage_src->registers[1];
 	carriage_new->next = data->carriage->next;
 	data->carriage = carriage_new;
+	data->n_carriage++;
 }
 
 //live
 void	corewar_operation1(t_game_data *data, t_carriage *carriage)
 {
+	int	arg;
+
 	carriage->cycle_live = data->cycle;
-	ft_printf("A process shows that player %u %s is alive\n", carriage->id,
-	data->players[carriage->id - 1]);
+	static_get_argument(data, carriage, 0, &arg);
+	if (-arg == carriage->registers[1])
+	{
+		ft_printf("A process shows that player %u %s is alive\n", carriage->id,
+		data->players[carriage->id - 1]);
+	}
 }
 
 //ld
@@ -94,7 +109,6 @@ void	corewar_operation2(t_game_data *data, t_carriage *carriage)
 	else
 		carriage->carry = 0;
 }
-
 
 //st
 void	corewar_operation3(t_game_data *data, t_carriage *carriage)
@@ -263,7 +277,7 @@ void		corewar_operation12(t_game_data *data, t_carriage *carriage)
 
 	static_get_argument(data, carriage, 0, &arg);
 	pos = carriage->pos + (arg % IDX_MOD);
-	static_coppy_carriage(data, carriage, pos);
+	static_clone_carriage(data, carriage, pos);
 }
 
 //lld
@@ -304,7 +318,7 @@ void		corewar_operation15(t_game_data *data, t_carriage *carriage)
 
 	static_get_argument(data, carriage, 0, &arg);
 	pos = carriage->pos + arg;
-	static_coppy_carriage(data, carriage, pos);
+	static_clone_carriage(data, carriage, pos);
 }
 
 //aff

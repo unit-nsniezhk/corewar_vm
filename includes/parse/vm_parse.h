@@ -15,7 +15,6 @@
 # define VM_PARSE_H
 
 # include "vm_parse_defines.h"
-# include "vm_parse_errors.h"
 
 int	corewar_parse_options(t_parse *parse, const char **argv, unsigned int i);
 int	corewar_parse_champion(t_parse *parse, const char *file);

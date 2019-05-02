@@ -9,7 +9,7 @@ AUX_SOURCE_DIRECTORY(sources/parse SRCSP)
 
 add_executable(corewar
         ${SRCS}
-        ${LSRCS}
+#        ${LSRCS}
         ${SRCSP})
 
 target_include_directories(corewar

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 14:22:00 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/01 17:15:53 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/02 19:01:46 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	static_introduction(t_parse *parse)
 	i = 0;
 	while (i < parse->n_champs)
 	{
-		ft_printf("* Player %u, weighing %u bytes, \"%s\" (\"%s\") !",
+		ft_printf("* Player %u, weighing %u bytes, \"%s\" (\"%s\") !\n",
 		parse->champs[i].id, parse->champs[i].code_size, parse->champs[i].name,
 		parse->champs[i].comment);
 		++i;
@@ -43,21 +43,29 @@ int			main(int argc, char **argv)
 	corewar_game(&data, &parse);
 	return (0);
 }
+# include "stdio.h"
 
-void		corewar_dump(unsigned char *arena)
+void		corewar_dump(char *arena)
 {
 	unsigned int	i;
 
 	i = 0;
 	while (i < ARENA_SIZE)
 	{
-		if (arena[i] < 16)
-			ft_printf("0");
-		ft_printf("%x", (unsigned int)arena[i]);
-		if (!(i % DUMP_LINE))
-			ft_printf("\n");
+		if (arena[i] < 0)
+		{
+			arena[i] *= -1;
+			write(1, "-", 1);
+		}
 		else
-			ft_printf(" ");
+			write(1, " ", 1);
+		if (arena[i] < 16)
+			write(1, "0", 1);
+		ft_printf("%x", arena[i] & 127);
+		if (!((i + 1) % DUMP_LINE))
+			write(1, "\n", 1);
+		else
+			write(1, " ", 1);
 		++i;
 	}
 }
