@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:29:55 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/02 23:53:12 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 15:21:42 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,11 @@ void	corewar_op_live(t_data *data, t_carriage *carr)
 
 	carr->last_live = data->cycle;
 	corewar_op_arg(data, carr, 0, &arg);
-	if (-arg == carr->regs[1])
+	if (arg == carr->regs[1])
 	{
-		ft_printf("A process shows that player %u %s is alive\n", carr->id,
-		data->players[carr->id - 1]);
+		ft_printf("A process shows that player %u (%s) is alive\n", -arg,
+		data->players[(-arg) - 1].name);
+		data->leader = (unsigned int)(-carr->regs[1]);
 	}
 }
 

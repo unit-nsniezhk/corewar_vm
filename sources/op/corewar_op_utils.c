@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 00:00:57 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 15:33:30 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,6 +50,7 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 	t_carriage		*carr_new;
 	unsigned int	i;
 
+	data->n_carrs++;
 	carr_new = ft_memalloc(sizeof(t_carriage));
 	carr_new->id = data->n_carrs;
 	carr_new->carry = carr_src->carry;
@@ -63,8 +64,6 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 		carr_new->regs[i] = carr_src->regs[i];
 		++i;
 	}
-	carr_new->regs[1] = carr_src->regs[1];
-	carr_new->next = data->carr->next;
+	carr_new->next = data->carr;
 	data->carr = carr_new;
-	data->n_carrs++;
 }

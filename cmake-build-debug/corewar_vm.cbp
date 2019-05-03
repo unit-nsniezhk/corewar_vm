@@ -90,16 +90,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_cycles.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_vm.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c">

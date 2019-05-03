@@ -123,86 +123,59 @@ corewar/fast:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/build
 .PHONY : corewar/fast
 
-sources/corewar_game.o: sources/corewar_game.c.o
+sources/corewar.o: sources/corewar.c.o
 
-.PHONY : sources/corewar_game.o
-
-# target to build an object file
-sources/corewar_game.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game.c.o
-.PHONY : sources/corewar_game.c.o
-
-sources/corewar_game.i: sources/corewar_game.c.i
-
-.PHONY : sources/corewar_game.i
-
-# target to preprocess a source file
-sources/corewar_game.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game.c.i
-.PHONY : sources/corewar_game.c.i
-
-sources/corewar_game.s: sources/corewar_game.c.s
-
-.PHONY : sources/corewar_game.s
-
-# target to generate assembly for a file
-sources/corewar_game.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game.c.s
-.PHONY : sources/corewar_game.c.s
-
-sources/corewar_game_loop.o: sources/corewar_game_loop.c.o
-
-.PHONY : sources/corewar_game_loop.o
+.PHONY : sources/corewar.o
 
 # target to build an object file
-sources/corewar_game_loop.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o
-.PHONY : sources/corewar_game_loop.c.o
+sources/corewar.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar.c.o
+.PHONY : sources/corewar.c.o
 
-sources/corewar_game_loop.i: sources/corewar_game_loop.c.i
+sources/corewar.i: sources/corewar.c.i
 
-.PHONY : sources/corewar_game_loop.i
+.PHONY : sources/corewar.i
 
 # target to preprocess a source file
-sources/corewar_game_loop.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game_loop.c.i
-.PHONY : sources/corewar_game_loop.c.i
+sources/corewar.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar.c.i
+.PHONY : sources/corewar.c.i
 
-sources/corewar_game_loop.s: sources/corewar_game_loop.c.s
+sources/corewar.s: sources/corewar.c.s
 
-.PHONY : sources/corewar_game_loop.s
+.PHONY : sources/corewar.s
 
 # target to generate assembly for a file
-sources/corewar_game_loop.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_game_loop.c.s
-.PHONY : sources/corewar_game_loop.c.s
+sources/corewar.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar.c.s
+.PHONY : sources/corewar.c.s
 
-sources/corewar_main.o: sources/corewar_main.c.o
+sources/corewar_cycles.o: sources/corewar_cycles.c.o
 
-.PHONY : sources/corewar_main.o
+.PHONY : sources/corewar_cycles.o
 
 # target to build an object file
-sources/corewar_main.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_main.c.o
-.PHONY : sources/corewar_main.c.o
+sources/corewar_cycles.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
+.PHONY : sources/corewar_cycles.c.o
 
-sources/corewar_main.i: sources/corewar_main.c.i
+sources/corewar_cycles.i: sources/corewar_cycles.c.i
 
-.PHONY : sources/corewar_main.i
+.PHONY : sources/corewar_cycles.i
 
 # target to preprocess a source file
-sources/corewar_main.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_main.c.i
-.PHONY : sources/corewar_main.c.i
+sources/corewar_cycles.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_cycles.c.i
+.PHONY : sources/corewar_cycles.c.i
 
-sources/corewar_main.s: sources/corewar_main.c.s
+sources/corewar_cycles.s: sources/corewar_cycles.c.s
 
-.PHONY : sources/corewar_main.s
+.PHONY : sources/corewar_cycles.s
 
 # target to generate assembly for a file
-sources/corewar_main.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_main.c.s
-.PHONY : sources/corewar_main.c.s
+sources/corewar_cycles.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_cycles.c.s
+.PHONY : sources/corewar_cycles.c.s
 
 sources/corewar_utils.o: sources/corewar_utils.c.o
 
@@ -230,6 +203,33 @@ sources/corewar_utils.s: sources/corewar_utils.c.s
 sources/corewar_utils.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_utils.c.s
 .PHONY : sources/corewar_utils.c.s
+
+sources/corewar_vm.o: sources/corewar_vm.c.o
+
+.PHONY : sources/corewar_vm.o
+
+# target to build an object file
+sources/corewar_vm.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_vm.c.o
+.PHONY : sources/corewar_vm.c.o
+
+sources/corewar_vm.i: sources/corewar_vm.c.i
+
+.PHONY : sources/corewar_vm.i
+
+# target to preprocess a source file
+sources/corewar_vm.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_vm.c.i
+.PHONY : sources/corewar_vm.c.i
+
+sources/corewar_vm.s: sources/corewar_vm.c.s
+
+.PHONY : sources/corewar_vm.s
+
+# target to generate assembly for a file
+sources/corewar_vm.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/corewar_vm.c.s
+.PHONY : sources/corewar_vm.c.s
 
 sources/op/corewar_op.o: sources/op/corewar_op.c.o
 
@@ -456,18 +456,18 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... corewar"
-	@echo "... sources/corewar_game.o"
-	@echo "... sources/corewar_game.i"
-	@echo "... sources/corewar_game.s"
-	@echo "... sources/corewar_game_loop.o"
-	@echo "... sources/corewar_game_loop.i"
-	@echo "... sources/corewar_game_loop.s"
-	@echo "... sources/corewar_main.o"
-	@echo "... sources/corewar_main.i"
-	@echo "... sources/corewar_main.s"
+	@echo "... sources/corewar.o"
+	@echo "... sources/corewar.i"
+	@echo "... sources/corewar.s"
+	@echo "... sources/corewar_cycles.o"
+	@echo "... sources/corewar_cycles.i"
+	@echo "... sources/corewar_cycles.s"
 	@echo "... sources/corewar_utils.o"
 	@echo "... sources/corewar_utils.i"
 	@echo "... sources/corewar_utils.s"
+	@echo "... sources/corewar_vm.o"
+	@echo "... sources/corewar_vm.i"
+	@echo "... sources/corewar_vm.s"
 	@echo "... sources/op/corewar_op.o"
 	@echo "... sources/op/corewar_op.i"
 	@echo "... sources/op/corewar_op.s"

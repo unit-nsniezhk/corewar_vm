@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_game.c.o"
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_game_loop.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_game_loop.c.o"
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_main.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_main.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_cycles.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_cycles.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_utils.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_vm.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_vm.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o"

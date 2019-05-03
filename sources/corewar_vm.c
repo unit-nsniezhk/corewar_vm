@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/02 23:53:16 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 15:18:04 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ static void	static_init_carr(t_data *data, unsigned int pos, unsigned int id)
 		carr_tmp->regs[i] = 0;
 		++i;
 	}
-	carr_tmp->regs[1] = id;
+	carr_tmp->regs[1] = -id;
 	if (data->carr)
 		carr_tmp->next = data->carr;
 	else
@@ -47,6 +47,7 @@ static void	static_init_data(t_data *data, t_parse *parse)
 
 	data->dump = parse->dump;
 	data->cycle = 0;
+	data->leader = parse->n_champs;
 	data->check = 0;
 	data->cycles_to_check = CYCLES_TO_CHECK;
 	data->n_live = 0;
@@ -69,23 +70,16 @@ static void	static_init_data(t_data *data, t_parse *parse)
 	}
 }
 
-static void	static_dump(char *arena)
+static void	static_dump(const unsigned char *arena)
 {
 	unsigned int	i;
 
 	i = 0;
 	while (i < ARENA_SIZE)
 	{
-		if (arena[i] < 0)
-		{
-			arena[i] *= -1;
-			write(1, "-", 1);
-		}
-		else
-			write(1, " ", 1);
 		if (arena[i] < 16)
 			write(1, "0", 1);
-		ft_printf("%x", arena[i] & 127);
+		ft_printf("%x", arena[i]);
 		if (!((i + 1) % DUMP_BYTES_PER_LINE))
 			write(1, "\n", 1);
 		else
@@ -131,7 +125,7 @@ void		corewar_vm(t_data *data, t_parse *parse)
 		if (!corewar_cycles(data))
 		{
 			static_dump(data->arena);
-			break ;
+			return ;
 		}
 		static_kill_carrs(data, data->carr);
 		if (data->n_live >= MIN_LIVE)
@@ -146,6 +140,6 @@ void		corewar_vm(t_data *data, t_parse *parse)
 		if (data->cycles_to_check <= 0)
 			data->cycles_to_check = 1;
 	}
-	ft_printf("Player %d (%s) won\n", data->carr->id,
-	data->players[data->carr->id].name);
+	ft_printf("Player %d (%s) won\n", data->leader,
+	data->players[data->leader - 1].name);
 }

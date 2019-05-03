@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:48:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/02 23:17:25 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 15:10:43 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,11 +42,12 @@ typedef struct			s_data
 	unsigned int		dump;
 	unsigned int		check;
 	unsigned int		cycle;
+	unsigned int		leader;
 	int					cycles_to_check;
 	unsigned int		n_live;
 	unsigned int		n_carrs;
 	t_player			players[MAX_PLAYERS];
-	char				arena[ARENA_SIZE];
+	unsigned char		arena[ARENA_SIZE];
 	t_carriage			*carr;
 }						t_data;
 
