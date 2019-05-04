@@ -447,6 +447,114 @@ sources/parse/corewar_parse_options.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.s
 .PHONY : sources/parse/corewar_parse_options.c.s
 
+sources/vis/corewar_vis.o: sources/vis/corewar_vis.c.o
+
+.PHONY : sources/vis/corewar_vis.o
+
+# target to build an object file
+sources/vis/corewar_vis.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o
+.PHONY : sources/vis/corewar_vis.c.o
+
+sources/vis/corewar_vis.i: sources/vis/corewar_vis.c.i
+
+.PHONY : sources/vis/corewar_vis.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.i
+.PHONY : sources/vis/corewar_vis.c.i
+
+sources/vis/corewar_vis.s: sources/vis/corewar_vis.c.s
+
+.PHONY : sources/vis/corewar_vis.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.s
+.PHONY : sources/vis/corewar_vis.c.s
+
+sources/vis/corewar_vis_events.o: sources/vis/corewar_vis_events.c.o
+
+.PHONY : sources/vis/corewar_vis_events.o
+
+# target to build an object file
+sources/vis/corewar_vis_events.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o
+.PHONY : sources/vis/corewar_vis_events.c.o
+
+sources/vis/corewar_vis_events.i: sources/vis/corewar_vis_events.c.i
+
+.PHONY : sources/vis/corewar_vis_events.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_events.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.i
+.PHONY : sources/vis/corewar_vis_events.c.i
+
+sources/vis/corewar_vis_events.s: sources/vis/corewar_vis_events.c.s
+
+.PHONY : sources/vis/corewar_vis_events.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_events.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.s
+.PHONY : sources/vis/corewar_vis_events.c.s
+
+sources/vis/corewar_vis_render_arena.o: sources/vis/corewar_vis_render_arena.c.o
+
+.PHONY : sources/vis/corewar_vis_render_arena.o
+
+# target to build an object file
+sources/vis/corewar_vis_render_arena.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o
+.PHONY : sources/vis/corewar_vis_render_arena.c.o
+
+sources/vis/corewar_vis_render_arena.i: sources/vis/corewar_vis_render_arena.c.i
+
+.PHONY : sources/vis/corewar_vis_render_arena.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_render_arena.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.i
+.PHONY : sources/vis/corewar_vis_render_arena.c.i
+
+sources/vis/corewar_vis_render_arena.s: sources/vis/corewar_vis_render_arena.c.s
+
+.PHONY : sources/vis/corewar_vis_render_arena.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_render_arena.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.s
+.PHONY : sources/vis/corewar_vis_render_arena.c.s
+
+sources/vis/corewar_vis_render_menu.o: sources/vis/corewar_vis_render_menu.c.o
+
+.PHONY : sources/vis/corewar_vis_render_menu.o
+
+# target to build an object file
+sources/vis/corewar_vis_render_menu.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o
+.PHONY : sources/vis/corewar_vis_render_menu.c.o
+
+sources/vis/corewar_vis_render_menu.i: sources/vis/corewar_vis_render_menu.c.i
+
+.PHONY : sources/vis/corewar_vis_render_menu.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_render_menu.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.i
+.PHONY : sources/vis/corewar_vis_render_menu.c.i
+
+sources/vis/corewar_vis_render_menu.s: sources/vis/corewar_vis_render_menu.c.s
+
+.PHONY : sources/vis/corewar_vis_render_menu.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_render_menu.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.s
+.PHONY : sources/vis/corewar_vis_render_menu.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -492,6 +600,18 @@ help:
 	@echo "... sources/parse/corewar_parse_options.o"
 	@echo "... sources/parse/corewar_parse_options.i"
 	@echo "... sources/parse/corewar_parse_options.s"
+	@echo "... sources/vis/corewar_vis.o"
+	@echo "... sources/vis/corewar_vis.i"
+	@echo "... sources/vis/corewar_vis.s"
+	@echo "... sources/vis/corewar_vis_events.o"
+	@echo "... sources/vis/corewar_vis_events.i"
+	@echo "... sources/vis/corewar_vis_events.s"
+	@echo "... sources/vis/corewar_vis_render_arena.o"
+	@echo "... sources/vis/corewar_vis_render_arena.i"
+	@echo "... sources/vis/corewar_vis_render_arena.s"
+	@echo "... sources/vis/corewar_vis_render_menu.o"
+	@echo "... sources/vis/corewar_vis_render_menu.i"
+	@echo "... sources/vis/corewar_vis_render_menu.s"
 .PHONY : help
 
 

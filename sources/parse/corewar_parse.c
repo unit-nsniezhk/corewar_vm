@@ -93,8 +93,9 @@ static void	static_init(t_parse *parse)
 		parse->champs[i].code = NULL;
 		++i;
 	}
-	parse->pos = 0;
+	parse->vis = 0;
 	parse->dump = 0;
+	parse->pos = 0;
 	parse->n_champs = 0;
 }
 
@@ -108,7 +109,7 @@ int			corewar_parse(t_parse *parse, unsigned int argc, const char **argv)
 	{
 		if (argv[i][0] == '-')
 		{
-			if (!corewar_parse_options(parse, argv, i))
+			if (!corewar_parse_options(parse, argv, &i))
 				return (0);
 			++i;
 		}

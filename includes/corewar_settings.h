@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:19:12 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/02 22:50:26 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/03 19:25:12 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,9 +32,10 @@
 # define MAGIC_HEADER 0xea83f3
 # define MAGIC_NULL 0
 
-# define MIN_CHAMPIONS 2
+# define MIN_CHAMPIONS 1
 # define MAX_CHAMPIONS 4
 # define MAX_PLAYERS MAX_CHAMPIONS
+# define MIN_PLAYERS MIN_CHAMPIONS
 
 # define BASE_ARENA_SIZE 1024
 # define ARENA_SIZE (MAX_CHAMPIONS * BASE_ARENA_SIZE)

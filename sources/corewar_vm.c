@@ -6,12 +6,13 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 15:18:04 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/04 18:26:47 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "corewar.h"
+#include "corewar_vis.h"
 
 static void	static_init_carr(t_data *data, unsigned int pos, unsigned int id)
 {
@@ -40,7 +41,7 @@ static void	static_init_carr(t_data *data, unsigned int pos, unsigned int id)
 	data->carr = carr_tmp;
 }
 
-static void	static_init_data(t_data *data, t_parse *parse)
+static void	static_init_data(t_data *data, t_parse *parse, t_vis *vis)
 {
 	unsigned int	i;
 	unsigned int	byte;
@@ -52,17 +53,21 @@ static void	static_init_data(t_data *data, t_parse *parse)
 	data->cycles_to_check = CYCLES_TO_CHECK;
 	data->n_live = 0;
 	data->n_carrs = parse->n_champs;
+	data->n_players = parse->n_champs;
 	data->carr = NULL;
+	ft_memset(data->arena, 0, ARENA_SIZE);
 	i = 0;
 	while (i < parse->n_champs)
 	{
-		data->players[i].pos = ARENA_SIZE / parse->n_champs * i;
+		data->players[i].pos = (ARENA_SIZE / parse->n_champs) * i;
 		data->players[i].name = parse->champs[i].name;
 		byte = 0;
 		while (byte < parse->champs[i].code_size)
 		{
 			data->arena[data->players[i].pos + byte] =
 			parse->champs[i].code[byte];
+			if (vis)
+				vis->color[data->players[i].pos + byte] = g_color_table[i];
 			++byte;
 		}
 		static_init_carr(data, data->players[i].pos, parse->champs[i].id);
@@ -70,13 +75,19 @@ static void	static_init_data(t_data *data, t_parse *parse)
 	}
 }
 
-static void	static_dump(const unsigned char *arena)
+static void	static_dump(const unsigned char *arena, t_vis *vis)
 {
 	unsigned int	i;
 
+	if (vis)
+		return ;
 	i = 0;
 	while (i < ARENA_SIZE)
 	{
+		if (!i)
+			write(1, "0x0000 : ", 9);
+		else if (!(i % DUMP_BYTES_PER_LINE))
+			ft_printf("%#06x : ", i);
 		if (arena[i] < 16)
 			write(1, "0", 1);
 		ft_printf("%x", arena[i]);
@@ -117,14 +128,14 @@ static void	static_kill_carrs(t_data *data, t_carriage *carr_tmp)
 	}
 }
 
-void		corewar_vm(t_data *data, t_parse *parse)
+void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 {
-	static_init_data(data, parse);
-	while (data->carr->next != NULL)
+	static_init_data(data, parse, vis);
+	while (!data->cycle || data->carr->next != NULL)
 	{
-		if (!corewar_cycles(data))
+		if (!corewar_cycles(data, vis))
 		{
-			static_dump(data->arena);
+			static_dump(data->arena, vis);
 			return ;
 		}
 		static_kill_carrs(data, data->carr);
@@ -139,7 +150,9 @@ void		corewar_vm(t_data *data, t_parse *parse)
 		}
 		if (data->cycles_to_check <= 0)
 			data->cycles_to_check = 1;
+		data->n_live = 0;
 	}
-	ft_printf("Player %d (%s) won\n", data->leader,
-	data->players[data->leader - 1].name);
+	if (!vis)
+		ft_printf("Player %d (%s) won\n", data->leader,
+		data->players[data->leader - 1].name);
 }

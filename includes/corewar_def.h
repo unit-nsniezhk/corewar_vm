@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:48:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 15:10:43 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/04 16:52:42 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define COREWAR_DEF_H
 
 # include "corewar_settings.h"
+# include "corewar_vis_def.h"
 
 typedef struct			s_player
 {
@@ -46,11 +47,13 @@ typedef struct			s_data
 	int					cycles_to_check;
 	unsigned int		n_live;
 	unsigned int		n_carrs;
+	unsigned int		n_players;
 	t_player			players[MAX_PLAYERS];
 	unsigned char		arena[ARENA_SIZE];
 	t_carriage			*carr;
 }						t_data;
 
-typedef void			(*t_function)(t_data *data, t_carriage *carr);
+typedef void			(*t_function)(t_data *data, t_carriage *carr,
+						t_vis *vis);
 
 #endif

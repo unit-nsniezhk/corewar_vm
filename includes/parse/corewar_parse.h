@@ -16,7 +16,7 @@
 
 # include "corewar_parse_def.h"
 
-int	corewar_parse_options(t_parse *parse, const char **argv, unsigned int i);
+int	corewar_parse_options(t_parse *parse, const char **argv, unsigned int *i);
 int	corewar_parse_champion(t_parse *parse, const char *file);
 
 #endif

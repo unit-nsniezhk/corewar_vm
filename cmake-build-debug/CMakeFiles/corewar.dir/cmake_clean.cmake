@@ -11,6 +11,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o"
   "CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o"
   "CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o"
+  "CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o"
+  "CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o"
+  "CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
+  "CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
   "corewar.pdb"
   "corewar"
 )

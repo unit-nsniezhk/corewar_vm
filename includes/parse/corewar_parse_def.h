@@ -33,6 +33,7 @@ typedef struct		s_champ
 
 typedef struct		s_parse
 {
+	unsigned int	vis : 1;
 	unsigned int	dump;
 	unsigned int	n_champs;
 	unsigned int	pos;

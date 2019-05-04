@@ -7,8 +7,56 @@ CMakeFiles/corewar.dir/sources/corewar.c.o
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar.c
 CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
  ../includes/corewar.h
@@ -18,6 +66,54 @@ CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_cycles.c
 CMakeFiles/corewar.dir/sources/corewar_utils.c.o
  ../includes/corewar.h
@@ -25,6 +121,54 @@ CMakeFiles/corewar.dir/sources/corewar_utils.c.o
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c
 CMakeFiles/corewar.dir/sources/corewar_vm.c.o
  ../includes/corewar.h
@@ -32,8 +176,56 @@ CMakeFiles/corewar.dir/sources/corewar_vm.c.o
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_vm.c
 CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
  ../includes/corewar.h
@@ -43,26 +235,219 @@ CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c
 CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/op/corewar_op.h
  ../includes/op/corewar_op_def.h
+ ../includes/vis/corewar_vis_def.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c
 CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o
+ ../includes/corewar.h
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/op/corewar_op.h
  ../includes/op/corewar_op_def.h
+ ../includes/parse/corewar_parse.h
+ ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c
 CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/op/corewar_op.h
  ../includes/op/corewar_op_def.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c
 CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o
  ../includes/corewar.h
@@ -72,8 +457,56 @@ CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c
 CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o
  ../includes/corewar_settings.h
@@ -96,3 +529,211 @@ CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c
+CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.c
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_events.c
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ ../libs/SDL2/includes/SDL.h
+ ../libs/SDL2/includes/SDL_assert.h
+ ../libs/SDL2/includes/SDL_atomic.h
+ ../libs/SDL2/includes/SDL_audio.h
+ ../libs/SDL2/includes/SDL_blendmode.h
+ ../libs/SDL2/includes/SDL_clipboard.h
+ ../libs/SDL2/includes/SDL_config.h
+ ../libs/SDL2/includes/SDL_cpuinfo.h
+ ../libs/SDL2/includes/SDL_endian.h
+ ../libs/SDL2/includes/SDL_error.h
+ ../libs/SDL2/includes/SDL_events.h
+ ../libs/SDL2/includes/SDL_filesystem.h
+ ../libs/SDL2/includes/SDL_gamecontroller.h
+ ../libs/SDL2/includes/SDL_gesture.h
+ ../libs/SDL2/includes/SDL_haptic.h
+ ../libs/SDL2/includes/SDL_hints.h
+ ../libs/SDL2/includes/SDL_joystick.h
+ ../libs/SDL2/includes/SDL_keyboard.h
+ ../libs/SDL2/includes/SDL_keycode.h
+ ../libs/SDL2/includes/SDL_loadso.h
+ ../libs/SDL2/includes/SDL_log.h
+ ../libs/SDL2/includes/SDL_main.h
+ ../libs/SDL2/includes/SDL_messagebox.h
+ ../libs/SDL2/includes/SDL_mouse.h
+ ../libs/SDL2/includes/SDL_mutex.h
+ ../libs/SDL2/includes/SDL_pixels.h
+ ../libs/SDL2/includes/SDL_platform.h
+ ../libs/SDL2/includes/SDL_power.h
+ ../libs/SDL2/includes/SDL_quit.h
+ ../libs/SDL2/includes/SDL_rect.h
+ ../libs/SDL2/includes/SDL_render.h
+ ../libs/SDL2/includes/SDL_rwops.h
+ ../libs/SDL2/includes/SDL_scancode.h
+ ../libs/SDL2/includes/SDL_sensor.h
+ ../libs/SDL2/includes/SDL_shape.h
+ ../libs/SDL2/includes/SDL_stdinc.h
+ ../libs/SDL2/includes/SDL_surface.h
+ ../libs/SDL2/includes/SDL_system.h
+ ../libs/SDL2/includes/SDL_thread.h
+ ../libs/SDL2/includes/SDL_timer.h
+ ../libs/SDL2/includes/SDL_touch.h
+ ../libs/SDL2/includes/SDL_version.h
+ ../libs/SDL2/includes/SDL_video.h
+ ../libs/SDL2/includes/begin_code.h
+ ../libs/SDL2/includes/close_code.h
+ ../libs/SDL2_ttf/includes/SDL_ttf.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:55:00 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/02 23:27:28 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/04 16:52:42 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,22 +21,23 @@ void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n,
 void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
 		int *arg);
 void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos);
+void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos);
 
-void	corewar_op_live(t_data *data, t_carriage *carr);
-void	corewar_op_ld(t_data *data, t_carriage *carr);
-void	corewar_op_st(t_data *data, t_carriage *carr);
-void	corewar_op_add(t_data *data, t_carriage *carr);
-void	corewar_op_sub(t_data *data, t_carriage *carr);
-void	corewar_op_and(t_data *data, t_carriage *carr);
-void	corewar_op_or(t_data *data, t_carriage *carr);
-void	corewar_op_xor(t_data *data, t_carriage *carr);
-void	corewar_op_zjmp(t_data *data, t_carriage *carr);
-void	corewar_op_ldi(t_data *data, t_carriage *carr);
-void	corewar_op_sti(t_data *data, t_carriage *carr);
-void	corewar_op_fork(t_data *data, t_carriage *carr);
-void	corewar_op_lld(t_data *data, t_carriage *carr);
-void	corewar_op_lldi(t_data *data, t_carriage *carr);
-void	corewar_op_lfork(t_data *data, t_carriage *carr);
-void	corewar_op_aff(t_data *data, t_carriage *carr);
+void	corewar_op_live(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_ld(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_st(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_add(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_sub(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_and(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_or(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_zjmp(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_ldi(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_sti(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_fork(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_lld(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_lldi(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_lfork(t_data *data, t_carriage *carr, t_vis *vis);
+void	corewar_op_aff(t_data *data, t_carriage *carr, t_vis *vis);
 
 #endif

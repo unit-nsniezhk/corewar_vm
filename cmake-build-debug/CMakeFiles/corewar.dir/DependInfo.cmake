@@ -16,6 +16,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_champion.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/parse/corewar_parse_options.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_events.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -25,6 +29,9 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
   "../includes/parse"
   "../libft/includes"
   "../includes/op"
+  "../includes/vis"
+  "../libs/SDL2_ttf/includes"
+  "../libs/SDL2/includes"
   )
 
 # Targets to which this target links.

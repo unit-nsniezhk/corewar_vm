@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 15:33:30 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/04 17:37:27 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
 		*arg = carr->args_values[n];
 	else
 	{
-		pos = carr->pos + carr->args_values[n];
+		pos = carr->pos + (char)(carr->args_values[n]);
 		corewar_read_arg(data, arg, REG, data->arena[corewar_8(pos)]);
 	}
 }
@@ -56,7 +56,7 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 	carr_new->carry = carr_src->carry;
 	carr_new->op = 0;
 	carr_new->last_live = carr_src->last_live;
-	carr_new->pos = pos;
+	carr_new->pos = corewar_8(pos);
 	carr_new->delta_pos = 0;
 	i = 0;
 	while (i < N_REGS + 1)
@@ -66,4 +66,12 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 	}
 	carr_new->next = data->carr;
 	data->carr = carr_new;
+}
+
+void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos)
+{
+	if (-carr->regs[1] <= MAX_PLAYERS && -carr->regs[1] >= MIN_PLAYERS)
+		vis->color[corewar_8(pos)] = g_color_table[(-carr->regs[1]) - 1];
+	else
+		vis->color[corewar_8(pos)] = RGB_UNDEF;
 }
