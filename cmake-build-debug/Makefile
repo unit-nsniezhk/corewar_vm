@@ -474,32 +474,140 @@ sources/vis/corewar_vis.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.s
 .PHONY : sources/vis/corewar_vis.c.s
 
-sources/vis/corewar_vis_events.o: sources/vis/corewar_vis_events.c.o
+sources/vis/corewar_vis_buttons.o: sources/vis/corewar_vis_buttons.c.o
 
-.PHONY : sources/vis/corewar_vis_events.o
+.PHONY : sources/vis/corewar_vis_buttons.o
 
 # target to build an object file
-sources/vis/corewar_vis_events.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o
-.PHONY : sources/vis/corewar_vis_events.c.o
+sources/vis/corewar_vis_buttons.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.o
+.PHONY : sources/vis/corewar_vis_buttons.c.o
 
-sources/vis/corewar_vis_events.i: sources/vis/corewar_vis_events.c.i
+sources/vis/corewar_vis_buttons.i: sources/vis/corewar_vis_buttons.c.i
 
-.PHONY : sources/vis/corewar_vis_events.i
+.PHONY : sources/vis/corewar_vis_buttons.i
 
 # target to preprocess a source file
-sources/vis/corewar_vis_events.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.i
-.PHONY : sources/vis/corewar_vis_events.c.i
+sources/vis/corewar_vis_buttons.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.i
+.PHONY : sources/vis/corewar_vis_buttons.c.i
 
-sources/vis/corewar_vis_events.s: sources/vis/corewar_vis_events.c.s
+sources/vis/corewar_vis_buttons.s: sources/vis/corewar_vis_buttons.c.s
 
-.PHONY : sources/vis/corewar_vis_events.s
+.PHONY : sources/vis/corewar_vis_buttons.s
 
 # target to generate assembly for a file
-sources/vis/corewar_vis_events.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.s
-.PHONY : sources/vis/corewar_vis_events.c.s
+sources/vis/corewar_vis_buttons.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.s
+.PHONY : sources/vis/corewar_vis_buttons.c.s
+
+sources/vis/corewar_vis_buttons2.o: sources/vis/corewar_vis_buttons2.c.o
+
+.PHONY : sources/vis/corewar_vis_buttons2.o
+
+# target to build an object file
+sources/vis/corewar_vis_buttons2.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o
+.PHONY : sources/vis/corewar_vis_buttons2.c.o
+
+sources/vis/corewar_vis_buttons2.i: sources/vis/corewar_vis_buttons2.c.i
+
+.PHONY : sources/vis/corewar_vis_buttons2.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_buttons2.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.i
+.PHONY : sources/vis/corewar_vis_buttons2.c.i
+
+sources/vis/corewar_vis_buttons2.s: sources/vis/corewar_vis_buttons2.c.s
+
+.PHONY : sources/vis/corewar_vis_buttons2.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_buttons2.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.s
+.PHONY : sources/vis/corewar_vis_buttons2.c.s
+
+sources/vis/corewar_vis_handle_utils.o: sources/vis/corewar_vis_handle_utils.c.o
+
+.PHONY : sources/vis/corewar_vis_handle_utils.o
+
+# target to build an object file
+sources/vis/corewar_vis_handle_utils.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o
+.PHONY : sources/vis/corewar_vis_handle_utils.c.o
+
+sources/vis/corewar_vis_handle_utils.i: sources/vis/corewar_vis_handle_utils.c.i
+
+.PHONY : sources/vis/corewar_vis_handle_utils.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_handle_utils.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.i
+.PHONY : sources/vis/corewar_vis_handle_utils.c.i
+
+sources/vis/corewar_vis_handle_utils.s: sources/vis/corewar_vis_handle_utils.c.s
+
+.PHONY : sources/vis/corewar_vis_handle_utils.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_handle_utils.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.s
+.PHONY : sources/vis/corewar_vis_handle_utils.c.s
+
+sources/vis/corewar_vis_key_handle.o: sources/vis/corewar_vis_key_handle.c.o
+
+.PHONY : sources/vis/corewar_vis_key_handle.o
+
+# target to build an object file
+sources/vis/corewar_vis_key_handle.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o
+.PHONY : sources/vis/corewar_vis_key_handle.c.o
+
+sources/vis/corewar_vis_key_handle.i: sources/vis/corewar_vis_key_handle.c.i
+
+.PHONY : sources/vis/corewar_vis_key_handle.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_key_handle.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.i
+.PHONY : sources/vis/corewar_vis_key_handle.c.i
+
+sources/vis/corewar_vis_key_handle.s: sources/vis/corewar_vis_key_handle.c.s
+
+.PHONY : sources/vis/corewar_vis_key_handle.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_key_handle.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.s
+.PHONY : sources/vis/corewar_vis_key_handle.c.s
+
+sources/vis/corewar_vis_mouse_handle.o: sources/vis/corewar_vis_mouse_handle.c.o
+
+.PHONY : sources/vis/corewar_vis_mouse_handle.o
+
+# target to build an object file
+sources/vis/corewar_vis_mouse_handle.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o
+.PHONY : sources/vis/corewar_vis_mouse_handle.c.o
+
+sources/vis/corewar_vis_mouse_handle.i: sources/vis/corewar_vis_mouse_handle.c.i
+
+.PHONY : sources/vis/corewar_vis_mouse_handle.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_mouse_handle.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.i
+.PHONY : sources/vis/corewar_vis_mouse_handle.c.i
+
+sources/vis/corewar_vis_mouse_handle.s: sources/vis/corewar_vis_mouse_handle.c.s
+
+.PHONY : sources/vis/corewar_vis_mouse_handle.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_mouse_handle.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.s
+.PHONY : sources/vis/corewar_vis_mouse_handle.c.s
 
 sources/vis/corewar_vis_render_arena.o: sources/vis/corewar_vis_render_arena.c.o
 
@@ -555,6 +663,33 @@ sources/vis/corewar_vis_render_menu.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.s
 .PHONY : sources/vis/corewar_vis_render_menu.c.s
 
+sources/vis/corewar_vis_utils.o: sources/vis/corewar_vis_utils.c.o
+
+.PHONY : sources/vis/corewar_vis_utils.o
+
+# target to build an object file
+sources/vis/corewar_vis_utils.c.o:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o
+.PHONY : sources/vis/corewar_vis_utils.c.o
+
+sources/vis/corewar_vis_utils.i: sources/vis/corewar_vis_utils.c.i
+
+.PHONY : sources/vis/corewar_vis_utils.i
+
+# target to preprocess a source file
+sources/vis/corewar_vis_utils.c.i:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.i
+.PHONY : sources/vis/corewar_vis_utils.c.i
+
+sources/vis/corewar_vis_utils.s: sources/vis/corewar_vis_utils.c.s
+
+.PHONY : sources/vis/corewar_vis_utils.s
+
+# target to generate assembly for a file
+sources/vis/corewar_vis_utils.c.s:
+	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.s
+.PHONY : sources/vis/corewar_vis_utils.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -603,15 +738,30 @@ help:
 	@echo "... sources/vis/corewar_vis.o"
 	@echo "... sources/vis/corewar_vis.i"
 	@echo "... sources/vis/corewar_vis.s"
-	@echo "... sources/vis/corewar_vis_events.o"
-	@echo "... sources/vis/corewar_vis_events.i"
-	@echo "... sources/vis/corewar_vis_events.s"
+	@echo "... sources/vis/corewar_vis_buttons.o"
+	@echo "... sources/vis/corewar_vis_buttons.i"
+	@echo "... sources/vis/corewar_vis_buttons.s"
+	@echo "... sources/vis/corewar_vis_buttons2.o"
+	@echo "... sources/vis/corewar_vis_buttons2.i"
+	@echo "... sources/vis/corewar_vis_buttons2.s"
+	@echo "... sources/vis/corewar_vis_handle_utils.o"
+	@echo "... sources/vis/corewar_vis_handle_utils.i"
+	@echo "... sources/vis/corewar_vis_handle_utils.s"
+	@echo "... sources/vis/corewar_vis_key_handle.o"
+	@echo "... sources/vis/corewar_vis_key_handle.i"
+	@echo "... sources/vis/corewar_vis_key_handle.s"
+	@echo "... sources/vis/corewar_vis_mouse_handle.o"
+	@echo "... sources/vis/corewar_vis_mouse_handle.i"
+	@echo "... sources/vis/corewar_vis_mouse_handle.s"
 	@echo "... sources/vis/corewar_vis_render_arena.o"
 	@echo "... sources/vis/corewar_vis_render_arena.i"
 	@echo "... sources/vis/corewar_vis_render_arena.s"
 	@echo "... sources/vis/corewar_vis_render_menu.o"
 	@echo "... sources/vis/corewar_vis_render_menu.i"
 	@echo "... sources/vis/corewar_vis_render_menu.s"
+	@echo "... sources/vis/corewar_vis_utils.o"
+	@echo "... sources/vis/corewar_vis_utils.i"
+	@echo "... sources/vis/corewar_vis_utils.s"
 .PHONY : help
 
 

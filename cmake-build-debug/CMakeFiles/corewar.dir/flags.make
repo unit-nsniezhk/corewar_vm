@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/dderevyn/CLionProjects/corewar_vm/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/parse -I/Users/dderevyn/CLionProjects/corewar_vm/libft/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/op -I/Users/dderevyn/CLionProjects/corewar_vm/includes/vis -I/Users/dderevyn/CLionProjects/corewar_vm/libs/SDL2_ttf/includes -I/Users/dderevyn/CLionProjects/corewar_vm/libs/SDL2/includes 
+C_INCLUDES = -I/Users/dderevyn/CLionProjects/corewar_vm/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/parse -I/Users/dderevyn/CLionProjects/corewar_vm/libft/includes -I/Users/dderevyn/CLionProjects/corewar_vm/includes/op -I/Users/dderevyn/CLionProjects/corewar_vm/includes/vis -I/Users/dderevyn/Library/Frameworks/SDL2.framework/Headers -I/Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers -I/Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers 
 

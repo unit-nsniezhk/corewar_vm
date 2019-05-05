@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 18:36:14 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/04 21:44:33 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/05 21:53:43 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ static void	static_render_byte(t_vis *vis, SDL_Rect *rect, unsigned int i)
 	SDL_RenderFillRect(vis->rend, rect);
 }
 
-static void	static_render_bytes(t_vis *vis)
+static void	static_render_bytes(t_vis *vis, t_data *data)
 {
 	unsigned int	row;
 	unsigned int	column;
@@ -49,6 +49,9 @@ static void	static_render_bytes(t_vis *vis)
 		{
 			rect.x = (COLUMN_WIDTH * column) + BYTE_X_PADD;
 			static_render_byte(vis, &rect, i);
+			if (vis->mods.values)
+				corewar_vis_render_value(vis, rect, data->arena[i],
+				vis->color[i]);
 			++column;
 			++i;
 		}
@@ -84,7 +87,7 @@ static void	static_render_carrs(t_vis *vis, t_data *data)
 	rect.h = BYTE_HEIGHT;
 	SDL_SetRenderDrawBlendMode(vis->rend, SDL_BLENDMODE_BLEND);
 	carriage_tmp = data->carr;
-	if (vis->select)
+	if (vis->mods.reverse)
 		color = RGB_CARR_SELECT;
 	else
 		color = RGB_CARR;
@@ -100,6 +103,6 @@ static void	static_render_carrs(t_vis *vis, t_data *data)
 
 void		corewar_vis_render_arena(t_vis *vis, t_data *data)
 {
-	static_render_bytes(vis);
+	static_render_bytes(vis, data);
 	static_render_carrs(vis, data);
 }

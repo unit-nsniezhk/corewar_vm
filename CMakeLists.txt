@@ -4,6 +4,8 @@ project(corewar_vm)
 
 set(CMAKE_C_STANDARD 99)
 
+set(FRAMEWORKS_DIR /Users/dderevyn/Library/Frameworks/)
+
 AUX_SOURCE_DIRECTORY(sources SRCS)
 AUX_SOURCE_DIRECTORY(sources/parse SRCSP)
 AUX_SOURCE_DIRECTORY(sources/op LSRCS)
@@ -16,21 +18,21 @@ add_executable(corewar
         ${VSRCS})
 
 target_include_directories(corewar
-        PUBLIC includes
-        PUBLIC includes/parse
-        PUBLIC libft/includes
-        PUBLIC includes/op
-        PUBLIC includes/vis
-        PUBLIC libs/SDL2_ttf/includes
-        PUBLIC libs/SDL2/includes)
+        PUBLIC includes/
+        PUBLIC includes/parse/
+        PUBLIC libft/includes/
+        PUBLIC includes/op/
+        PUBLIC includes/vis/
+        PUBLIC ${FRAMEWORKS_DIR}SDL2.framework/Headers
+        PUBLIC ${FRAMEWORKS_DIR}SDL2_image.framework/Headers
+        PUBLIC ${FRAMEWORKS_DIR}SDL2_ttf.framework/Headers)
 
 target_link_directories(corewar
-        PUBLIC libft
-        PUBLIC libs/SDL2_ttf
-        PUBLIC libs/SDL2)
+        PUBLIC libft/)
 
 target_link_libraries(corewar
         libft.a
-        libSDL2-2.0.0.dylib
-        libSDL2_ttf-2.0.0.dylib)
+        "-F ${FRAMEWORKS_DIR} -framework SDL2"
+        "-F ${FRAMEWORKS_DIR} -framework SDL2_image"
+        "-F ${FRAMEWORKS_DIR} -framework SDL2_ttf")
 
