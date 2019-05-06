@@ -149,10 +149,16 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c">

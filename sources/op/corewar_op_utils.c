@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/04 17:37:27 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/06 19:27:35 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,10 +68,10 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 	data->carr = carr_new;
 }
 
-void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos)
+void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos, unsigned int n_players)
 {
-	if (-carr->regs[1] <= MAX_PLAYERS && -carr->regs[1] >= MIN_PLAYERS)
-		vis->color[corewar_8(pos)] = g_color_table[(-carr->regs[1]) - 1];
+	if (-carr->regs[1] <= n_players && -carr->regs[1] >= MIN_PLAYERS)
+		vis->color[corewar_8(pos)] = g_color_table[(-carr->regs[1])];
 	else
-		vis->color[corewar_8(pos)] = RGB_UNDEF;
+		vis->color[corewar_8(pos)] =  g_color_table[0];
 }

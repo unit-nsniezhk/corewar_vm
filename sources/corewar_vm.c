@@ -67,7 +67,7 @@ static void	static_init_data(t_data *data, t_parse *parse, t_vis *vis)
 			data->arena[data->players[i].pos + byte] =
 			parse->champs[i].code[byte];
 			if (vis)
-				vis->color[data->players[i].pos + byte] = g_color_table[i];
+				vis->color[data->players[i].pos + byte] = g_color_table[i + 1];
 			++byte;
 		}
 		static_init_carr(data, data->players[i].pos, parse->champs[i].id);

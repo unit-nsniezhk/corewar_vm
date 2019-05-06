@@ -21,7 +21,8 @@ void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n,
 void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
 		int *arg);
 void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos);
-void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos);
+void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos,
+		unsigned int n_players);
 
 void	corewar_op_live(t_data *data, t_carriage *carr, t_vis *vis);
 void	corewar_op_ld(t_data *data, t_carriage *carr, t_vis *vis);

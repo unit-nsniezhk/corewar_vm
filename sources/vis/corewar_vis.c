@@ -6,25 +6,36 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:29:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/05 23:34:09 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/06 21:23:48 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis.h"
+#include "libft.h"
 
 static void	static_init(t_vis *vis)
 {
-	vis->n_rows = ARENA_SIZE / N_COLUMNS;
-	vis->cycle_len = CYCLE_LEN;
-	vis->mods.run = 0;
-	vis->mods.quit = 0;
-	vis->mods.values = 0;
-	vis->mods.reverse = 0;
+	unsigned int	i;
+
+	i = 0;
+	while (i < ARENA_SIZE)
+	{
+		vis->color[i] = RGBA_PLAYER0;
+		++i;
+	}
+	vis->cycle_ms = CYCLE_MS;
 	vis->keydown.esk = 0;
 	vis->keydown.space = 0;
 	vis->keydown.f = 0;
 	vis->keydown.lalt = 0;
 	vis->keydown.mbl = 0;
+	corewar_init_status(&vis->buttons.status);
+	corewar_init_speedup(&vis->buttons.speedup);
+	corewar_init_slowdown(&vis->buttons.slowdown);
+	corewar_init_pause(&vis->buttons.pause);
+	corewar_init_exit(&vis->buttons.exit);
+	corewar_init_reverse(&vis->buttons.reverse);
+	corewar_init_values(&vis->buttons.values);
 }
 
 int			corewar_vis_init(t_vis *vis)
@@ -58,7 +69,7 @@ static void	static_handle_events(t_vis *vis, Uint32 start)
 		if (!SDL_WaitEventTimeout(&event, 0))
 			;
 		else if (event.type == SDL_QUIT)
-			vis->mods.quit = 1;
+			vis->buttons.exit.state = 1;
 		else if (event.type == SDL_KEYDOWN)
 			corewar_vis_keydown(vis, &event);
 		else if (event.type == SDL_KEYUP)
@@ -77,22 +88,24 @@ static void	static_handle_events(t_vis *vis, Uint32 start)
 
 static void	static_render(t_vis *vis, t_data *data)
 {
-	SDL_SetRenderDrawColor(vis->rend, (RGB_BG >> 16) & 255, (RGB_BG >> 8) & 255,
-	RGB_BG & 255, 255);
+	SDL_SetRenderDrawColor(vis->rend, (RGBA_BG >> 16) & 255, (RGBA_BG >> 8) & 255,
+	RGBA_BG & 255, 255);
 	SDL_RenderClear(vis->rend);
+	SDL_SetRenderDrawBlendMode(vis->rend, SDL_BLENDMODE_BLEND);
 	corewar_vis_render_arena(vis, data);
-	corewar_vis_render_menu(vis, data);
+	corewar_vis_render_menu(vis);
+	corewar_vis_render_info(vis, data);
 	SDL_RenderPresent(vis->rend);
-	static_handle_events(vis, (SDL_GetTicks() + vis->cycle_len));
+	static_handle_events(vis, (SDL_GetTicks() + vis->cycle_ms));
 }
 
 void		corewar_vis(t_vis *vis, t_data *data)
 {
-	if (vis->mods.run && !vis->mods.quit)
+	if (vis->buttons.pause.state && !vis->buttons.exit.state)
 		static_render(vis, data);
 	else
 	{
-		while (!vis->mods.run && !vis->mods.quit)
+		while (!vis->buttons.pause.state && !vis->buttons.exit.state)
 			static_render(vis, data);
 	}
 }

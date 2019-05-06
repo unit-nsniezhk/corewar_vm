@@ -278,9 +278,22 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.s
 
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o: ../sources/vis/corewar_vis_mods.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c
+
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c > CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.i
+
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.s
+
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o: ../sources/vis/corewar_vis_mouse_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.i: cmake_force
@@ -293,7 +306,7 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.s: cmake_force
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o: ../sources/vis/corewar_vis_render_arena.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.i: cmake_force
@@ -304,9 +317,22 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.s
 
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o: CMakeFiles/corewar.dir/flags.make
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o: ../sources/vis/corewar_vis_render_info.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c
+
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c > CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.i
+
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.s
+
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o: ../sources/vis/corewar_vis_render_menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.i: cmake_force
@@ -319,7 +345,7 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.s: cmake_force
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o: ../sources/vis/corewar_vis_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o   -c /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_utils.c
 
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.i: cmake_force
@@ -349,8 +375,10 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o" \
+"CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o" \
+"CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o" \
 "CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o"
 
@@ -374,13 +402,15 @@ corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o
+corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o
+corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o
 corewar: CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

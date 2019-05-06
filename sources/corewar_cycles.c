@@ -104,7 +104,7 @@ int			corewar_cycles(t_data *data, t_vis *vis)
 			corewar_vis(vis, data);
 		carr_tmp = data->carr;
 		if ((data->dump && data->cycle == data->dump)
-		|| (vis && vis->mods.quit))
+		|| (vis && vis->buttons.exit.state))
 			return (0);
 		while (carr_tmp != NULL)
 		{

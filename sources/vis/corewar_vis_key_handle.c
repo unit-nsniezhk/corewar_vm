@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 20:03:57 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/05 20:19:41 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/06 14:56:43 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,16 +31,8 @@ static void	static_keyup2(t_vis *vis, SDL_Event *event)
 	else if (event->key.keysym.sym == SDLK_f)
 	{
 		vis->keydown.f = 0;
-		if (vis->keydown.lalt && vis->mods.values)
-		{
-			vis->mods.values = 0;
-			vis->mods.run = 1;
-		}
-		else if (vis->keydown.lalt)
-		{
-			vis->mods.values = 1;
-			vis->mods.run = 0;
-		}
+		if (vis->keydown.lalt)
+			corewar_vis_values(vis);
 	}
 }
 
@@ -49,25 +41,15 @@ void		corewar_vis_keyup(t_vis *vis, SDL_Event *event)
 	if (event->key.keysym.sym == SDLK_ESCAPE)
 	{
 		vis->keydown.esk = 0;
-		if (vis->mods.quit)
-			vis->mods.quit = 0;
-		else
-			vis->mods.quit = 1;
+		corewar_vis_quit(vis);
 	}
 	else if (event->key.keysym.sym == SDLK_SPACE)
 	{
 		vis->keydown.space = 0;
-		if (!vis->keydown.lalt && vis->mods.run)
-			vis->mods.run = 0;
-		else if (!vis->keydown.lalt)
-		{
-			vis->mods.run = 1;
-			vis->mods.values = 0;
-		}
-		else if (vis->keydown.lalt && vis->mods.reverse)
-			vis->mods.reverse = 0;
-		else if (vis->keydown.lalt && !vis->mods.reverse)
-			vis->mods.reverse = 1;
+		if (vis->keydown.lalt)
+			corewar_vis_reverse(vis);
+		else
+			corewar_vis_run(vis);
 	}
 	else
 		static_keyup2(vis, event);

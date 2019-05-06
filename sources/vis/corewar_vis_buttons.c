@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 20:12:34 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/05 22:16:21 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/06 21:56:19 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	corewar_init_status(t_button *button)
 {
 	button->press = 0;
 	button->hower = 0;
-	button->pressed = 0;
-	button->text = ft_strndup("CoreWars", -1);
-	button->alt_text = NULL;
+	button->state = 0;
+	button->text = ft_strndup("  Pause  ", -1);
+	button->alt_text = ft_strndup("CoreWars", -1);
 	button->text_rect.x = STATUS_X;
 	button->text_rect.y = STATUS_Y;
 	button->text_rect.w = STATUS_W;
@@ -35,8 +35,8 @@ void	corewar_init_speedup(t_button *button)
 {
 	button->press = 0;
 	button->hower = 0;
-	button->pressed = 0;
-	button->text = ft_strndup("SpeedUp", -1);
+	button->state = 0;
+	button->text = ft_strndup("  SpeedUp  ", -1);
 	button->alt_text = NULL;
 	button->text_rect.x = LOW_BAR_X;
 	button->text_rect.y = SPEEDUP_Y;

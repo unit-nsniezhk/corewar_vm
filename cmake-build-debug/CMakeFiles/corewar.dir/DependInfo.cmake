@@ -21,8 +21,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons2.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o"
   )

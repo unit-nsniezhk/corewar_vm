@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:17:41 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/04 17:20:25 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/06 17:09:35 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	corewar_op_st(t_data *data, t_carriage *carr, t_vis *vis)
 		pos = carr->pos + (arg1 % IDX_MOD);
 		corewar_write_arg(data, arg, REG_SIZE, pos);
 		if (vis)
-			corewar_op_vis(carr, vis, pos);
+			corewar_op_vis(carr, vis, pos, data->n_players);
 	}
 }
 
@@ -82,7 +82,7 @@ void	corewar_op_sti(t_data *data, t_carriage *carr, t_vis *vis)
 	pos = carr->pos + ((arg1 + arg2) % IDX_MOD);
 	corewar_write_arg(data, arg, REG_SIZE, pos);
 	if (vis)
-		corewar_op_vis(carr, vis, pos);
+		corewar_op_vis(carr, vis, pos, data->n_players);
 }
 
 void	corewar_op_lldi(t_data *data, t_carriage *carr, t_vis *vis)

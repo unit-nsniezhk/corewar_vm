@@ -12,18 +12,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c503ae59-01a7-48c9-939c-ef18f30cc05b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/corewar_vm.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_utils.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/vis/corewar_vis_colors.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/vis/corewar_vis_prop.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_mods.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_render_info.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" afterDir="false" />
@@ -31,7 +24,6 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar.c.o" afterDir="false" />
@@ -39,106 +31,38 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_vm.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_vm.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op.c.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_events.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/op/corewar_op.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/op/corewar_op.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vis/corewar_vis.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/includes/vis/corewar_vis_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_assert.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_atomic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_audio.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_bits.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_blendmode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_clipboard.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_config.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_cpuinfo.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_egl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_endian.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_error.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_events.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_filesystem.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_gamecontroller.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_gesture.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_haptic.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_hints.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_joystick.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_keyboard.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_keycode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_loadso.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_log.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_main.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_messagebox.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_mouse.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_mutex.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_name.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengl.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengl_glext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles2_gl2.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles2_gl2ext.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles2_gl2platform.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_opengles2_khrplatform.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_pixels.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_platform.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_power.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_quit.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_rect.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_render.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_revision.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_rwops.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_scancode.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_sensor.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_shape.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_stdinc.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_surface.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_system.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_syswm.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_assert.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_common.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_compare.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_crc32.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_font.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_fuzzer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_harness.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_images.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_log.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_md5.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_memory.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_test_random.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_thread.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_timer.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_touch.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_types.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_version.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_video.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/SDL_vulkan.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/begin_code.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/includes/close_code.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2/libSDL2-2.0.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_gfx/includes/SDL2_framerate.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_framerate.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_gfx/includes/SDL2_gfxPrimitives.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_gfxPrimitives.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_gfx/includes/SDL2_imageFilter.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_imageFilter.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_gfx/includes/SDL2_rotozoom.h" beforeDir="false" afterPath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_rotozoom.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_gfx/libSDL2_gfx-1.0.0.dylib" beforeDir="false" afterPath="$PROJECT_DIR$/SDL2_gfx/libSDL2_gfx-1.0.0.dylib" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_ttf/includes/SDL_ttf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/SDL2_ttf/libSDL2_ttf-2.0.0.dylib" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/corewar_cycles.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/corewar_cycles.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/corewar_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/corewar_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/op/corewar_op.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/op/corewar_op_utils.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_events.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs.tar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/sources/vis/corewar_vis_utils.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -149,16 +73,16 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.55039227">
+    <splitter split-orientation="horizontal" split-proportion="0.42350203">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/corewar.c">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+                <state relative-caret-position="932">
+                  <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
                   <folding>
-                    <element signature="e#892#910#0" expanded="true" />
+                    <element signature="e#892#916#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -167,35 +91,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="390">
-                  <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+                <state relative-caret-position="-14">
+                  <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+                  <folding>
+                    <element signature="e#892#916#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c">
+            <entry file="file://$PROJECT_DIR$/sources/corewar_vm.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="870">
-                  <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="580">
-                  <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+                <state relative-caret-position="815">
+                  <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+                  <folding>
+                    <element signature="e#892#910#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c">
+            <entry file="file://$PROJECT_DIR$/sources/op/corewar_op_utils.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
-                  <caret line="13" selection-start-line="13" selection-end-line="13" />
+                <state relative-caret-position="555">
+                  <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#892#910#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -203,17 +127,35 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="14" column="28" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="28" />
+                <state relative-caret-position="705">
+                  <caret line="47" selection-start-line="47" selection-end-line="47" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mods.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+                <state relative-caret-position="555">
+                  <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="273">
+                  <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_info.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="510">
+                  <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
                   <folding>
                     <element signature="e#892#916#0" expanded="true" />
                   </folding>
@@ -224,8 +166,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_utils.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="961">
-                  <caret line="92" selection-start-line="92" selection-end-line="92" />
+                <state relative-caret-position="946">
+                  <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
                   <folding>
                     <element signature="e#892#916#0" expanded="true" />
                   </folding>
@@ -236,8 +178,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="600">
-                  <caret line="40" selection-start-line="40" selection-end-line="40" />
+                <state relative-caret-position="750">
+                  <caret line="50" selection-start-line="50" selection-end-line="50" />
                   <folding>
                     <element signature="e#892#916#0" expanded="true" />
                   </folding>
@@ -258,11 +200,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="525">
-                  <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
+                <state relative-caret-position="598">
+                  <caret line="42" selection-start-line="42" selection-end-line="42" />
                   <folding>
                     <element signature="e#939#968#0" expanded="true" />
                   </folding>
@@ -273,8 +215,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_def.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="223">
-                  <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
+                <state relative-caret-position="168">
+                  <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
                   <folding>
                     <element signature="e#947#963#0" expanded="true" />
                   </folding>
@@ -283,31 +225,40 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/corewar_settings.h">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+                <state relative-caret-position="851">
+                  <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_colors.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="750">
+                  <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/corewar.h">
+            <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_prop.h">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="315">
-                  <caret line="21" selection-start-line="21" selection-end-line="21" />
+                  <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="390">
+                  <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
                   <folding>
-                    <element signature="e#931#956#0" expanded="true" />
+                    <element signature="e#892#916#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/includes/parse/corewar_parse.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
                 </state>
               </provider>
             </entry>
@@ -322,11 +273,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/corewar_op.h" />
-        <option value="$PROJECT_DIR$/includes/corewar_defines.h" />
-        <option value="$PROJECT_DIR$/includes/operations/corewar_op_defines.h" />
-        <option value="$PROJECT_DIR$/sources/vm_operations_1to5.c" />
-        <option value="$PROJECT_DIR$/includes/op/corewar_op_def.h" />
         <option value="$PROJECT_DIR$/sources/op/corewar_op_3.c" />
         <option value="$PROJECT_DIR$/sources/corewar_game_loop.c" />
         <option value="$PROJECT_DIR$/sources/corewar_main.c" />
@@ -344,15 +290,11 @@
         <option value="$PROJECT_DIR$/sources/parse/corewar_parse_options.c" />
         <option value="$PROJECT_DIR$/includes/corewar.h" />
         <option value="$PROJECT_DIR$/includes/corewar_settings.h" />
-        <option value="$PROJECT_DIR$/includes/op/corewar_op.h" />
-        <option value="$PROJECT_DIR$/sources/op/corewar_op.c" />
         <option value="$PROJECT_DIR$/sources/op/corewar_op3.c" />
         <option value="$PROJECT_DIR$/sources/op/corewar_op4.c" />
         <option value="$PROJECT_DIR$/includes/corewar_def.h" />
-        <option value="$PROJECT_DIR$/sources/op/corewar_op_utils.c" />
         <option value="$PROJECT_DIR$/sources/op/corewar_op2.c" />
         <option value="$PROJECT_DIR$/sources/corewar.c" />
-        <option value="$PROJECT_DIR$/sources/corewar_vm.c" />
         <option value="$PROJECT_DIR$/libs/SDL2_image/Includes/SDL_image.h" />
         <option value="$PROJECT_DIR$/frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h" />
         <option value="$PROJECT_DIR$/m.c" />
@@ -361,24 +303,33 @@
         <option value="$USER_HOME$/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h" />
         <option value="$PROJECT_DIR$/sources/vis/corewar_vis_keyhandle.c" />
         <option value="$PROJECT_DIR$/sources/vis/corewar_vis_events.c" />
-        <option value="$PROJECT_DIR$/sources/corewar_cycles.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_mods2.c" />
         <option value="$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_utils.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c" />
-        <option value="$PROJECT_DIR$/includes/vis/corewar_vis_def.h" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_cycles.c" />
         <option value="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" />
+        <option value="$PROJECT_DIR$/includes/op/corewar_op.h" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op.c" />
         <option value="$PROJECT_DIR$/includes/vis/corewar_vis.h" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_info.c" />
+        <option value="$PROJECT_DIR$/sources/corewar_vm.c" />
+        <option value="$PROJECT_DIR$/sources/op/corewar_op_utils.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c" />
+        <option value="$PROJECT_DIR$/includes/vis/corewar_vis_def.h" />
+        <option value="$PROJECT_DIR$/includes/vis/corewar_vis_colors.h" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" />
         <option value="$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_utils.c" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c" />
+        <option value="$PROJECT_DIR$/includes/vis/corewar_vis_prop.h" />
+        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_mods.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="false" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="231" />
+    <option name="x" value="312" />
     <option name="y" value="23" />
     <option name="width" value="2139" />
     <option name="height" value="1417" />
@@ -391,17 +342,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="corewar_vm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -412,13 +352,41 @@
             <path>
               <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
+              <item name="includes" type="462c0819:PsiDirectoryNode" />
+              <item name="vis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
               <item name="sources" type="462c0819:PsiDirectoryNode" />
+              <item name="op" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="corewar_vm" type="b2602c69:ProjectViewProjectNode" />
+              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
+              <item name="sources" type="462c0819:PsiDirectoryNode" />
               <item name="vis" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="corewar_vm" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
           </expand>
           <select />
@@ -495,18 +463,20 @@
       <workItem from="1556904413959" duration="6285000" />
       <workItem from="1556970104144" duration="23882000" />
       <workItem from="1557049929044" duration="12794000" />
-      <workItem from="1557065630029" duration="22616000" />
+      <workItem from="1557065630029" duration="22875000" />
+      <workItem from="1557142111829" duration="60000" />
+      <workItem from="1557142177858" duration="25278000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="215324000" />
+    <option name="totallyTimeSpent" value="240921000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="231" y="23" width="2139" height="1417" extended-state="0" />
+    <frame x="312" y="23" width="2139" height="1417" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20982356" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18025751" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -574,7 +544,7 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
       <expression>
-        <expression-string>(-carr-&gt;regs[1]) - 1</expression-string>
+        <expression-string>g_color_table[(-carr-&gt;regs[1]) - 1]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -585,6 +555,11 @@
       </expression>
       <expression>
         <expression-string>-carr-&gt;regs[1]</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>(-carr-&gt;regs[1]) - 1</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -613,11 +588,6 @@
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
-      <expression>
-        <expression-string>parse-&gt;champs[i].code[byte]</expression-string>
-        <language-id>ObjectiveC</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
     </expressions>
     <expressions id="watch">
       <expression>
@@ -628,11 +598,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/bee_gees.s" />
-    <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/bigzork.s" />
-    <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/fluttershy.s" />
-    <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/turtle.s" />
-    <entry file="file://$PROJECT_DIR$/rm/zork.cor" />
     <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/zork.s" />
     <entry file="file://$PROJECT_DIR$/vm_champs/champs/examples/helltrain.s" />
     <entry file="file://$PROJECT_DIR$/rm/helltrain.cor" />
@@ -680,43 +645,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op3.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="597">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-          <folding>
-            <element signature="e#892#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="679">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="14" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/op/corewar_op.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/corewar_def.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="690">
@@ -727,48 +655,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op4.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h" />
-    <entry file="file://$PROJECT_DIR$/libs/SDL2/includes/SDL_stdinc.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/SDL2_image/Includes/SDL_image.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="115" column="32" selection-start-line="115" selection-start-column="32" selection-end-line="115" selection-end-column="32" />
-          <folding>
-            <element signature="e#1094#1110#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libs/SDL2_image.framework/Headers/SDL_image.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="55" selection-start-line="2" selection-start-column="55" selection-end-line="2" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frameworks/SDL2_image.framework/Headers/SDL_image.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/SDL2/includes/SDL_stdinc.h" />
+    <entry file="file://$PROJECT_DIR$/libs/SDL2_image/Includes/SDL_image.h" />
+    <entry file="file://$PROJECT_DIR$/libs/SDL2_image.framework/Headers/SDL_image.h" />
+    <entry file="file://$PROJECT_DIR$/frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h" />
+    <entry file="file://$PROJECT_DIR$/frameworks/SDL2_image.framework/Headers/SDL_image.h" />
     <entry file="file://$USER_HOME$/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="449">
@@ -779,30 +671,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/m.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/corewar.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/m.c" />
     <entry file="file://$USER_HOME$/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="875">
@@ -816,64 +685,17 @@
     <entry file="file://$PROJECT_DIR$/SDL2_gfx/includes/SDL2_rotozoom.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/corewar_vm.c">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="116" column="26" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="6" column="55" selection-start-line="6" selection-start-column="55" selection-end-line="6" selection-end-column="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/includes/parse/corewar_parse.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="75" selection-start-line="18" selection-start-column="75" selection-end-line="18" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-14">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#892#912#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/corewar_cycles.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="106" column="8" selection-start-line="106" selection-start-column="8" selection-end-line="106" selection-end-column="8" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="51" column="32" selection-start-line="51" selection-start-column="32" selection-end-line="51" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/corewar_settings.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <caret line="18" column="76" selection-start-line="18" selection-start-column="76" selection-end-line="18" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -887,10 +709,182 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/corewar_settings.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="781">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#892#912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="84" column="54" selection-start-line="84" selection-start-column="54" selection-end-line="84" selection-end-column="54" />
+          <folding>
+            <element signature="e#892#912#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op4.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="33" column="12" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="12" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/corewar_cycles.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="961">
+          <caret line="118" selection-start-line="118" selection-end-line="118" />
+          <folding>
+            <element signature="e#892#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/op/corewar_op.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mods2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="30" selection-start-line="33" selection-start-column="30" selection-end-line="33" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/corewar.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="1" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_info.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="74" selection-start-line="34" selection-start-column="74" selection-end-line="34" selection-end-column="74" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-14">
+          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="932">
+          <caret line="87" column="22" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/corewar_vm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="815">
+          <caret line="69" column="77" selection-start-line="69" selection-start-column="77" selection-end-line="69" selection-end-column="77" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/op/corewar_op_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="49" column="30" lean-forward="true" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="14" column="26" lean-forward="true" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+          <folding>
+            <element signature="e#947#963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="851">
+          <caret line="67" column="5" lean-forward="true" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons2.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="21" selection-start-line="54" selection-start-column="21" selection-end-line="54" selection-end-column="21" />
+        <state relative-caret-position="390">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="598">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#939#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_buttons.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="e#892#916#0" expanded="true" />
           </folding>
@@ -899,66 +893,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="961">
-          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        <state relative-caret-position="946">
+          <caret line="97" column="1" selection-start-line="97" selection-start-column="1" selection-end-line="97" selection-end-column="1" />
           <folding>
             <element signature="e#892#916#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_def.h">
+    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_prop.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="101" column="28" selection-start-line="101" selection-start-column="28" selection-end-line="101" selection-end-column="28" />
-          <folding>
-            <element signature="e#947#963#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="315">
+          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c">
+    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis_colors.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="82" column="31" selection-start-line="82" selection-start-column="31" selection-end-line="82" selection-end-column="31" />
+        <state relative-caret-position="750">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis.c">
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mods.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/includes/vis/corewar_vis.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
-          <folding>
-            <element signature="e#939#968#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="555">
+          <caret line="43" column="34" lean-forward="true" selection-start-line="43" selection-start-column="34" selection-end-line="43" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="705">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c">
+    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_render_menu.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="580">
-          <caret line="103" column="1" lean-forward="true" selection-start-line="103" selection-start-column="1" selection-end-line="103" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="23" column="57" lean-forward="true" selection-start-line="23" selection-start-column="57" selection-end-line="23" selection-end-column="57" />
         </state>
       </provider>
     </entry>
