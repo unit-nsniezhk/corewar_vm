@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:30:17 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 16:49:24 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/07 15:04:12 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ int		corewar_vis_init(t_vis *vis);
 
 void	corewar_vis(t_vis *vis, t_data *data);
 void	corewar_vis_render_arena(t_vis *vis, t_data *data);
-void	corewar_vis_render_menu(t_vis *vis);
+void	corewar_vis_render_menu(t_vis *vis, t_data *data);
 
 void	corewar_vis_keyup(t_vis *vis, SDL_Event *event);
 void	corewar_vis_keydown(t_vis *vis, SDL_Event *event);
@@ -60,8 +60,8 @@ void	corewar_init_values(t_button *button);
 void	corewar_vis_render_rtext(t_vis *vis, const char *message,
 		unsigned int color, SDL_Rect *box);
 void	corewar_vis_render_btext(t_vis *vis, const char *message,
-		unsigned int color, SDL_Rect *box);
+		unsigned int color, SDL_Rect box);
 
-void	corewar_vis_render_button(t_vis *vis, t_button *button);
+void	corewar_vis_render_button(t_vis *vis, t_data *data, t_button *button);
 
 #endif

@@ -16,7 +16,7 @@ void	corewar_vis_speed(t_vis *vis, unsigned int state)
 {
 	if (state)
 	{
-		if (vis->cycle_ms > 0)
+		if (vis->cycle_ms > MIN_CYCLE_MS)
 			vis->cycle_ms -= D_CYCLE_MS;
 	}
 	else

@@ -6,7 +6,23 @@
 
 #IncludeRegexTransform: 
 
+../includes/corewar_def.h
+corewar_settings.h
 ../includes/corewar_settings.h
+corewar_vis_def.h
+../includes/corewar_vis_def.h
+
+../includes/corewar_settings.h
+
+../includes/vis/corewar_vis.h
+corewar_vis_def.h
+../includes/vis/corewar_vis_def.h
+corewar_def.h
+../includes/vis/corewar_def.h
+SDL_ttf.h
+../includes/vis/SDL_ttf.h
+SDL_image.h
+../includes/vis/SDL_image.h
 
 ../includes/vis/corewar_vis_colors.h
 SDL.h
@@ -26,9 +42,21 @@ corewar_vis_colors.h
 
 ../includes/vis/corewar_vis_prop.h
 
-/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c
-corewar_vis_def.h
-/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_def.h
+../libft/includes/libft.h
+stdlib.h
+-
+unistd.h
+-
+libft_defs.h
+../libft/includes/libft_defs.h
+
+../libft/includes/libft_defs.h
+
+/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c
+corewar_vis.h
+/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.h
+libft.h
+/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/libft.h
 
 /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
 SDL_main.h
@@ -645,6 +673,16 @@ close_code.h
 /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
 
 /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
+
+/Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
+SDL.h
+-
+SDL_version.h
+-
+begin_code.h
+-
+close_code.h
+-
 
 /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 SDL.h

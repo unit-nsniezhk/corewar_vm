@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 19:43:40 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 22:03:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/07 20:44:20 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,15 @@
 
 # define COREWAR_VIS_PROP_H
 
+# define WIN_WIDTH 1800
+# define WIN_HEIGHT 1105
 # define ARENA_W 1505
 # define N_COLUMNS 75
-# define N_ROWS (ARENA_SIZE / N_COLUMNS)
 
+# define BUTTON_W 10
+# define BUTTON_H 5
 # define BYTE_W 15
-# define DIGIT_W 12
+# define CHAR_W 12
 # define BYTE_H 15
 # define BYTE_X_PADD 5
 # define BYTE_Y_PADD 5
@@ -32,43 +35,29 @@
 # define STATUS_W (WIN_WIDTH - ARENA_W - 60)
 # define STATUS_H 50
 
-# define LOW_BAR_Y 835
-# define D_LOW_BAR 35
-# define LOB_BAR_GAP 30
-# define LOW_BAR_X (ARENA_W + 10)
-# define LOW_BAR_W (WIN_WIDTH - ARENA_W - 215)
-# define LOW_BAR_X1 (LOW_BAR_X + LOW_BAR_W + 15)
-# define LOW_BAR_W1 (WIN_WIDTH - LOW_BAR_X1 - 5)
-# define LOW_BAR_H 20
+# define BAR_H 20
+# define BAR_PADD 5
+# define BAR_W (WIN_WIDTH - ARENA_W - 10)
 
-# define TOP_BAR_W (WIN_WIDTH - ARENA_W - 180)
 # define TOP_BAR_X (ARENA_W + 5)
 # define TOP_BAR_Y 100
-# define TOP_BAR_X1 (TOP_BAR_X + TOP_BAR_W + 10)
 # define D_TOP_BAR 30
+# define TOP_BAR_EL_Y(N) (TOP_BAR_Y + (D_TOP_BAR * N))
 
-# define INF_POS 0
-# define INF_Y (LOW_BAR_Y + (D_LOW_BAR * INF_POS))
+# define MID_BAR_Y 230
+# define MID_BAR_H 25
+# define MID_BAR_D 50
+# define MID_BAR_X (ARENA_W + BAR_PADD)
 
-# define SPEEDUP_POS 1
-# define SPEEDUP_Y (LOW_BAR_Y + (D_LOW_BAR * SPEEDUP_POS))
+# define MID_BAR_EL_Y(I, N) (MID_BAR_Y + (MID_BAR_D * I) + (MID_BAR_H * N) + (MID_BAR_H * 3 * I))
 
-# define SLOWDOWN_POS 2
-# define SLOWDOWN_Y (LOW_BAR_Y + (D_LOW_BAR * SLOWDOWN_POS))
+# define PDB_SHADOW_W 3
 
-# define VALUES_POS 3
-# define VALUES_Y (LOW_BAR_Y + (D_LOW_BAR * VALUES_POS) + LOB_BAR_GAP)
-
-# define REVERSE_POS 4
-# define REVERSE_Y (LOW_BAR_Y + (D_LOW_BAR * REVERSE_POS) + LOB_BAR_GAP)
-
-# define PAUSE_POS 5
-# define PAUSE_Y (LOW_BAR_Y + (D_LOW_BAR * PAUSE_POS) + LOB_BAR_GAP)
-
-# define EXIT_POS 6
-# define EXIT_Y (LOW_BAR_Y + (D_LOW_BAR * EXIT_POS) + LOB_BAR_GAP)
-
-# define BUTTON_W 10
-# define BUTTON_H 5
+# define BTM_BAR_Y 795
+# define D_BTM_BAR 35
+# define BTM_BAR_X (ARENA_W + 10)
+# define BTM_BAR_W (WIN_WIDTH - ARENA_W - 215)
+# define BTM_BAR_X1 (BTM_BAR_X + BTM_BAR_W + BUTTON_W + BAR_PADD)
+# define BTM_BAR_EL_Y(N) (BTM_BAR_Y + (D_BTM_BAR * N))
 
 #endif

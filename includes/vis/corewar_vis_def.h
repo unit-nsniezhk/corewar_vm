@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:41:42 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 21:51:21 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/07 16:55:54 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,15 +21,11 @@
 # include "corewar_vis_colors.h"
 
 # define WIN_NAME "CoreWars"
-# define WIN_WIDTH 1800
-# define WIN_HEIGHT 1105
 
 # define CYCLE_MS 50
 # define MIN_CYCLE_MS 0
 # define MAX_CYCLE_MS 100
 # define D_CYCLE_MS 10
-
-//TODO add all carriage counter to get good ides
 
 typedef struct		s_keydown
 {
@@ -45,6 +41,7 @@ typedef	struct		s_button
 	unsigned int	press : 1;
 	unsigned int	hower : 1;
 	unsigned int	state : 1;
+	char			*init_text;
 	char			*text;
 	char			*alt_text;
 	SDL_Rect		text_rect;

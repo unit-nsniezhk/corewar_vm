@@ -98,7 +98,7 @@ int			corewar_cycles(t_data *data, t_vis *vis)
 	t_carriage		*carr_tmp;
 
 	i = 0;
-	while (i < data->cycles_to_check)
+	while (i < data->ctc)
 	{
 		if (vis)
 			corewar_vis(vis, data);

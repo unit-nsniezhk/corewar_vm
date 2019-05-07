@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:29:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 21:23:48 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/07 18:54:06 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,8 +43,8 @@ int			corewar_vis_init(t_vis *vis)
 	if (SDL_Init(SDL_INIT_EVERYTHING) == -1 || TTF_Init() == -1
 	|| !(IMG_Init(IMG_INIT_JPG) & IMG_INIT_JPG))
 		return (0);
-	if (!(vis->win =
-	SDL_CreateWindow(WIN_NAME, 0, 0, WIN_WIDTH, WIN_HEIGHT, SDL_WINDOW_SHOWN)))
+	if (!(vis->win = SDL_CreateWindow(WIN_NAME, 0, 0, WIN_WIDTH, WIN_HEIGHT,
+	SDL_WINDOW_RESIZABLE)))
 		return (0);
 	if (!(vis->rend =
 	SDL_CreateRenderer(vis->win, -1, SDL_RENDERER_ACCELERATED)))
@@ -88,12 +88,12 @@ static void	static_handle_events(t_vis *vis, Uint32 start)
 
 static void	static_render(t_vis *vis, t_data *data)
 {
-	SDL_SetRenderDrawColor(vis->rend, (RGBA_BG >> 16) & 255, (RGBA_BG >> 8) & 255,
-	RGBA_BG & 255, 255);
+	SDL_SetRenderDrawColor(vis->rend, R(RGBA_BG), G(RGBA_BG), B(RGBA_BG),
+	A(RGBA_BG));
 	SDL_RenderClear(vis->rend);
 	SDL_SetRenderDrawBlendMode(vis->rend, SDL_BLENDMODE_BLEND);
 	corewar_vis_render_arena(vis, data);
-	corewar_vis_render_menu(vis);
+	corewar_vis_render_menu(vis, data);
 	corewar_vis_render_info(vis, data);
 	SDL_RenderPresent(vis->rend);
 	static_handle_events(vis, (SDL_GetTicks() + vis->cycle_ms));

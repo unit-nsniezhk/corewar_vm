@@ -27,7 +27,7 @@ static void		static_render_value(t_vis *vis, SDL_Rect rect,
 	text = ft_uitoabase(HEX, value);
 	if (value < 16)
 		ft_strninject(&text, "0", 0, 1);
-	if (brightness > 110)
+	if (brightness > 100)
 		corewar_vis_render_rtext(vis, text, RGBA_VALUE_DARK, &rect);
 	else
 		corewar_vis_render_rtext(vis, text, RGBA_VALUE_LIGHT, &rect);

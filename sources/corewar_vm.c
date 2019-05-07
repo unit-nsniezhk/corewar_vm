@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/04 18:26:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/07 17:10:20 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,9 +50,10 @@ static void	static_init_data(t_data *data, t_parse *parse, t_vis *vis)
 	data->cycle = 0;
 	data->leader = parse->n_champs;
 	data->check = 0;
-	data->cycles_to_check = CYCLES_TO_CHECK;
+	data->ctc = CYCLES_TO_CHECK;
 	data->n_live = 0;
 	data->n_carrs = parse->n_champs;
+	data->n_a_carrs = data->n_carrs;
 	data->n_players = parse->n_champs;
 	data->carr = NULL;
 	ft_memset(data->arena, 0, ARENA_SIZE);
@@ -61,13 +62,15 @@ static void	static_init_data(t_data *data, t_parse *parse, t_vis *vis)
 	{
 		data->players[i].pos = (ARENA_SIZE / parse->n_champs) * i;
 		data->players[i].name = parse->champs[i].name;
+		data->players[i].last_live = 0;
+		data->players[i].n_lives = 0;
 		byte = 0;
 		while (byte < parse->champs[i].code_size)
 		{
 			data->arena[data->players[i].pos + byte] =
 			parse->champs[i].code[byte];
 			if (vis)
-				vis->color[data->players[i].pos + byte] = g_color_table[i + 1];
+				vis->color[data->players[i].pos + byte] = g_color[i + 1];
 			++byte;
 		}
 		static_init_carr(data, data->players[i].pos, parse->champs[i].id);
@@ -106,8 +109,8 @@ static void	static_kill_carrs(t_data *data, t_carriage *carr_tmp)
 	carr_prev = NULL;
 	while (carr_tmp != NULL && data->carr->next)
 	{
-		if (data->cycles_to_check <= 0
-		|| carr_tmp->last_live < data->cycle - data->cycles_to_check)
+		if (data->ctc <= 0
+		|| carr_tmp->last_live < data->cycle - data->ctc)
 		{
 			if (carr_prev)
 				carr_prev->next = carr_tmp->next;
@@ -128,6 +131,19 @@ static void	static_kill_carrs(t_data *data, t_carriage *carr_tmp)
 	}
 }
 
+void	set_players(t_data *data)
+{
+	unsigned int	i;
+
+	i = 0;
+	while (i < data->n_players)
+	{
+		data->players[i].last_live = 0;
+		data->players[i].n_lives = 0;
+		++i;
+	}
+}
+
 void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 {
 	static_init_data(data, parse, vis);
@@ -140,17 +156,18 @@ void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 		}
 		static_kill_carrs(data, data->carr);
 		if (data->n_live >= MIN_LIVE)
-			data->cycles_to_check -= CYCLE_DELTA;
+			data->ctc -= CYCLE_DELTA;
 		else
 			data->check++;
 		if (data->check == MAX_CHECKS)
 		{
 			data->check = 0;
-			data->cycles_to_check -= CYCLE_DELTA;
+			data->ctc -= CYCLE_DELTA;
 		}
-		if (data->cycles_to_check <= 0)
-			data->cycles_to_check = 1;
+		if (data->ctc <= 0)
+			data->ctc = 1;
 		data->n_live = 0;
+		set_players(data);
 	}
 	if (!vis)
 		ft_printf("Player %d (%s) won\n", data->leader,
