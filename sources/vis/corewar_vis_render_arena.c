@@ -6,40 +6,40 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 18:36:14 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 21:45:39 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/08 21:13:48 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis.h"
 #include "libft.h"
 
-static void		static_render_value(t_vis *vis, SDL_Rect rect,
-				unsigned char value, unsigned int bg_color)
+static void	static_render_value(t_vis *vis, SDL_Rect rect,
+			unsigned char value, unsigned int bg_color)
 {
 	char			*text;
 	unsigned int	brightness;
 
 	rect.x += 1;
 	rect.y += 1;
-	rect.h -= 2;
-	rect.w -= 2;
+	rect.h = XS_CHAR_H - 1;
+	rect.w = XS_CHAR_W - 1;
 	brightness = (unsigned int)((R(bg_color) + G(bg_color) + B(bg_color)) / 3);
 	text = ft_uitoabase(HEX, value);
 	if (value < 16)
 		ft_strninject(&text, "0", 0, 1);
 	if (brightness > 100)
-		corewar_vis_render_rtext(vis, text, RGBA_VALUE_DARK, &rect);
+		corewar_vis_render_rtext(vis->rend, text, RGBA_VALUE_DARK, rect);
 	else
-		corewar_vis_render_rtext(vis, text, RGBA_VALUE_LIGHT, &rect);
+		corewar_vis_render_rtext(vis->rend, text, RGBA_VALUE_LIGHT, rect);
 	ft_strdel(&text);
 }
 
 static void	static_render_shadow(t_vis *vis, SDL_Rect rect)
 {
-	rect.x -= SHADOW_SIZE;
-	rect.y -= SHADOW_SIZE;
-	rect.w += (SHADOW_SIZE * 2);
-	rect.h += (SHADOW_SIZE * 2);
+	rect.x -= BYTE_SHADOW;
+	rect.y -= BYTE_SHADOW;
+	rect.w += (BYTE_SHADOW * 2);
+	rect.h += (BYTE_SHADOW * 2);
 	SDL_SetRenderDrawColor(vis->rend, R(RGBA_SHADOW), G(RGBA_SHADOW),
 	B(RGBA_SHADOW), A(RGBA_SHADOW));
 	SDL_RenderFillRect(vis->rend, &rect);
@@ -51,13 +51,13 @@ static void	static_render_bytes(t_vis *vis, t_data *data)
 	SDL_Rect		rect;
 	unsigned int	color;
 
-	rect.h = BYTE_H;
-	rect.w = BYTE_W;
+	rect.h = BYTE_SIZE;
+	rect.w = BYTE_SIZE;
 	i = 0;
 	while (i < ARENA_SIZE || (i % N_COLUMNS))
 	{
-		rect.y = (ROW_H * (i / N_COLUMNS)) + BYTE_Y_PADD;
-		rect.x = (COLUMN_W * (i % N_COLUMNS)) + BYTE_X_PADD;
+		rect.y = ((BYTE_SIZE + PAD) * (i / N_COLUMNS)) + PAD;
+		rect.x = ((BYTE_SIZE + PAD) * (i % N_COLUMNS)) + PAD;
 		static_render_shadow(vis, rect);
 		if (i < ARENA_SIZE)
 			color = vis->color[i];
@@ -74,18 +74,18 @@ static void	static_render_bytes(t_vis *vis, t_data *data)
 
 static void	static_render_carrs(t_vis *vis, t_data *data)
 {
-	t_carriage	*carriage_tmp;
+	t_carriage	*carr_tmp;
 	SDL_Rect	rect;
 
-	rect.w = BYTE_W + (SHADOW_SIZE * 2);
-	rect.h = BYTE_H + (SHADOW_SIZE * 2);
-	carriage_tmp = data->carr;
-	while (carriage_tmp)
+	rect.w = BYTE_SIZE + (BYTE_SHADOW * 2);
+	rect.h = BYTE_SIZE + (BYTE_SHADOW * 2);
+	carr_tmp = data->carr;
+	while (carr_tmp)
 	{
-		rect.x = ((carriage_tmp->pos % N_COLUMNS) * COLUMN_W) + BYTE_X_PADD
-		- SHADOW_SIZE;
-		rect.y = ((carriage_tmp->pos / N_COLUMNS) * ROW_H) + BYTE_Y_PADD
-		- SHADOW_SIZE;
+		rect.x = ((carr_tmp->pos % N_COLUMNS) * (BYTE_SIZE + PAD)) + PAD
+		- BYTE_SHADOW;
+		rect.y = ((carr_tmp->pos / N_COLUMNS) * (BYTE_SIZE + PAD)) + PAD
+		- BYTE_SHADOW;
 		if (vis->buttons.reverse.state)
 			SDL_SetRenderDrawColor(vis->rend, R(RGBA_RCARR), G(RGBA_RCARR),
 			B(RGBA_RCARR), A(RGBA_RCARR));
@@ -93,7 +93,7 @@ static void	static_render_carrs(t_vis *vis, t_data *data)
 			SDL_SetRenderDrawColor(vis->rend, R(RGBA_CARR), G(RGBA_CARR),
 			B(RGBA_CARR), A(RGBA_CARR));
 		SDL_RenderFillRect(vis->rend, &rect);
-		carriage_tmp = carriage_tmp->next;
+		carr_tmp = carr_tmp->next;
 	}
 }
 

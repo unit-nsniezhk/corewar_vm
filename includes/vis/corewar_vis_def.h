@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:41:42 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/07 16:55:54 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/08 20:17:03 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,16 @@
 
 # define COREWAR_VIS_DEF_H
 
-#include "SDL.h"
+# include "SDL.h"
 # include "SDL_ttf.h"
 # include "corewar_settings.h"
 # include "corewar_vis_prop.h"
-# include "corewar_vis_colors.h"
+# include "corewar_vis_color.h"
+# include <stdbool.h>
 
 # define WIN_NAME "CoreWars"
+# define FONT_REG "fonts/Roboto-Regular.ttf"
+# define FONT_BOLD "fonts/Roboto-Bold.ttf"
 
 # define CYCLE_MS 50
 # define MIN_CYCLE_MS 0
@@ -29,24 +32,23 @@
 
 typedef struct		s_keydown
 {
-	unsigned int	esk : 1;
-	unsigned int	space : 1;
-	unsigned int	lalt : 1;
-	unsigned int	f : 1;
-	unsigned int	mbl : 1;
+	bool			esk;
+	bool			space;
+	bool			lalt;
+	bool			f;
+	bool			mbl;
 }					t_keydown;
 
 typedef	struct		s_button
 {
-	unsigned int	press : 1;
-	unsigned int	hower : 1;
-	unsigned int	state : 1;
-	char			*init_text;
-	char			*text;
-	char			*alt_text;
-	SDL_Rect		text_rect;
-	unsigned int	bg : 1;
-	SDL_Rect		button_rect;
+	bool			press;
+	bool			hower;
+	bool			state;
+	char			*init_msg;
+	char			*msg;
+	char			*alt_msg;
+	bool			bg_shown;
+	SDL_Rect		bg;
 }					t_button;
 
 typedef struct		s_buttons
@@ -58,13 +60,8 @@ typedef struct		s_buttons
 	t_button		exit;
 	t_button		reverse;
 	t_button		values;
+	t_button		nxt;
 }					t_buttons;
-
-typedef struct		s_fonts
-{
-	TTF_Font		*bold;
-	TTF_Font		*regular;
-}					t_fonts;
 
 typedef struct		s_vis
 {
@@ -74,7 +71,6 @@ typedef struct		s_vis
 	unsigned int	color[ARENA_SIZE];
 	t_buttons		buttons;
 	t_keydown		keydown;
-	t_fonts			fonts;
 }					t_vis;
 
 #endif

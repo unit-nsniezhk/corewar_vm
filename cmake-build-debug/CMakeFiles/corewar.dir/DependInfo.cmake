@@ -20,13 +20,18 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons2.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_wheel.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_wheel.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods2.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods2.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o"
   "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o"
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_info.c.o"
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_menu.c.o"
-  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_utils.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_btmb.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_btmb.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_button.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_button.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_mdlb.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_mdlb.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_text.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_text.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_topb.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb.c.o"
+  "/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_utils.c" "/Users/dderevyn/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_utils.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

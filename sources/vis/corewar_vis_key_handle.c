@@ -15,22 +15,22 @@
 void		corewar_vis_keydown(t_vis *vis, SDL_Event *event)
 {
 	if (event->key.keysym.sym == SDLK_ESCAPE)
-		vis->keydown.esk = 1;
+		vis->keydown.esk = true;
 	else if (event->key.keysym.sym == SDLK_SPACE)
-		vis->keydown.space = 1;
+		vis->keydown.space = true;
 	else if (event->key.keysym.sym == SDLK_LALT)
-		vis->keydown.lalt = 1;
+		vis->keydown.lalt = true;
 	else if (event->key.keysym.sym == SDLK_f)
-		vis->keydown.f = 1;
+		vis->keydown.f = true;
 }
 
 static void	static_keyup2(t_vis *vis, SDL_Event *event)
 {
 	if (event->key.keysym.sym == SDLK_LALT)
-		vis->keydown.lalt = 0;
+		vis->keydown.lalt = false;
 	else if (event->key.keysym.sym == SDLK_f)
 	{
-		vis->keydown.f = 0;
+		vis->keydown.f = false;
 		if (vis->keydown.lalt)
 			corewar_vis_values(vis);
 	}
@@ -40,12 +40,12 @@ void		corewar_vis_keyup(t_vis *vis, SDL_Event *event)
 {
 	if (event->key.keysym.sym == SDLK_ESCAPE)
 	{
-		vis->keydown.esk = 0;
+		vis->keydown.esk = false;
 		corewar_vis_quit(vis);
 	}
 	else if (event->key.keysym.sym == SDLK_SPACE)
 	{
-		vis->keydown.space = 0;
+		vis->keydown.space = false;
 		if (vis->keydown.lalt)
 			corewar_vis_reverse(vis);
 		else

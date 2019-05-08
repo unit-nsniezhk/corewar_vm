@@ -12,36 +12,38 @@
 
 #include "corewar_vis_def.h"
 
-int		corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *button)
+bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *button)
 {
 	if (x > button->x && x < button->x + button->w
 		&& y > button->y && y < button->y + button->h)
-		return (1);
-	return (0);
+		return (true);
+	return (false);
 }
 
 void	corewar_vis_set_hower(t_vis *vis, t_button *button)
 {
-	vis->buttons.values.hower = 0;
-	vis->buttons.reverse.hower = 0;
-	vis->buttons.exit.hower = 0;
-	vis->buttons.pause.hower = 0;
-	vis->buttons.slowdown.hower = 0;
-	vis->buttons.speedup.hower = 0;
-	vis->buttons.status.hower = 0;
+	vis->buttons.values.hower = false;
+	vis->buttons.reverse.hower = false;
+	vis->buttons.exit.hower = false;
+	vis->buttons.pause.hower = false;
+	vis->buttons.slowdown.hower = false;
+	vis->buttons.speedup.hower = false;
+	vis->buttons.status.hower = false;
+	vis->buttons.nxt.hower = false;
 	if (button)
-		button->hower = 1;
+		button->hower = true;
 }
 
 void	corewar_vis_set_press(t_vis *vis, t_button *button)
 {
-	vis->buttons.values.press = 0;
-	vis->buttons.reverse.press = 0;
-	vis->buttons.exit.press = 0;
-	vis->buttons.pause.press = 0;
-	vis->buttons.slowdown.press = 0;
-	vis->buttons.speedup.press = 0;
-	vis->buttons.status.press = 0;
+	vis->buttons.values.press = false;
+	vis->buttons.reverse.press = false;
+	vis->buttons.exit.press = false;
+	vis->buttons.pause.press = false;
+	vis->buttons.slowdown.press = false;
+	vis->buttons.speedup.press = false;
+	vis->buttons.status.press = false;
+	vis->buttons.nxt.press = false;
 	if (button)
-		button->press = 1;
+		button->press = true;
 }

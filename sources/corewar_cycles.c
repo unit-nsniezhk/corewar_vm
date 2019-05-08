@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include <stddef.h>
+#include <stdbool.h>
 #include "corewar_op_def.h"
 #include "corewar.h"
 

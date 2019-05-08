@@ -146,10 +146,16 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_wheel.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods2.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c">
@@ -158,13 +164,22 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_btmb.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_menu.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_button.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_utils.c">
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_mdlb.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_text.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_topb.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_utils.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/CMakeLists.txt">

@@ -24,9 +24,7 @@ SDL_ttf.h
 SDL_image.h
 ../includes/vis/SDL_image.h
 
-../includes/vis/corewar_vis_colors.h
-SDL.h
-../includes/vis/SDL.h
+../includes/vis/corewar_vis_color.h
 
 ../includes/vis/corewar_vis_def.h
 SDL.h
@@ -37,8 +35,10 @@ corewar_settings.h
 ../includes/vis/corewar_settings.h
 corewar_vis_prop.h
 ../includes/vis/corewar_vis_prop.h
-corewar_vis_colors.h
-../includes/vis/corewar_vis_colors.h
+corewar_vis_color.h
+../includes/vis/corewar_vis_color.h
+stdbool.h
+-
 
 ../includes/vis/corewar_vis_prop.h
 
@@ -52,7 +52,7 @@ libft_defs.h
 
 ../libft/includes/libft_defs.h
 
-/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_info.c
+/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_arena.c
 corewar_vis.h
 /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.h
 libft.h
