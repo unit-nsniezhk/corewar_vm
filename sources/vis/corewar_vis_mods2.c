@@ -14,8 +14,7 @@
 
 void	corewar_vis_nxt(t_vis *vis)
 {
-	vis->buttons.nxt.state = true;
-	vis->buttons.pause.state = false;
-	vis->buttons.status.state = true;
-	vis->buttons.values.state = false;
+	vis->buttons.nxt.active = true;
+	vis->buttons.run.active = false;
+	vis->buttons.status.active = true;
 }

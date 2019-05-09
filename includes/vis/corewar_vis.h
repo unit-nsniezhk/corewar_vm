@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:30:17 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 20:04:55 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 21:20:32 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,16 @@
 # include "corewar_def.h"
 # include "SDL_ttf.h"
 # include "SDL_image.h"
+# include "SDL_mixer.h"
 
 int		corewar_vis_init(t_vis *vis);
 
-void	corewar_vis(t_vis *vis, t_data *data);
+void	corewar_vis(t_vis *vis, t_data *data, bool endgame);
 void	corewar_vis_render_arena(t_vis *vis, t_data *data);
+void	corewar_vis_render_processes(t_vis *vis, t_data *data);
+
+void	corewar_vis_endgame_set(t_buttons *btns);
+void	corewar_vis_render_endgame(t_vis *vis, t_data *data);
 
 void	corewar_vis_keyup(t_vis *vis, SDL_Event *event);
 void	corewar_vis_keydown(t_vis *vis, SDL_Event *event);
@@ -35,13 +40,29 @@ void	corewar_vis_set_press(t_vis *vis, t_button *button);
 void	corewar_vis_set_hower(t_vis *vis, t_button *button);
 bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *button);
 
+
+void	corewar_vis_render_pc_regs(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+void	corewar_vis_render_pc_timeout(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+void	corewar_vis_render_pc_lastlive(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+void	corewar_vis_render_pc_op(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+void	corewar_vis_render_pc_carry(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+void	corewar_vis_render_pc_id(SDL_Renderer *rend, t_carriage *carr,
+		SDL_Rect box);
+
+void	corewar_vis_process_shown(Sint32 x, Sint32 y, t_carriage *carr_tmp);
+
 void	corewar_vis_speed(t_vis *vis, unsigned int state);
 void	corewar_vis_reverse(t_vis *vis);
 void	corewar_vis_quit(t_vis *vis);
 void	corewar_vis_values(t_vis *vis);
 void	corewar_vis_run(t_vis *vis);
 void	corewar_vis_nxt(t_vis *vis);
-
+void	corewar_mousebuttondown_left(t_vis *vis, Sint32 x, Sint32 y);
 
 void	corewar_init_status(t_button *btn);
 void	corewar_init_speedup(t_button *btn);

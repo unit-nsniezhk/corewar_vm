@@ -17,7 +17,7 @@ void	corewar_init_slowdown(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("SlowDown", -1);
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;
@@ -29,7 +29,7 @@ void	corewar_init_pause(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("Resume", -1);
 	btn->alt_msg = ft_strndup(" Pause ", -1);
 	btn->init_msg = ft_strndup(" Start ", -1);
@@ -41,7 +41,7 @@ void	corewar_init_exit(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("Quit", -1);
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;
@@ -53,7 +53,7 @@ void	corewar_init_reverse(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("Reverse", -1);
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;
@@ -65,7 +65,7 @@ void	corewar_init_values(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("Details", -1);
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;

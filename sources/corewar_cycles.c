@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/05 20:03:55 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 20:32:08 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -102,10 +102,10 @@ int			corewar_cycles(t_data *data, t_vis *vis)
 	while (i < data->ctc)
 	{
 		if (vis)
-			corewar_vis(vis, data);
+			corewar_vis(vis, data, false);
 		carr_tmp = data->carr;
-		if ((data->dump && data->cycle == data->dump)
-		|| (vis && vis->buttons.exit.state))
+		if ((data->dump && data->cycle == data->dump && !vis)
+		|| (vis && vis->buttons.exit.active))
 			return (0);
 		while (carr_tmp != NULL)
 		{

@@ -59,6 +59,8 @@ void	corewar_op_new_carriage(t_data *data, t_carriage *carr_src, int pos)
 	carr_new->last_live = carr_src->last_live;
 	carr_new->pos = corewar_8(pos);
 	carr_new->delta_pos = 0;
+	carr_new->selected = false;
+	carr_new->shown = false;
 	i = 0;
 	while (i < N_REGS + 1)
 	{

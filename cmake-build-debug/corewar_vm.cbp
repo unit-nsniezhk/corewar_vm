@@ -52,6 +52,7 @@
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2.framework/Headers"/>
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -82,6 +83,7 @@
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2.framework/Headers"/>
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers"/>
 					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers"/>
+					<Add directory="/Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
@@ -143,6 +145,9 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons2.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_endgame.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c">
 			<Option target="corewar"/>
 		</Unit>
@@ -156,6 +161,9 @@
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods2.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_motion_handle.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c">
@@ -173,10 +181,22 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_mdlb.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_pc_msg.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_processes.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_ps_msg2.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_text.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_topb.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_topb2.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_utils.c">

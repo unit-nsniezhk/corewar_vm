@@ -17,7 +17,7 @@ void	corewar_init_status(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("  Pause  ", -1);
 	btn->alt_msg = ft_strndup("CoreWars", -1);
 	btn->init_msg = ft_strndup("  Start  ", -1);
@@ -29,7 +29,7 @@ void	corewar_init_speedup(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = ft_strndup("SpeedUp", -1);
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;
@@ -41,7 +41,7 @@ void	corewar_init_nxt(t_button *btn)
 {
 	btn->press = false;
 	btn->hower = false;
-	btn->state = false;
+	btn->active = false;
 	btn->msg = (char*)"Next cycle";
 	btn->alt_msg = NULL;
 	btn->init_msg = NULL;

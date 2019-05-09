@@ -53,7 +53,7 @@ void		corewar_vis_render_button(SDL_Renderer *rend, t_button *btn,
 	}
 	if (init && btn->init_msg)
 		msg = btn->init_msg;
-	else if (btn->state && btn->alt_msg)
+	else if (btn->active && btn->alt_msg)
 		msg = btn->alt_msg;
 	else
 		msg = btn->msg;

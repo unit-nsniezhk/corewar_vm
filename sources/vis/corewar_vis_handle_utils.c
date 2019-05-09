@@ -25,7 +25,7 @@ void	corewar_vis_set_hower(t_vis *vis, t_button *button)
 	vis->buttons.values.hower = false;
 	vis->buttons.reverse.hower = false;
 	vis->buttons.exit.hower = false;
-	vis->buttons.pause.hower = false;
+	vis->buttons.run.hower = false;
 	vis->buttons.slowdown.hower = false;
 	vis->buttons.speedup.hower = false;
 	vis->buttons.status.hower = false;
@@ -39,7 +39,7 @@ void	corewar_vis_set_press(t_vis *vis, t_button *button)
 	vis->buttons.values.press = false;
 	vis->buttons.reverse.press = false;
 	vis->buttons.exit.press = false;
-	vis->buttons.pause.press = false;
+	vis->buttons.run.press = false;
 	vis->buttons.slowdown.press = false;
 	vis->buttons.speedup.press = false;
 	vis->buttons.status.press = false;

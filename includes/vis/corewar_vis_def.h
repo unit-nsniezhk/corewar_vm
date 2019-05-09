@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:41:42 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 20:17:03 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 19:45:12 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ typedef	struct		s_button
 {
 	bool			press;
 	bool			hower;
-	bool			state;
+	bool			active;
 	char			*init_msg;
 	char			*msg;
 	char			*alt_msg;
@@ -56,7 +56,7 @@ typedef struct		s_buttons
 	t_button		status;
 	t_button		speedup;
 	t_button		slowdown;
-	t_button		pause;
+	t_button		run;
 	t_button		exit;
 	t_button		reverse;
 	t_button		values;
@@ -67,6 +67,8 @@ typedef struct		s_vis
 {
 	SDL_Window		*win;
 	SDL_Renderer	*rend;
+	int 			m_x;
+	int 			m_y;
 	unsigned int	cycle_ms;
 	unsigned int	color[ARENA_SIZE];
 	t_buttons		buttons;

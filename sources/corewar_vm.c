@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/07 17:10:20 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 19:56:19 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,8 @@ static void	static_init_carr(t_data *data, unsigned int pos, unsigned int id)
 	carr_tmp->timeout = 0;
 	carr_tmp->pos = pos;
 	carr_tmp->delta_pos = 0;
+	carr_tmp->selected = false;
+	carr_tmp->shown = false;
 	i = 0;
 	while (i < N_REGS + 1)
 	{
@@ -169,7 +171,9 @@ void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 		data->n_live = 0;
 		set_players(data);
 	}
-	if (!vis)
+	if (vis)
+		corewar_vis(vis, data, true);
+	else
 		ft_printf("Player %d (%s) won\n", data->leader,
 		data->players[data->leader - 1].name);
 }

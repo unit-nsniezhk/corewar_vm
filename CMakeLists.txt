@@ -25,7 +25,8 @@ target_include_directories(corewar
         PUBLIC includes/vis/
         PUBLIC ${FRAMEWORKS_DIR}SDL2.framework/Headers
         PUBLIC ${FRAMEWORKS_DIR}SDL2_image.framework/Headers
-        PUBLIC ${FRAMEWORKS_DIR}SDL2_ttf.framework/Headers)
+        PUBLIC ${FRAMEWORKS_DIR}SDL2_ttf.framework/Headers
+        PUBLIC ${FRAMEWORKS_DIR}SDL2_mixer.framework/Headers)
 
 target_link_directories(corewar
         PUBLIC libft/)
@@ -34,5 +35,5 @@ target_link_libraries(corewar
         libft.a
         "-F ${FRAMEWORKS_DIR} -framework SDL2"
         "-F ${FRAMEWORKS_DIR} -framework SDL2_image"
-        "-F ${FRAMEWORKS_DIR} -framework SDL2_ttf")
-
+        "-F ${FRAMEWORKS_DIR} -framework SDL2_ttf"
+        "-F ${FRAMEWORKS_DIR} -framework SDL2_mixer")

@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 18:36:11 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 20:46:18 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 19:27:50 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ static void	static_render_buttons(SDL_Renderer *rend, t_buttons *btns,
 	corewar_vis_render_button(rend, &btns->speedup, init);
 	corewar_vis_render_button(rend, &btns->slowdown, init);
 	corewar_vis_render_button(rend, &btns->nxt, init);
-	corewar_vis_render_button(rend, &btns->pause, init);
+	corewar_vis_render_button(rend, &btns->run, init);
 	corewar_vis_render_button(rend, &btns->exit, init);
 	corewar_vis_render_button(rend, &btns->reverse, init);
 	corewar_vis_render_button(rend, &btns->values, init);
@@ -51,10 +51,10 @@ static void	static_speed_bar(SDL_Renderer *rend, unsigned int cycle_ms,
 	SDL_SetRenderDrawColor(rend, R(RGBA_SHADOW), G(RGBA_SHADOW), B(RGBA_SHADOW),
 	A(RGBA_SHADOW));
 	SDL_RenderFillRect(rend, &box);
-	box.x += PDB_SHADOW;
-	box.y += PDB_SHADOW;
-	box.h -= (PDB_SHADOW * 2);
-	box.w -= (PDB_SHADOW * 2);
+	box.x += SHADOW_SIZE;
+	box.y += SHADOW_SIZE;
+	box.h -= (SHADOW_SIZE * 2);
+	box.w -= (SHADOW_SIZE * 2);
 	SDL_SetRenderDrawColor(rend, R(RGBA_BUTTON), G(RGBA_BUTTON), B(RGBA_BUTTON),
 	A(RGBA_BUTTON));
 	SDL_RenderFillRect(rend, &box);

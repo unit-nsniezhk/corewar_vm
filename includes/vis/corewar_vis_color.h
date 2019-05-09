@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 19:41:31 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 20:17:09 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/09 18:20:37 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@
 # define RGBA_TEXT2 0xFFCCCCCC
 # define RGBA_TEXT3 0xAAACACAC
 # define RGBA_TEXTS 0xFF78A42B
-# define RGBA_BUTTON 0xAA444444
+# define RGBA_BUTTON 0xEA444444
 
 # define RGBA_CARR 0x9FB4B4B4
 # define RGBA_RCARR 0x9FAA4628
@@ -43,6 +43,7 @@
 # define PRESS -20
 # define HOWER 20
 
+# define A_PS_INF 0xD0
 # define A_PB 0xCC
 
 static const unsigned int	g_color[MAX_PLAYERS + 1] =
