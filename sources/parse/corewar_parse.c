@@ -13,7 +13,7 @@
 #include "libft.h"
 #include "corewar_parse.h"
 
-static int	static_extension(const char *file)
+static bool	static_extension(const char *file)
 {
 	size_t	i;
 
@@ -23,12 +23,12 @@ static int	static_extension(const char *file)
 	{
 		ft_printf("[redError:~] %s [yellowFile %s~]\n",
 		"Invalid extension of a champion", file);
-		return (0);
+		return (false);
 	}
-	return (1);
+	return (true);
 }
 
-static int	static_valid(t_parse *parse)
+static bool	static_valid(t_parse *parse)
 {
 	unsigned int	i;
 
@@ -36,7 +36,7 @@ static int	static_valid(t_parse *parse)
 	{
 		ft_printf("[redError:] Less than [yellow%u~] champions specified\n",
 		MIN_CHAMPIONS);
-		return (0);
+		return (false);
 	}
 	i = 0;
 	while (i < parse->n_champs)
@@ -45,14 +45,14 @@ static int	static_valid(t_parse *parse)
 		{
 			ft_printf("[redError:~] %s\n",
 			"Champions were not specified in the right order");
-			return (0);
+			return (false);
 		}
 		++i;
 	}
-	return (1);
+	return (true);
 }
 
-static int	static_pos(t_parse *parse)
+static bool	static_pos(t_parse *parse)
 {
 	unsigned int i;
 
@@ -65,7 +65,7 @@ static int	static_pos(t_parse *parse)
 		{
 			ft_printf("[redError:~] More than [yellow%u~] champions specified ",
 			MAX_CHAMPIONS);
-			return (0);
+			return (false);
 		}
 		parse->pos = i + 1;
 	}
@@ -74,11 +74,11 @@ static int	static_pos(t_parse *parse)
 		if (parse->champs[parse->pos - 1].id)
 		{
 			ft_printf("[redError:~] Specified position is already occupied ");
-			return (0);
+			return (false);
 		}
 	}
 	parse->champs[parse->pos - 1].id = parse->pos;
-	return (1);
+	return (true);
 }
 
 static void	static_init(t_parse *parse)
@@ -93,13 +93,13 @@ static void	static_init(t_parse *parse)
 		parse->champs[i].code = NULL;
 		++i;
 	}
-	parse->vis = 0;
+	parse->vis = false;
 	parse->dump = 0;
 	parse->pos = 0;
 	parse->n_champs = 0;
 }
 
-int			corewar_parse(t_parse *parse, unsigned int argc, const char **argv)
+bool		corewar_parse(t_parse *parse, unsigned int argc, const char **argv)
 {
 	unsigned int	i;
 

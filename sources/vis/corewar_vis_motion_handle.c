@@ -6,18 +6,22 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 21:21:54 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 19:45:12 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:55:58 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis.h"
 
-void	corewar_vis_process_shown(Sint32 x, Sint32 y, t_carriage *carr_tmp)
+void	corewar_vis_pc_shown(t_vis *vis, t_carriage *carr_tmp)
 {
+	if (vis->game_start || vis->game_over)
+		return ;
 	while (carr_tmp)
 	{
-		if (x > carr_tmp->box.x && x < carr_tmp->box.x + carr_tmp->box.w
-		&& y > carr_tmp->box.y && y < carr_tmp->box.y + carr_tmp->box.h)
+		if (vis->m_x > carr_tmp->hitbox.x
+		&& vis->m_x < carr_tmp->hitbox.x + carr_tmp->hitbox.w
+		&& vis->m_y > carr_tmp->hitbox.y
+		&& vis->m_y < carr_tmp->hitbox.y + carr_tmp->hitbox.h)
 			carr_tmp->shown = true;
 		else
 			carr_tmp->shown = false;
@@ -31,22 +35,22 @@ void	corewar_vis_mousemotion(t_vis *vis, SDL_Event *event)
 	vis->m_y = event->motion.y;
 	if (vis->keydown.mbl)
 		corewar_mousebuttondown_left(vis, event->motion.x, event->motion.y);
-	if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.values.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.values);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.reverse.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.reverse);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.exit.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.exit);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.run.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.run);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.slowdown.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.slowdown);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.speedup.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.speedup);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.status.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.status);
-	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->buttons.nxt.bg))
-		corewar_vis_set_hower(vis, &vis->buttons.nxt);
+	if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.detail.bg))
+		corewar_vis_set_hower(vis, &vis->btns.detail);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.reverse.bg))
+		corewar_vis_set_hower(vis, &vis->btns.reverse);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.quit.bg))
+		corewar_vis_set_hower(vis, &vis->btns.quit);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.run.bg))
+		corewar_vis_set_hower(vis, &vis->btns.run);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.slow_down.bg))
+		corewar_vis_set_hower(vis, &vis->btns.slow_down);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.speed_up.bg))
+		corewar_vis_set_hower(vis, &vis->btns.speed_up);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.status.bg))
+		corewar_vis_set_hower(vis, &vis->btns.status);
+	else if (corewar_vis_hitbox(vis->m_x, vis->m_y, &vis->btns.next.bg))
+		corewar_vis_set_hower(vis, &vis->btns.next);
 	else
 		corewar_vis_set_hower(vis, NULL);
 }

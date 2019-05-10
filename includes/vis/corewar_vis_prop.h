@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/06 19:43:40 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 20:58:56 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:33:13 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@
 # define N_COLUMNS 75
 # define SHADOW_SIZE 3
 
+# define L_CHAR_H 70
+# define L_CHAR_W 35
 # define CHAR_H 50
 # define CHAR_W 25
 # define M_CHAR_H 25
@@ -48,7 +50,7 @@
 # define STS_PAD (BUTTON_H - (TOP_BAR_D / 2))
 # define TOP_BAR_Y(N) (TOP_BAR_POS_Y + (TOP_BAR_D * N) + (N > 0 ? STS_PAD : 0))
 
-# define MID_BAR_POS_Y 230
+# define MID_BAR_POS_Y 250
 # define MID_BAR_D 50
 # define N_MID_BAR_EL 3
 # define MID_BAR_I_Y(I) ((MID_BAR_D * I) + (M_CHAR_H * N_MID_BAR_EL * I))
@@ -59,7 +61,10 @@
 # define BTM_BAR_D 35
 # define BTM_BAR_Y(N) (BTM_BAR_POS_Y + (BTM_BAR_D * N))
 # define BTM_BAR_MSG_X (BAR_X + S_BUTTON_W + PAD)
-# define BTM_BAR_MSG_Y(N, CHR_H) (BTM_BAR_Y(N) + (CHR_H / 2))
+# define BTM_BAR_MSG_Y(N) (BTM_BAR_Y(N) + (S_CHAR_H / 2))
+
+# define CAR_INF_W 200
+# define CAR_INF_H 485
 
 # define PROCESS_H (S_CHAR_H + PAD)
 

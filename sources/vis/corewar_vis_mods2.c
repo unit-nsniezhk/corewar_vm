@@ -14,7 +14,9 @@
 
 void	corewar_vis_nxt(t_vis *vis)
 {
-	vis->buttons.nxt.active = true;
-	vis->buttons.run.active = false;
-	vis->buttons.status.active = true;
+	if (vis->game_start || vis->game_over)
+		return ;
+	vis->btns.next.active = true;
+	vis->btns.run.active = false;
+	vis->btns.status.active = true;
 }

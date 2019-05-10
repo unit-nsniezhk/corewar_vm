@@ -6,62 +6,17 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:29:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 21:39:48 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 20:07:31 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis.h"
-#include "libft.h"
+#include "SDL_image.h"
+#include "SDL_mixer.h"
+#include "corewar_vis_prop.h"
+#include "corewar_vis_color.h"
 
-static void	static_init(t_vis *vis)
-{
-	unsigned int	i;
-
-	i = 0;
-	while (i < ARENA_SIZE)
-	{
-		vis->color[i] = RGBA_PLAYER0;
-		++i;
-	}
-	vis->cycle_ms = CYCLE_MS;
-	vis->keydown.esk = false;
-	vis->keydown.space = false;
-	vis->keydown.f = false;
-	vis->keydown.lalt = false;
-	vis->keydown.mbl = false;
-	vis->m_x = 0;
-	vis->m_y = 0;
-	corewar_init_status(&vis->buttons.status);
-	corewar_init_nxt(&vis->buttons.nxt);
-	corewar_init_speedup(&vis->buttons.speedup);
-	corewar_init_slowdown(&vis->buttons.slowdown);
-	corewar_init_pause(&vis->buttons.run);
-	corewar_init_exit(&vis->buttons.exit);
-	corewar_init_reverse(&vis->buttons.reverse);
-	corewar_init_values(&vis->buttons.values);
-}
-
-int			corewar_vis_init(t_vis *vis)
-{
-	if (SDL_Init(SDL_INIT_EVERYTHING) == -1 || TTF_Init() == -1
-	|| !(IMG_Init(IMG_INIT_JPG) & IMG_INIT_JPG))
-		return (0);
-	if (!(vis->win = SDL_CreateWindow(WIN_NAME, 0, 0, WIN_W, WIN_H,
-	SDL_WINDOW_RESIZABLE)))
-		return (0);
-	if (!(vis->rend =
-	SDL_CreateRenderer(vis->win, -1, SDL_RENDERER_ACCELERATED)))
-		return (0);
-	if(Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096) == -1)
-		return (0);
-	SDL_SetWindowPosition(vis->win, SDL_WINDOWPOS_CENTERED,
-	SDL_WINDOWPOS_CENTERED);
-	static_init(vis);
-	return (1);
-}
-
-static void	static_handle_events(t_vis *vis, t_data *data, Uint32 timeout,
-			bool endgame)
+static void	static_handle_events(t_data *data, t_vis *vis, Uint32 timeout)
 {
 	SDL_Event	event;
 	Uint32		time;
@@ -72,7 +27,7 @@ static void	static_handle_events(t_vis *vis, t_data *data, Uint32 timeout,
 		if (!SDL_WaitEventTimeout(&event, 0))
 			;
 		else if (event.type == SDL_QUIT)
-			vis->buttons.exit.active = 1;
+			vis->btns.quit.active = true;
 		else if (event.type == SDL_KEYDOWN)
 			corewar_vis_keydown(vis, &event);
 		else if (event.type == SDL_KEYUP)
@@ -85,53 +40,72 @@ static void	static_handle_events(t_vis *vis, t_data *data, Uint32 timeout,
 			corewar_vis_mousebuttondown(vis, &event);
 		else if (event.type == SDL_MOUSEBUTTONUP)
 			corewar_vis_mousebuttonup(vis, &event);
-		corewar_vis_process_shown(vis->m_x, vis->m_y, data->carr);
+		corewar_vis_pc_shown(vis, data->carr);
 		time = SDL_GetTicks();
 	}
 }
 
-static void	static_render(t_vis *vis, t_data *data, bool endgame)
+void	static_cover_arena(t_vis *vis, t_data *data)
+{
+	static SDL_Rect	box = {0, 0, ARENA_W + PAD, WIN_H};
+
+	SDL_SetRenderDrawColor(vis->rend, R(RGBA_BG), G(RGBA_BG), B(RGBA_BG),
+	PROCESS_INF_OP);
+	SDL_RenderFillRect(vis->rend, &box);
+	if (vis->game_start)
+		corewar_vis_render_gamestart(vis, data);
+	else if (vis->game_over)
+		corewar_vis_render_gameover(vis, data);
+}
+
+static void	static_render(t_data *data, t_vis *vis)
 {
 	static SDL_Rect		box = {ARENA_W, 0, WIN_W - ARENA_W, WIN_H};
 	static SDL_Texture	*bg = NULL;
-	bool				init;
+	Uint32				timeout;
 
+	if (!bg)
+		bg = IMG_LoadTexture(vis->rend, IMG_BG);
 	SDL_SetRenderDrawColor(vis->rend, R(RGBA_BG), G(RGBA_BG), B(RGBA_BG),
 	A(RGBA_BG));
 	SDL_RenderClear(vis->rend);
 	SDL_SetRenderDrawBlendMode(vis->rend, SDL_BLENDMODE_BLEND);
-	if (!bg)
-		bg = IMG_LoadTexture(vis->rend, "images/menu_bg.jpg");
 	SDL_RenderCopy(vis->rend, bg, NULL, &box);
-	init = (!data->cycle ? true : false);
-	corewar_vis_render_arena(vis, data);
-	if (endgame)
-		corewar_vis_render_endgame(vis, data);
-	corewar_vis_render_processes(vis, data);
-	corewar_vis_render_btmb(vis->rend, &vis->buttons, init, vis->cycle_ms);
-	corewar_vis_render_mdlb(vis->rend, vis->color, data);
-	corewar_vis_render_topb(vis->rend, &vis->buttons.status, data, init);
+	corewar_vis_render_arena(data, vis);
+	corewar_vis_render_pc(data, vis);
+	corewar_vis_render_topb(data, vis);
+	corewar_vis_render_mdlb(data, vis);
+	corewar_vis_render_btmb(vis);
+	if (vis->game_start || vis->game_over)
+		static_cover_arena(vis, data);
 	SDL_RenderPresent(vis->rend);
-	static_handle_events(vis, data, (SDL_GetTicks() + vis->cycle_ms), endgame);
+	timeout = SDL_GetTicks() + vis->timeout;
+	static_handle_events(data, vis, timeout);
 }
 
-void		corewar_vis(t_vis *vis, t_data *data, bool endgame)
+void		corewar_vis(t_data *data, t_vis *vis)
 {
 	static Mix_Music	*music = NULL;
 
-	if (!music)
-		music = Mix_LoadMUS("music/i_am_smeared.mp3");
-	if (data->cycle == 1)
-		Mix_PlayMusic(music, -1);
-	if (endgame)
-		corewar_vis_endgame_set(&vis->buttons);
-	vis->buttons.nxt.active = false;
-	if (vis->buttons.run.active && !vis->buttons.exit.active)
-		static_render(vis, data, endgame);
+	vis->btns.next.active = false;
+	if (vis->game_start)
+	{
+		if (!music)
+			music = Mix_LoadMUS(MUSIC_BG);
+		else
+		{
+			vis->game_start = false;
+			Mix_PlayMusic(music, -1);
+		}
+	}
+	else if (vis->game_over)
+		corewar_vis_gameover_lock(&vis->btns);
+	if (vis->btns.run.active && !vis->btns.quit.active)
+		static_render(data, vis);
 	else
 	{
-		while (!vis->buttons.run.active && !vis->buttons.exit.active
-		&& !vis->buttons.nxt.active)
-			static_render(vis, data, endgame);
+		while (!vis->btns.run.active && !vis->btns.quit.active
+		&& !vis->btns.next.active)
+			static_render(data, vis);
 	}
 }

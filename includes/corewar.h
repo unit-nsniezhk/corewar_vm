@@ -16,15 +16,17 @@
 
 # include "corewar_def.h"
 # include "corewar_parse.h"
-# include "corewar_vis.h"
 
-int		corewar_parse(t_parse *parse, unsigned int argc, const char **argv);
+bool	corewar_parse(t_parse *parse, unsigned int argc, const char **argv);
 
 void	corewar_vm(t_data *data, t_parse *parse, t_vis *vis);
-int		corewar_cycles(t_data *data, t_vis *vis);
+bool	corewar_cycles(t_data *data, t_vis *vis);
 
 void	corewar_read_arg(t_data *data, int *value, unsigned char size, int pos);
 void	corewar_write_arg(t_data *data, int value, unsigned char size, int pos);
 int		corewar_8(int pos);
+
+bool	corewar_vis_init(t_vis *vis);
+void	corewar_vis(t_data *data, t_vis *vis);
 
 #endif

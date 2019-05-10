@@ -6,44 +6,48 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 23:48:36 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 15:13:00 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:55:58 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis_def.h"
 
-bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *button)
+bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *box)
 {
-	if (x > button->x && x < button->x + button->w
-		&& y > button->y && y < button->y + button->h)
+	if (x > box->x && x < box->x + box->w
+		&& y > box->y && y < box->y + box->h)
 		return (true);
 	return (false);
 }
 
-void	corewar_vis_set_hower(t_vis *vis, t_button *button)
+void	corewar_vis_set_hower(t_vis *vis, t_button *btn)
 {
-	vis->buttons.values.hower = false;
-	vis->buttons.reverse.hower = false;
-	vis->buttons.exit.hower = false;
-	vis->buttons.run.hower = false;
-	vis->buttons.slowdown.hower = false;
-	vis->buttons.speedup.hower = false;
-	vis->buttons.status.hower = false;
-	vis->buttons.nxt.hower = false;
-	if (button)
-		button->hower = true;
+	vis->btns.detail.hower = false;
+	vis->btns.reverse.hower = false;
+	vis->btns.quit.hower = false;
+	vis->btns.run.hower = false;
+	vis->btns.slow_down.hower = false;
+	vis->btns.speed_up.hower = false;
+	vis->btns.status.hower = false;
+	vis->btns.next.hower = false;
+	if (btn)
+		btn->hower = true;
 }
 
-void	corewar_vis_set_press(t_vis *vis, t_button *button)
+void	corewar_vis_set_press(t_vis *vis, t_button *btn)
 {
-	vis->buttons.values.press = false;
-	vis->buttons.reverse.press = false;
-	vis->buttons.exit.press = false;
-	vis->buttons.run.press = false;
-	vis->buttons.slowdown.press = false;
-	vis->buttons.speedup.press = false;
-	vis->buttons.status.press = false;
-	vis->buttons.nxt.press = false;
-	if (button)
-		button->press = true;
+	vis->btns.detail.press = false;
+	vis->btns.reverse.press = false;
+	vis->btns.quit.press = false;
+	vis->btns.run.press = false;
+	vis->btns.slow_down.press = false;
+	vis->btns.speed_up.press = false;
+	vis->btns.status.press = false;
+	vis->btns.next.press = false;
+	if ((vis->game_start && btn != &vis->btns.status
+	&& btn != &vis->btns.run && btn != &vis->btns.quit)
+	|| (vis->game_over && btn != &vis->btns.quit))
+		return ;
+	if (btn)
+		btn->press = true;
 }

@@ -49,9 +49,9 @@ void	corewar_op_add(t_data *data, t_carriage *carr, t_vis *vis)
 	value = arg + arg1;
 	carr->regs[arg2] = value;
 	if (!value)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }
 
 void	corewar_op_ldi(t_data *data, t_carriage *carr, t_vis *vis)

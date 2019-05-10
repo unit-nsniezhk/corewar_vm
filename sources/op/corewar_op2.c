@@ -54,9 +54,9 @@ void	corewar_op_sub(t_data *data, t_carriage *carr, t_vis *vis)
 	value = arg - arg1;
 	carr->regs[arg2] = value;
 	if (!value)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }
 
 void	corewar_op_and(t_data *data, t_carriage *carr, t_vis *vis)
@@ -73,9 +73,9 @@ void	corewar_op_and(t_data *data, t_carriage *carr, t_vis *vis)
 	value = arg & arg1;
 	carr->regs[arg2] = value;
 	if (!value)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }
 
 void	corewar_op_or(t_data *data, t_carriage *carr, t_vis *vis)
@@ -92,7 +92,7 @@ void	corewar_op_or(t_data *data, t_carriage *carr, t_vis *vis)
 	value = arg | arg1;
 	carr->regs[arg2] = value;
 	if (!value)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }

@@ -6,31 +6,33 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/04 18:36:14 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 20:32:08 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 20:00:08 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis.h"
 #include "libft.h"
+#include "corewar_vis_color.h"
+#include "corewar_vis_prop.h"
 
 static void	static_render_value(t_vis *vis, SDL_Rect rect, unsigned char value,
 			unsigned int bg_color)
 {
-	char			*text;
-	unsigned int	brightness;
+	char	*text;
+	Uint8	brightness;
 
 	rect.x += 1;
 	rect.y += 1;
 	rect.h = XS_CHAR_H;
 	rect.w = XS_CHAR_W;
-	brightness = (unsigned int)((R(bg_color) + G(bg_color) + B(bg_color)) / 3);
+	brightness = (Uint8)((R(bg_color) + G(bg_color) + B(bg_color)) / 3);
 	text = ft_uitoabase(HEX, value);
-	if (value < 16)
+	if (value <= 0xF)
 		ft_strninject(&text, "0", 0, 1);
-	if (brightness > 100)
+	if (brightness > EDGE_BRIGHT)
 		corewar_vis_render_rtext(vis->rend, text, RGBA_VALUE_DARK, rect);
 	else
-		corewar_vis_render_rtext(vis->rend, text, RGBA_VALUE_LIGHT, rect);
+		corewar_vis_render_rtext(vis->rend, text, RGBA_VALUE_BRIGHT, rect);
 	ft_strdel(&text);
 }
 
@@ -45,10 +47,10 @@ static void	static_render_shadow(t_vis *vis, SDL_Rect rect)
 	SDL_RenderFillRect(vis->rend, &rect);
 }
 
-void	corewar_vis_render_arena(t_vis *vis, t_data *data)
+void	corewar_vis_render_arena(t_data *data, t_vis *vis)
 {
-	unsigned int	i;
 	SDL_Rect		rect;
+	unsigned int	i;
 	unsigned int	color;
 
 	rect.h = BYTE_SIZE;
@@ -66,7 +68,7 @@ void	corewar_vis_render_arena(t_vis *vis, t_data *data)
 		SDL_SetRenderDrawColor(vis->rend, R(color), G(color), B(color),
 		A(color));
 		SDL_RenderFillRect(vis->rend, &rect);
-		if (vis->buttons.values.active && i < ARENA_SIZE)
+		if (vis->btns.detail.active && i < ARENA_SIZE)
 			static_render_value(vis, rect, data->arena[i], vis->color[i]);
 		++i;
 	}

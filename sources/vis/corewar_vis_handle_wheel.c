@@ -12,7 +12,7 @@
 
 #include "corewar_vis.h"
 
-void		corewar_vis_mousewheel(t_vis *vis, SDL_Event *event)
+void	corewar_vis_mousewheel(t_vis *vis, SDL_Event *event)
 {
 	if (vis->keydown.lalt && event->wheel.y > 0)
 		corewar_vis_speed(vis, true);

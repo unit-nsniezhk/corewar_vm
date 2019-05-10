@@ -7,10 +7,7 @@ CMakeFiles/corewar.dir/sources/corewar.c.o
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar.c
@@ -60,9 +57,6 @@ CMakeFiles/corewar.dir/sources/corewar.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
@@ -71,10 +65,7 @@ CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_cycles.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -122,19 +113,13 @@ CMakeFiles/corewar.dir/sources/corewar_cycles.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/corewar_utils.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_utils.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -182,19 +167,14 @@ CMakeFiles/corewar.dir/sources/corewar_utils.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/corewar_vm.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/corewar_vm.c
@@ -244,9 +224,6 @@ CMakeFiles/corewar.dir/sources/corewar_vm.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
@@ -255,10 +232,7 @@ CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -306,17 +280,12 @@ CMakeFiles/corewar.dir/sources/op/corewar_op.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/op/corewar_op.h
  ../includes/op/corewar_op_def.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op2.c
@@ -366,7 +335,6 @@ CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
@@ -375,10 +343,7 @@ CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o
  ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op3.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -426,17 +391,12 @@ CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/op/corewar_op.h
  ../includes/op/corewar_op_def.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op4.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -484,19 +444,14 @@ CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o
  ../includes/corewar.h
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
- ../includes/op/corewar_op.h
- ../includes/op/corewar_op_def.h
  ../includes/parse/corewar_parse.h
  ../includes/parse/corewar_parse_def.h
- ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
  ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/op/corewar_op_utils.c
@@ -546,9 +501,6 @@ CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o
  ../includes/corewar_settings.h
  ../includes/parse/corewar_parse.h
@@ -577,8 +529,6 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o
  ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -628,189 +578,9 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
  /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_buttons2.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons2.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_endgame.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_endgame.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o
  ../includes/corewar_settings.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -858,15 +628,65 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_wheel.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_wheel.c
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_init.c.o
+ ../includes/corewar_settings.h
  ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_content.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_wheel.c
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_init.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
@@ -920,9 +740,7 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -970,16 +788,67 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_lock.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
+ ../libft/includes/libft.h
+ ../libft/includes/libft_defs.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_lock.c
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_def.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -1027,14 +896,10 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
  /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods2.c.o
  ../includes/corewar_settings.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods2.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -1082,14 +947,11 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods2.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_motion_handle.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_motion_handle.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -1137,16 +999,11 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_motion_handle.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
  ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mouse_handle.c
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
@@ -1194,9 +1051,6 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
@@ -1253,14 +1107,12 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_btmb.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_content.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_btmb.c
@@ -1310,73 +1162,12 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_btmb.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_button.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_button.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_mdlb.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_content.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
@@ -1428,9 +1219,62 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_mdlb.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
+CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_pc.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_def.h
+ ../includes/vis/corewar_vis_prop.h
+ ../libft/includes/libft.h
+ ../libft/includes/libft_defs.h
+ /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_pc.c
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_pc_msg.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
@@ -1489,191 +1333,12 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_pc_msg.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_processes.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_processes.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_ps_msg2.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/op/corewar_op.h
- ../includes/op/corewar_op_def.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_ps_msg2.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
-CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_text.c.o
- ../includes/corewar_def.h
- ../includes/corewar_settings.h
- ../includes/vis/corewar_vis.h
- ../includes/vis/corewar_vis_color.h
- ../includes/vis/corewar_vis_def.h
- ../includes/vis/corewar_vis_prop.h
- ../libft/includes/libft.h
- ../libft/includes/libft_defs.h
- /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_text.c
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
- /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_content.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
@@ -1725,14 +1390,12 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb2.c.o
  ../includes/corewar_def.h
  ../includes/corewar_settings.h
  ../includes/vis/corewar_vis.h
  ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_content.h
  ../includes/vis/corewar_vis_def.h
  ../includes/vis/corewar_vis_prop.h
  ../libft/includes/libft.h
@@ -1784,8 +1447,60 @@ CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb2.c.o
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
  /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
- /Users/dderevyn/Library/Frameworks/SDL2_image.framework/Headers/SDL_image.h
- /Users/dderevyn/Library/Frameworks/SDL2_mixer.framework/Headers/SDL_mixer.h
- /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h
 CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_utils.c.o
+ ../includes/corewar_def.h
+ ../includes/corewar_settings.h
+ ../includes/vis/corewar_vis.h
+ ../includes/vis/corewar_vis_color.h
+ ../includes/vis/corewar_vis_def.h
+ ../includes/vis/corewar_vis_prop.h
+ ../libft/includes/libft.h
+ ../libft/includes/libft_defs.h
  /Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_utils.c
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_assert.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_atomic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_audio.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_blendmode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_clipboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_config_macosx.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_cpuinfo.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_endian.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_error.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_events.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_filesystem.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gamecontroller.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_gesture.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_haptic.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_hints.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_joystick.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keyboard.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_keycode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_loadso.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_log.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_main.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_messagebox.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mouse.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_mutex.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_pixels.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_platform.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_power.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_quit.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rect.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_render.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_rwops.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_scancode.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_sensor.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_shape.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_stdinc.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_surface.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_system.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_thread.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_timer.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_touch.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_version.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/SDL_video.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/begin_code.h
+ /Users/dderevyn/Library/Frameworks/SDL2.framework/Headers/close_code.h
+ /Users/dderevyn/Library/Frameworks/SDL2_ttf.framework/Headers/SDL_ttf.h

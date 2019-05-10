@@ -139,22 +139,19 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_buttons2.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_endgame.c">
-			<Option target="corewar"/>
-		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_utils.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_handle_wheel.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_init.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_key_handle.c">
+			<Option target="corewar"/>
+		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_lock.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_mods.c">
@@ -175,22 +172,13 @@
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_btmb.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_button.c">
-			<Option target="corewar"/>
-		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_mdlb.c">
 			<Option target="corewar"/>
 		</Unit>
+		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_pc.c">
+			<Option target="corewar"/>
+		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_pc_msg.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_processes.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_ps_msg2.c">
-			<Option target="corewar"/>
-		</Unit>
-		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_text.c">
 			<Option target="corewar"/>
 		</Unit>
 		<Unit filename="/Users/dderevyn/CLionProjects/corewar_vm/sources/vis/corewar_vis_render_topb.c">

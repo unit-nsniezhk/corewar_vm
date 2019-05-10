@@ -6,28 +6,27 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 19:56:19 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:32:39 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include "corewar.h"
-#include "corewar_vis.h"
+#include "corewar_vis_color.h"
 
 static void	static_init_carr(t_data *data, unsigned int pos, unsigned int id)
 {
 	t_carriage		*carr_tmp;
-	unsigned int	i;
+	unsigned char	i;
 
 	carr_tmp = ft_memalloc(sizeof(t_carriage));
 	carr_tmp->id = id;
-	carr_tmp->carry = 0;
+	carr_tmp->carry = false;
 	carr_tmp->op = 0;
 	carr_tmp->last_live = 0;
 	carr_tmp->timeout = 0;
 	carr_tmp->pos = pos;
 	carr_tmp->delta_pos = 0;
-	carr_tmp->selected = false;
 	carr_tmp->shown = false;
 	i = 0;
 	while (i < N_REGS + 1)
@@ -63,7 +62,9 @@ static void	static_init_data(t_data *data, t_parse *parse, t_vis *vis)
 	while (i < parse->n_champs)
 	{
 		data->players[i].pos = (ARENA_SIZE / parse->n_champs) * i;
-		data->players[i].name = parse->champs[i].name;
+		data->players[i].name = ft_strndup(parse->champs[i].name, -1);
+		data->players[i].comment = parse->champs[i].comment;
+		data->players[i].code_size = parse->champs[i].code_size;
 		data->players[i].last_live = 0;
 		data->players[i].n_lives = 0;
 		byte = 0;
@@ -158,7 +159,10 @@ void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 		}
 		static_kill_carrs(data, data->carr);
 		if (data->n_live >= MIN_LIVE)
+		{
 			data->ctc -= CYCLE_DELTA;
+			data->check = 0;
+		}
 		else
 			data->check++;
 		if (data->check == MAX_CHECKS)
@@ -172,7 +176,10 @@ void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 		set_players(data);
 	}
 	if (vis)
-		corewar_vis(vis, data, true);
+	{
+		vis->game_over = true;
+		corewar_vis(data, vis);
+	}
 	else
 		ft_printf("Player %d (%s) won\n", data->leader,
 		data->players[data->leader - 1].name);

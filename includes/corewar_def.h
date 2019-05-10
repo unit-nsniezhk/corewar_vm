@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:48:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 22:11:49 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/10 19:35:21 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,8 @@ typedef struct			s_player
 {
 	unsigned int		pos;
 	char				*name;
+	char				*comment;
+	unsigned int		code_size;
 	unsigned int		last_live;
 	unsigned int		n_lives;
 }						t_player;
@@ -28,10 +30,9 @@ typedef struct			s_player
 typedef struct			s_carriage
 {
 	unsigned int		id;
-	SDL_Rect			box;
-	unsigned int		selected : 1;
-	unsigned int		shown : 1;
-	unsigned int		carry : 1;
+	SDL_Rect			hitbox;
+	bool				shown;
+	bool				carry;
 	char				op;
 	unsigned int		last_live;
 	unsigned int		timeout;

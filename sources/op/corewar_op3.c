@@ -45,9 +45,9 @@ void	corewar_op_lld(t_data *data, t_carriage *carr, t_vis *vis)
 	arg1 = carr->args_values[1];
 	carr->regs[arg1] = arg;
 	if (!arg)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }
 
 void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis)
@@ -64,9 +64,9 @@ void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis)
 	value = arg ^ arg1;
 	carr->regs[arg2] = value;
 	if (!value)
-		carr->carry = 1;
+		carr->carry = true;
 	else
-		carr->carry = 0;
+		carr->carry = false;
 }
 
 void	corewar_op_zjmp(t_data *data, t_carriage *carr, t_vis *vis)

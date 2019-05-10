@@ -10,24 +10,22 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stddef.h>
-#include <stdbool.h>
 #include "corewar_op_def.h"
 #include "corewar.h"
 
-static int	static_valid_arg(t_data *data, t_carriage *carr, t_operation *op,
+static bool	static_valid_arg(t_data *data, t_carriage *carr, t_operation *op,
 			unsigned int i)
 {
 	unsigned char	arg_size;
-	unsigned int	ret;
+	bool			ret;
 
-	ret = 1;
+	ret = true;
 	if (op->t_arg)
 	{
 		carr->args_types[i] = (char)(data->arena[corewar_8(
 		carr->pos + OP_SIZE)] >> (8 - ((i + 1) * 2)) & TYPE_SIZE);
 		if (!(op->args[i] & carr->args_types[i]))
-			ret = 0;
+			ret = false;
 	}
 	else
 		carr->args_types[i] = op->args[i];
@@ -41,7 +39,7 @@ static int	static_valid_arg(t_data *data, t_carriage *carr, t_operation *op,
 	carr->pos + carr->delta_pos);
 	if (ret && carr->args_types[i] == REG
 	&& (!carr->args_values[i] || carr->args_values[i] > N_REGS))
-		ret = 0;
+		ret = false;
 	carr->delta_pos += arg_size;
 	return (ret);
 }
@@ -49,19 +47,19 @@ static int	static_valid_arg(t_data *data, t_carriage *carr, t_operation *op,
 static int	static_valid_op(t_data *data, t_carriage *carr, t_operation *op)
 {
 	unsigned int	i;
-	unsigned int	ret;
+	bool			ret;
 
-	ret = 0;
+	ret = false;
 	if (data->arena[carr->pos] > 0 && data->arena[carr->pos] <= N_OPS)
 	{
-		ret = 1;
+		ret = true;
 		if (op->t_arg)
 			carr->delta_pos += ARGS_TYPES_SIZE;
 		i = 0;
 		while (i < op->n_args)
 		{
 			if (!static_valid_arg(data, carr, op, i))
-				ret = 0;
+				ret = false;
 			++i;
 		}
 	}
@@ -93,7 +91,7 @@ static void	static_exec_carr(t_data *data, t_carriage *carr, t_vis *vis)
 	}
 }
 
-int			corewar_cycles(t_data *data, t_vis *vis)
+bool		corewar_cycles(t_data *data, t_vis *vis)
 {
 	unsigned int	i;
 	t_carriage		*carr_tmp;
@@ -102,11 +100,11 @@ int			corewar_cycles(t_data *data, t_vis *vis)
 	while (i < data->ctc)
 	{
 		if (vis)
-			corewar_vis(vis, data, false);
+			corewar_vis(data, vis);
 		carr_tmp = data->carr;
 		if ((data->dump && data->cycle == data->dump && !vis)
-		|| (vis && vis->buttons.exit.active))
-			return (0);
+		|| (vis && vis->btns.quit.active))
+			return (false);
 		while (carr_tmp != NULL)
 		{
 			static_exec_carr(data, carr_tmp, vis);
@@ -115,5 +113,5 @@ int			corewar_cycles(t_data *data, t_vis *vis)
 		++i;
 		data->cycle++;
 	}
-	return (1);
+	return (true);
 }
