@@ -16,6 +16,7 @@
 
 # define MAX_WIN_W 1800
 # define MAX_WIN_H 1105
+# define STANDARD_BORDER_H 30
 # define PAD 5
 # define ARENA_W (1500)
 # define N_COLUMNS 75

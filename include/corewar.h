@@ -15,7 +15,7 @@
 # define COREWAR_H
 
 # include "corewar_def.h"
-# include "corewar_parse.h"
+# include "corewar_parse_def.h"
 
 bool	corewar_parse(t_parse *parse, unsigned int argc, const char **argv);
 

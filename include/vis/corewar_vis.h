@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis.h                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:30:17 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/10 19:55:58 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/12 13:48:26 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	corewar_vis_render_mdlb(t_data *data, t_vis *vis);
 void	corewar_vis_render_btmb(t_vis *vis);
 void	corewar_vis_render_gameover(t_vis *vis, t_data *data);
 void	corewar_vis_render_gamestart(t_vis *vis, t_data *data);
+void	corewar_vis_resize(t_vis *vis, SDL_Event *event);
 
 void	corewar_vis_render_pc_timeout(SDL_Renderer *rend, t_carriage *carr,
 		SDL_Rect box);
@@ -55,7 +56,7 @@ void	corewar_vis_mousebuttonup(t_vis *vis, SDL_Event *event);
 
 void	corewar_vis_set_press(t_vis *vis, t_button *button);
 void	corewar_vis_set_hower(t_vis *vis, t_button *button);
-bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *box);
+bool	corewar_vis_hitbox(t_vis *vis, Sint32 x, Sint32 y, SDL_Rect *box);
 
 void	corewar_vis_pc_shown(t_vis *vis, t_carriage *carr_tmp);
 

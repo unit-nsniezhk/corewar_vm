@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_handle_utils.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/05 23:48:36 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/10 19:55:58 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/12 13:56:05 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "corewar_vis_def.h"
 
-bool	corewar_vis_hitbox(Sint32 x, Sint32 y, SDL_Rect *box)
+bool	corewar_vis_hitbox(t_vis *vis, Sint32 x, Sint32 y, SDL_Rect *box)
 {
-	if (x > box->x && x < box->x + box->w
-		&& y > box->y && y < box->y + box->h)
+	if (x > (box->x * vis->scale) && x < ((box->x + box->w) * vis->scale)
+	&& y > (box->y * vis->scale) && y < ((box->y + box->h) * vis->scale))
 		return (true);
 	return (false);
 }

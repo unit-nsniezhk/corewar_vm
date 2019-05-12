@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_cycles.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/09 20:32:08 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/12 16:23:17 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,11 +93,11 @@ static void	static_exec_carr(t_data *data, t_carriage *carr, t_vis *vis)
 
 bool		corewar_cycles(t_data *data, t_vis *vis)
 {
-	int			i;
-	t_carriage	*carr_tmp;
+	unsigned int	i;
+	t_carriage		*carr_tmp;
 
 	i = 0;
-	while (i < data->ctc)
+	while (i < data->ctc || (data->ctc == 0 && i == 0))
 	{
 		if (vis)
 			corewar_vis(data, vis);

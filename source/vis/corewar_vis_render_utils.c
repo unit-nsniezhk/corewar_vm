@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_render_utils.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 18:35:55 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/08 18:35:55 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/12 14:23:28 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,14 +65,14 @@ void		static_color(t_button *btn, unsigned int *msg_color,
 		mod = HOWER;
 	else
 		return ;
-	*msg_color = A(*msg_color) << 24
-	| (Uint8)((R(*msg_color) + mod) & 255) << 16
-	| (Uint8)((G(*msg_color) + mod) & 255) << 8
-	| (Uint8)((B(*msg_color) + mod) & 255);
-	*bg_color = A(*bg_color) << 24
-	| (Uint8)((R(*bg_color) + mod) & 255) << 16
-	| (Uint8)((G(*bg_color) + mod) & 255) << 8
-	| (Uint8)((B(*bg_color) + mod) & 255);
+	*msg_color = A(*msg_color) << 24u
+	| (Uint8)((unsigned int)(R(*msg_color) + mod) & 255u) << 16u
+	| (Uint8)((unsigned int)(G(*msg_color) + mod) & 255u) << 8u
+	| (Uint8)((unsigned int)(B(*msg_color) + mod) & 255u);
+	*bg_color = A(*bg_color) << 24u
+	| (Uint8)((unsigned int)(R(*bg_color) + mod) & 255u) << 16u
+	| (Uint8)((unsigned int)(G(*bg_color) + mod) & 255u) << 8u
+	| (Uint8)((unsigned int)(B(*bg_color) + mod) & 255u);
 }
 
 void		corewar_vis_render_button(t_vis *vis, t_button *btn)

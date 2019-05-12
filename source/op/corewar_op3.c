@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op3.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:31:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/04 17:31:14 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/11 23:50:55 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,6 +43,10 @@ void	corewar_op_lld(t_data *data, t_carriage *carr, t_vis *vis)
 	(void)vis;
 	corewar_op_larg(data, carr, 0, &arg);
 	arg1 = carr->args_values[1];
+	if (arg1 < 1 || arg1 > N_REGS)
+		return ;
+	if (arg1 < 1 || arg1 > N_REGS)
+		return ;
 	carr->regs[arg1] = arg;
 	if (!arg)
 		carr->carry = true;
@@ -62,6 +66,8 @@ void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	value = arg ^ arg1;
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 	if (!value)
 		carr->carry = true;

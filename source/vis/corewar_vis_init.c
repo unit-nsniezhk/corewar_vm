@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 16:38:19 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 18:44:38 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/12 15:41:03 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -69,29 +69,47 @@ static void	static_init_values(t_vis *vis)
 	static_init_buttons(&vis->btns);
 }
 
-bool		corewar_vis_init(t_vis *vis)
+static bool	static_scale(t_vis *vis)
 {
 	SDL_Rect	display;
 
-	if (SDL_Init(SDL_INIT_EVERYTHING)
-	|| TTF_Init()
-	|| !IMG_Init(IMG_INIT_PNG)
-	|| Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096))
-		return (false);
 	SDL_GetDisplayUsableBounds(0, &display);
-	if (display.w > MAX_WIN_W && display.h > MAX_WIN_H)
+	SDL_GetDisplayBounds(0, &display);
+	display.h -= STANDARD_BORDER_H;
+	if (display.w >= MAX_WIN_W && display.h >= MAX_WIN_H)
 	{
 		display.w = MAX_WIN_W;
 		display.h = MAX_WIN_H;
 	}
-	if (!(vis->win = SDL_CreateWindow(WIN_NAME, 0, 0, display.w, display.h,
-	SDL_WINDOW_SHOWN)))
+	if ((double)(MAX_WIN_W - display.w) / MAX_WIN_W
+	> (double)(MAX_WIN_H - display.h) / MAX_WIN_H)
+		vis->scale = (double)display.w / MAX_WIN_W;
+	else
+		vis->scale = (double)display.h / MAX_WIN_H;
+	return (true);
+}
+
+bool		corewar_vis_init(t_vis *vis)
+{
+	if (SDL_Init(SDL_INIT_EVERYTHING)
+	|| TTF_Init()
+	|| !IMG_Init(IMG_INIT_PNG)
+	|| Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096)
+	|| Mix_Init(MIX_INIT_MP3))
+		return (false);
+	static_scale(vis);
+	if (!(vis->win = SDL_CreateWindow(WIN_NAME, 0, 0,
+	(int)(vis->scale * MAX_WIN_W), (int)(vis->scale * MAX_WIN_H),
+	SDL_WINDOW_RESIZABLE)))
 		return (false);
 	if (!(vis->rend =
 	SDL_CreateRenderer(vis->win, -1, SDL_RENDERER_ACCELERATED)))
 		return (false);
-	SDL_RenderSetScale(vis->rend, (double)display.w / MAX_WIN_W,
-	(double)display.h / MAX_WIN_H);
+	SDL_SetWindowPosition(vis->win, SDL_WINDOWPOS_CENTERED,
+	SDL_WINDOWPOS_CENTERED);
+	SDL_SetWindowMaximumSize(vis->win, MAX_WIN_W, MAX_WIN_H);
+	SDL_SetWindowMinimumSize(vis->win, MAX_WIN_W / 4, MAX_WIN_H / 4);
+	SDL_RenderSetScale(vis->rend, vis->scale, vis->scale);
 	static_init_values(vis);
 	return (true);
 }

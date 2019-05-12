@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_lock.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 20:15:24 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/10 20:45:54 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/12 15:59:06 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include "corewar_vis_color.h"
 #include "libft.h"
 
-void	corewar_vis_gameover_lock(t_buttons *btns)
+void			corewar_vis_gameover_lock(t_buttons *btns)
 {
 	btns->detail.active = false;
 	btns->detail.hower = false;
@@ -40,33 +40,44 @@ void	corewar_vis_gameover_lock(t_buttons *btns)
 	btns->status.press = false;
 }
 
-void	corewar_vis_render_gameover(t_vis *vis, t_data *data)
+static void 	static_render_comment(t_data *data, t_vis *vis)
 {
-	static Sint32	w = 0;
-	Sint32			w2;
 	static SDL_Rect	box;
-	static SDL_Rect	box2;
+	static Sint32	w = 0;
 
 	if (!w)
 	{
-		ft_strninject(&data->players[data->leader - 1].name, "Player ", 0, -1);
-		ft_strninject(&data->players[data->leader - 1].name, " won !!!", -1,
-		-1);
-		w = (Sint32)ft_strlen(data->players[data->leader - 1].name);
+		w = (Sint32)ft_strlen(data->players[data->leader - 1].comment);
+		box.x = (ARENA_W / 2) - ((w * CHAR_W) / 2);
+		box.y = (MAX_WIN_H / 2) - (L_CHAR_H / 2) + L_CHAR_H + (PAD * 10);
+		box.w = CHAR_W;
+		box.h = L_CHAR_H;
+	}
+	corewar_vis_render_btext(vis->rend, data->players[data->leader - 1].comment,
+	vis->color[data->leader - 1], box);
+}
+
+void			corewar_vis_render_gameover(t_vis *vis, t_data *data)
+{
+	static Sint32	w = 0;
+	static SDL_Rect	box;
+	static char		*str = NULL;
+
+	if (!w)
+	{
+		w = ft_strlen("Player ");
+		w += ft_strlen(" won !!!");
+		w += ft_strlen(data->players[data->leader - 1].name);
+		ft_strninject(&str, "Player ", 0, -1);
+		ft_strninject(&str, data->players[data->leader - 1].name, -1, -1);
+		ft_strninject(&str, " won !!!", -1, -1);
 		box.x = (ARENA_W / 2) - ((w * L_CHAR_W) / 2);
-		box.y = (MAX_WIN_H / 3) - (L_CHAR_H / 2);
+		box.y = (MAX_WIN_H / 2) - (L_CHAR_H / 2);
 		box.w = L_CHAR_W;
 		box.h = L_CHAR_H;
-		w2 = (Sint32)ft_strlen(data->players[data->leader - 1].comment);
-		box2.x = (ARENA_W / 2) - ((w2 * CHAR_W) / 2);
-		box2.y = box.y + L_CHAR_H + (PAD * 10);
-		box2.w = CHAR_W;
-		box2.h = L_CHAR_H;
 	}
-	corewar_vis_render_btext(vis->rend, data->players[data->leader - 1].name,
-	vis->color[data->leader - 1], box);
-	corewar_vis_render_btext(vis->rend, data->players[data->leader - 1].comment,
-	vis->color[data->leader - 1], box2);
+	corewar_vis_render_btext(vis->rend, str, vis->color[data->leader - 1], box);
+	static_render_comment(data, vis);
 }
 
 static SDL_Rect	static_box(unsigned int i)
@@ -83,17 +94,11 @@ static SDL_Rect	static_box(unsigned int i)
 
 void			corewar_vis_render_gamestart(t_vis *vis, t_data *data)
 {
-	static Sint32	w = 0;
 	SDL_Rect		box;
-	int				i;
+	unsigned int	i;
 	Sint32			w_tmp;
 	char			*str;
 
-	if (!w)
-		w = (Sint32)ft_strlen("Contestants");
-	corewar_vis_render_btext(vis->rend, "Contestants", RGBA_TEXT,
-	(SDL_Rect){(ARENA_W / 2) - ((w * L_CHAR_W) / 2),
-	(MAX_WIN_H / 3) + (L_CHAR_H / 3), L_CHAR_W, L_CHAR_H});
 	i = 1;
 	while (i <= data->n_players)
 	{

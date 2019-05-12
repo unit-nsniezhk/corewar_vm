@@ -14,37 +14,37 @@
 
 # define COREWAR_VIS_COLOR_H
 
-# define A(RGBA) (Uint8)((RGBA >> 24) & 255)
-# define R(RGBA) (Uint8)((RGBA >> 16) & 255)
-# define G(RGBA) (Uint8)((RGBA >> 8) & 255)
-# define B(RGBA) (Uint8)(RGBA & 255)
+# define A(RGBA) (Uint8)((RGBA >> 24u) & 255u)
+# define R(RGBA) (Uint8)((RGBA >> 16u) & 255u)
+# define G(RGBA) (Uint8)((RGBA >> 8u) & 255u)
+# define B(RGBA) (Uint8)(RGBA & 255u)
 
-# define RGBA_TEXT 0xFF66686A
-# define RGBA_TEXT2 0xFFCCCCCC
-# define RGBA_TEXT3 0xAAACACAC
-# define RGBA_TEXTS 0xFF78A42B
-# define RGBA_BUTTON 0xEA444444
+# define RGBA_TEXT 0xFF66686Au
+# define RGBA_TEXT2 0xFFCCCCCCu
+# define RGBA_TEXT3 0xAAACACACu
+# define RGBA_TEXTS 0xFF78A42Bu
+# define RGBA_BUTTON 0xEA444444u
 # define PRESS -20
 # define HOWER 20
 
-# define RGBA_CARR 0x9FB4B4B4
-# define CARR_OP 0x9F
+# define RGBA_CARR 0x9FB4B4B4u
+# define CARR_OP 0x9Fu
 
-# define RGBA_BG 0xFF2B2B2B
-# define RGBA_SHADOW 0xFF44454A
+# define RGBA_BG 0xFF2B2B2Bu
+# define RGBA_SHADOW 0xFF44454Au
 
-# define EDGE_BRIGHT 0x64
-# define RGBA_VALUE_BRIGHT 0xFFD2B4B4
-# define RGBA_VALUE_DARK 0xFF141414
+# define EDGE_BRIGHT 0x64u
+# define RGBA_VALUE_BRIGHT 0xFFD2B4B4u
+# define RGBA_VALUE_DARK 0xFF141414u
 
-# define RGBA_PLAYER0 0xFF65655C
-# define RGBA_PLAYER 0xFF78A42B
-# define RGBA_PLAYER2 0xFF804980
-# define RGBA_PLAYER3 0xFF999900
-# define RGBA_PLAYER4 0xFFB96D40
-# define PROCESS_INF_OP 0xD0
-# define PlAYER_BAR_OP 0xCC
-# define PLAYER_SHADOW_OP 0x30
+# define RGBA_PLAYER0 0xFF65655Cu
+# define RGBA_PLAYER 0xFF78A42Bu
+# define RGBA_PLAYER2 0xFF804980u
+# define RGBA_PLAYER3 0xFF999900u
+# define RGBA_PLAYER4 0xFFB96D40u
+# define PROCESS_INF_OP 0xD0u
+# define PlAYER_BAR_OP 0xCCu
+# define PLAYER_SHADOW_OP 0x30u
 
 static const unsigned int	g_color[MAX_PLAYERS + 1] =
 {

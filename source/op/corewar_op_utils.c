@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/07 17:10:20 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/11 20:37:35 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,11 @@ void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n, int *arg)
 	int	pos;
 
 	if (carr->args_types[n] == REG)
-		*arg = carr->regs[carr->args_values[0]];
+	{
+		if (carr->args_values[n] < 1 || carr->args_values[n] > N_REGS)
+			return ;
+		*arg = carr->regs[carr->args_values[n]];
+	}
 	else if (carr->args_types[n] == DIR)
 		*arg = carr->args_values[n];
 	else
@@ -35,7 +39,11 @@ void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
 	int	pos;
 
 	if (carr->args_types[n] == REG)
-		*arg = carr->regs[carr->args_values[0]];
+	{
+		if (carr->args_values[n] < 1 || carr->args_values[n] > N_REGS)
+			return ;
+		*arg = carr->regs[carr->args_values[n]];
+	}
 	else if (carr->args_types[n] == DIR)
 		*arg = carr->args_values[n];
 	else

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 17:17:41 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/06 17:09:35 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/11 23:50:55 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ void	corewar_op_st(t_data *data, t_carriage *carr, t_vis *vis)
 	if (carr->args_types[1] == REG)
 	{
 		arg1 = carr->args_values[1];
+		if (arg1 < 1 || arg1 > N_REGS)
+			return ;
 		carr->regs[arg1] = arg;
 	}
 	else
@@ -46,6 +48,8 @@ void	corewar_op_add(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 0, &arg);
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	value = arg + arg1;
 	carr->regs[arg2] = value;
 	if (!value)
@@ -66,6 +70,8 @@ void	corewar_op_ldi(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	corewar_read_arg(data, &value, REG, carr->pos + ((arg + arg1) % IDX_MOD));
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 }
 
@@ -97,5 +103,7 @@ void	corewar_op_lldi(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	corewar_read_arg(data, &value, REG, carr->pos + (arg + arg1));
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 }

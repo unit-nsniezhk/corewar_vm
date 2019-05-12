@@ -8,8 +8,8 @@ set(CMAKE_C_STANDARD 99)
 #TODO Dont forget to change the framework path for MacOS / library path for Linux
 set(FRAMEWORK_PATH /Users/dderevyn/Library/Frameworks/)
 
-set(LIBRARY_PATH /home/linuxbrew/.linuxbrew/lib)
-set(LIBRARY_INCLUDE_PATH /home/linuxbrew/.linuxbrew/include)
+set(LIBRARY_PATH /home/linuxbrew/.linuxbrew/lib/)
+set(LIBRARY_INCLUDE_PATH /home/linuxbrew/.linuxbrew/include/)
 
 set(INCLUDE_PATH include/)
 set(SOURCE_PATH source/)
@@ -20,7 +20,7 @@ file(GLOB_RECURSE SOURCES CONFIGURE_DEPENDS ${SOURCE_PATH}*.c)
 add_executable(${EXECUTABLE}
 		${SOURCES})
 
-target_compile_options(${EXECUTABLE} PRIVATE -Wall -Wextra -Werror -Ofast)
+target_compile_options(${EXECUTABLE} PRIVATE -Wall -Wextra -Werror)
 
 target_include_directories(${EXECUTABLE}
 		PRIVATE ${INCLUDE_PATH}
@@ -28,6 +28,8 @@ target_include_directories(${EXECUTABLE}
 		PRIVATE ${INCLUDE_PATH}parse/
 		PRIVATE ${INCLUDE_PATH}vis/
 		PRIVATE libft/include)
+
+target_link_options(${EXECUTABLE} PRIVATE -Wl,-rpath=$(CLIBS_PATH))
 
 target_link_directories(${EXECUTABLE}
 		PRIVATE libft/)

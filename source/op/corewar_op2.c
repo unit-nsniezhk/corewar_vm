@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op2.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:29:55 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/07 17:15:19 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/11 23:57:35 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	corewar_op_live(t_data *data, t_carriage *carr, t_vis *vis)
 	carr->last_live = data->cycle;
 	data->n_live++;
 	corewar_op_arg(data, carr, 0, &arg);
-	if (-arg >= MIN_PLAYERS && -arg <= data->n_players)
+	if (-arg >= MIN_PLAYERS && -arg <= (int)data->n_players)
 	{
 		data->players[-arg - 1].n_lives++;
 		data->players[-arg - 1].last_live = data->cycle;
@@ -37,7 +37,7 @@ void	corewar_op_aff(t_data *data, t_carriage *carr, t_vis *vis)
 
 	(void)vis;
 	corewar_op_arg(data, carr, 0, &arg);
-	ft_printf("%c", (char)arg);
+	ft_printf("%c", arg);
 }
 
 void	corewar_op_sub(t_data *data, t_carriage *carr, t_vis *vis)
@@ -52,6 +52,8 @@ void	corewar_op_sub(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	value = arg - arg1;
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 	if (!value)
 		carr->carry = true;
@@ -71,6 +73,8 @@ void	corewar_op_and(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	value = arg & arg1;
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 	if (!value)
 		carr->carry = true;
@@ -90,6 +94,8 @@ void	corewar_op_or(t_data *data, t_carriage *carr, t_vis *vis)
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	value = arg | arg1;
+	if (arg2 < 1 || arg2 > N_REGS)
+		return ;
 	carr->regs[arg2] = value;
 	if (!value)
 		carr->carry = true;

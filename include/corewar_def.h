@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:48:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 18:44:39 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/12 00:18:27 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ typedef struct			s_carriage
 	SDL_Rect			hitbox;
 	bool				shown;
 	bool				carry;
-	char				op;
+	unsigned char		op;
 	unsigned int		last_live;
 	unsigned int		timeout;
 	int					pos;
 	unsigned int		delta_pos;
 	int					args_values[3];
-	char				args_types[3];
+	unsigned char		args_types[3];
 	int					regs[N_REGS + 1];
 	struct s_carriage	*next;
 }						t_carriage;
@@ -50,11 +50,11 @@ typedef struct			s_data
 	unsigned int		check;
 	unsigned int		cycle;
 	unsigned int		leader;
-	int					ctc;
+	unsigned int		ctc;
 	unsigned int		n_live;
 	unsigned int		n_carrs;
 	unsigned int		n_a_carrs;
-	int					n_players;
+	unsigned int		n_players;
 	t_player			players[MAX_PLAYERS];
 	unsigned char		arena[ARENA_SIZE];
 	t_carriage			*carr;

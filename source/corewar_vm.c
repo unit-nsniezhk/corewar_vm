@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/30 16:33:08 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 20:29:46 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/12 00:23:01 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -113,8 +113,7 @@ static void	static_kill_carrs(t_data *data, t_carriage *carr_tmp)
 	carr_prev = NULL;
 	while (carr_tmp != NULL && data->carr->next)
 	{
-		if (data->ctc <= 0
-		|| carr_tmp->last_live < data->cycle - data->ctc)
+		if (data->ctc == 0 || carr_tmp->last_live < data->cycle - data->ctc)
 		{
 			if (carr_prev)
 				carr_prev->next = carr_tmp->next;
@@ -137,7 +136,7 @@ static void	static_kill_carrs(t_data *data, t_carriage *carr_tmp)
 
 void	set_players(t_data *data)
 {
-	int	i;
+	unsigned int	i;
 
 	i = 0;
 	while (i < data->n_players)
@@ -159,20 +158,16 @@ void		corewar_vm(t_data *data, t_parse *parse, t_vis *vis)
 			return ;
 		}
 		static_kill_carrs(data, data->carr);
-		if (data->n_live >= MIN_LIVE)
+		if (data->n_live >= MIN_LIVE || data->check == MAX_CHECKS)
 		{
-			data->ctc -= CYCLE_DELTA;
+			if (data->ctc > CYCLE_DELTA)
+				data->ctc -= CYCLE_DELTA;
+			else
+				data->ctc = 0;
 			data->check = 0;
 		}
 		else
 			data->check++;
-		if (data->check == MAX_CHECKS)
-		{
-			data->check = 0;
-			data->ctc -= CYCLE_DELTA;
-		}
-		if (data->ctc <= 0)
-			data->ctc = 1;
 		data->n_live = 0;
 		set_players(data);
 	}

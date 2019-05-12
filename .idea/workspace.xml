@@ -12,324 +12,68 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c503ae59-01a7-48c9-939c-ef18f30cc05b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CoreWars.mov" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_framerate.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_gfxPrimitives.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_imageFilter.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_gfx/includes/SDL2_rotozoom.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SDL2_gfx/libSDL2_gfx-1.0.0.dylib" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.out" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.internal" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_cycles.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_utils.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/corewar_vm.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op3.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op4.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/op/corewar_op_utils.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse_champion.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/parse/corewar_parse_options.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_utils.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_handle_wheel.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_init.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_key_handle.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_lock.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mods2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_motion_handle.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_mouse_handle.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_arena.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_btmb.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_mdlb.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_pc.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_pc_msg.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_topb2.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/sources/vis/corewar_vis_render_utils.c.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.cxx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/DependInfo.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/build.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/cmake_clean.cmake" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/depend.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/flags.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/link.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/vm.dir/progress.make" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_cycles.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_cycles.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_utils.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_vm.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/corewar_vm.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op2.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op2.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op3.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op3.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op4.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op4.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/corewar_vm.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Roboto-Bold.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/resource/font/Roboto-Bold.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fonts/Roboto-Regular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/resource/font/Roboto-Regular.ttf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/ft/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/include/libft.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft/include/libft.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/include/libft_defs.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft/include/libft_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_gnl/ft_gnl.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_gnl/ft_gnl.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_gnl/include/ft_gnl_typedefs.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_gnl/include/ft_gnl_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_memalloc.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_memalloc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_memdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_memdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf_0_base.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf_0_base.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf_zjt.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_printf/ft_printf_zjt.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf.h" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf_defs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_strdel.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_strdel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_strjoin.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_strjoin.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ft/source/ft_strnew.c" beforeDir="false" afterPath="$PROJECT_DIR$/ft/source/ft_strnew.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/Mob_psycho_100.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/resource/image/Mob_psycho_100.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/corewar.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/corewar.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/corewar_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/corewar_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/corewar_settings.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/corewar_config.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/op/corewar_op.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/op/corewar_op.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/op/corewar_op_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/op/corewar_op_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/parse/corewar_parse.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/parse/corewar_parse.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/parse/corewar_parse_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/parse/corewar_parse_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis_color.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_color.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis_content.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_content.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_def.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/includes/vis/corewar_vis_prop.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_prop.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_gnl/ft_gnl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_0_base.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_color.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_cspf.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_diouxx.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_fill_funs.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_hash_zero_blank_plus.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_lhllhhl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_mod0_b_cap_udo.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_parce_funs.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_parse.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_prec.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_r.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_unicode.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_width.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/ft_printf/ft_printf_zjt.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_abs.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_atoibase.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_itoabase.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_memalloc.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_memcmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_memdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_memmove.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_memset.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_nbr_len.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strdel.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strfrepl.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strin.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strjoin.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strlen.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strncmp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strncpy.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strndup.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strneject.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strnew.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strnin.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strninject.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_strrchr.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/.objs/libft/ft_swap.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_gnl/includes/ft_gnl_typedefs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_gnl/srcs/ft_gnl.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/includes/ft_printf.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/ft_printf/includes/ft_printf_defs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/libft.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/includes/libft_defs.h" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/libft.a" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_abs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_atoibase.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_itoabase.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memalloc.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memcmp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memdel.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memmove.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_memset.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_nbr_len.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strchr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strdel.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strfrepl.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strjoin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strlen.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncmp.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strncpy.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strndup.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strneject.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnew.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strnin.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strninject.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_strrchr.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libft/srcs/ft_swap.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_0_base.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_color.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_cspf.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_diouxx.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_fill_funs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_hash_zero_blank_plus.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_lhllhhl.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_mod0_b_cap_udo.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_parce_funs.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_parse.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_prec.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_r.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_unicode.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_width.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/library/ft/source/ft_printf/source/ft_printf_zjt.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/music/Smeared.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/resource/music/Smeared.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/corewar.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/corewar_cycles.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar_cycles.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/corewar_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/corewar_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar_vm.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op2.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op3.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op3.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op4.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op4.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/op/corewar_op_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/parse/corewar_parse.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/parse/corewar_parse.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/parse/corewar_parse_champion.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/parse/corewar_parse_champion.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/parse/corewar_parse_options.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/parse/corewar_parse_options.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_handle_wheel.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_handle_wheel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_init.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_key_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_key_handle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_lock.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_lock.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_mods.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_mods.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_mods2.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_mods2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_motion_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_mouse_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_arena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_btmb.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_btmb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_mdlb.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_pc.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_pc.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_pc_msg.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_pc_msg.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_topb.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_topb.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_topb2.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_topb2.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sources/vis/corewar_vis_render_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turtle.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/42.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/42.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Backward.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Car.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Death.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Gagnant.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Gagnant.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Octobre_Rouge_V4.2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Survivor.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/Torpille.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/barriere.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/bguy/sam_2.0.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/bjacob/doge.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/brandazz/Rainbow_dash.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/cdivry/youforkmytralala.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/clafleur/big_feet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/dcohen/loose.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ekocevar/mandragore.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/esusseli/gedeon.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/evlasova/terminator.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/fcorre/ultimate-surrender.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gbir/_.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gjestin/salamahenagalabadoun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gleger/Machine-gun.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gmange/corelol.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gpetrov/MarineKing.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/gudepard/Kappa.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/hmichals/Wall.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/hmoutaou/Misaka_Mikoto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/kelickel/Varimathras.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/kmonrose/justin_bee.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ldesgoui/_honeybadger.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/lseguin/skynet.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/lsirigna/live.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/mbacoux/meowluigi.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/mconraux/dubo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/rabid-on/jinx.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/results.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/rmasse/THUNDER.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/sbuono/Asombra.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/srabah-m/littlepuppy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/tdemay/champ.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/vrey/darksasuke.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2014/ybouvet/casimir.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/adenis/Explosive_Kitty.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/agregoir/Kittystrophic.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/gnebie/ultima.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/iburel/gateau.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/jaustry/mise_a_jour_windows95.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/nolivier/run_Kitty_RUN.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/pzarmehr/overwatch.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2017/tbillard/Douceur_power.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/arobion" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/asm" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/bcozic" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/chaydont" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/mbenjell3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/mkamel" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/nolivier" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/sboulet" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/championships/2018/sgalasso3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/ex.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/bee_gees.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/bigzork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/fluttershy.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/helltrain.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/helltrain.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/turtle.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/zork.cor" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/examples/zork.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/jumper.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/lde.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/leeloo.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/mat.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/maxidef.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/mortel.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/new.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/sebc.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/slider2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/tdc2.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/tdc3.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/tdc4.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/champs/toto.s" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vm_champs/corewar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/zork.cor" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/corewar.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/corewar.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/corewar_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/corewar_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/vis/corewar_vis.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/vis/corewar_vis_color.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_color.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/vis/corewar_vis_def.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_def.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/vis/corewar_vis_prop.h" beforeDir="false" afterPath="$PROJECT_DIR$/include/vis/corewar_vis_prop.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resource/image/Mob_psycho_100.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/corewar_cycles.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar_cycles.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/corewar_vm.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/corewar_vm.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/op/corewar_op.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/op/corewar_op2.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op2.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/op/corewar_op3.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op3.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/op/corewar_op4.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op4.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/op/corewar_op_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/op/corewar_op_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_init.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_init.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_lock.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_lock.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c" beforeDir="false" afterPath="$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -343,32 +87,120 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.26059514">
+    <splitter split-orientation="horizontal" split-proportion="0.6168052">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+            <entry file="file://$PROJECT_DIR$/source/op/corewar_op.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                <state relative-caret-position="1575">
+                  <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#892#912#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-234">
+                  <caret line="50" selection-start-line="50" selection-end-line="50" />
+                  <folding>
+                    <element signature="e#892#916#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/source/corewar_vm.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-11">
+                  <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#892#911#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/Makefile">
-              <provider selected="true" editor-type-id="text-editor" />
+            <entry file="file://$PROJECT_DIR$/source/corewar_cycles.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="19">
+                  <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="253">
+                  <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+                  <folding>
+                    <element signature="e#892#916#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_color.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="570">
+                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                </state>
+              </provider>
             </entry>
           </file>
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/ft/Makefile">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="180">
-                  <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+                <state relative-caret-position="242">
+                  <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+                  <folding>
+                    <element signature="e#939#968#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_def.h">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="241">
+                  <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#947#968#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="195">
+                  <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_init.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="79">
+                  <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+                  <folding>
+                    <element signature="e#892#919#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -383,17 +215,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_mods.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_mods2.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_motion_handle.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_handle_utils.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_gameover.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_mdlb.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_topb.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_topb2.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_arena.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_pc.c" />
-        <option value="$PROJECT_DIR$/sources/vis/corewar_vis_render_pc_msg.c" />
         <option value="$PROJECT_DIR$/includes/vis/corewar_vis.h" />
         <option value="$PROJECT_DIR$/sources/corewar_vm.c" />
         <option value="$PROJECT_DIR$/includes/corewar_def.h" />
@@ -417,23 +238,34 @@
         <option value="$PROJECT_DIR$/library/ft/source/ft_printf/ft_printf_0_base.c" />
         <option value="$PROJECT_DIR$/library/ft/source/ft_printf/include/ft_printf.h" />
         <option value="$PROJECT_DIR$/library/ft/source/ft_printf/ft_printf_zjt.c" />
-        <option value="$PROJECT_DIR$/source/vis/corewar_vis.c" />
-        <option value="$PROJECT_DIR$/source/vis/corewar_vis_init.c" />
         <option value="$PROJECT_DIR$/source/vis/corewar_vis_mods.c" />
-        <option value="$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c" />
-        <option value="$PROJECT_DIR$/include/vis/corewar_vis_def.h" />
         <option value="$PROJECT_DIR$/include/op/corewar_op_def.h" />
-        <option value="$PROJECT_DIR$/source/corewar_cycles.c" />
-        <option value="$PROJECT_DIR$/source/op/corewar_op2.c" />
+        <option value="$PROJECT_DIR$/source/parse/corewar_parse_champion.c" />
+        <option value="$PROJECT_DIR$/include/op/corewar_op.h" />
+        <option value="$PROJECT_DIR$/ft/Makefile" />
+        <option value="$PROJECT_DIR$/include/corewar.h" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/source/op/corewar_op4.c" />
+        <option value="$PROJECT_DIR$/source/op/corewar_op.c" />
+        <option value="$PROJECT_DIR$/source/op/corewar_op3.c" />
+        <option value="$PROJECT_DIR$/source/op/corewar_op_utils.c" />
         <option value="$PROJECT_DIR$/include/corewar_def.h" />
         <option value="$PROJECT_DIR$/source/corewar_vm.c" />
-        <option value="$PROJECT_DIR$/source/parse/corewar_parse_champion.c" />
-        <option value="$PROJECT_DIR$/source/op/corewar_op_utils.c" />
-        <option value="$PROJECT_DIR$/include/op/corewar_op.h" />
-        <option value="$PROJECT_DIR$/source/vis/corewar_vis_lock.c" />
+        <option value="$PROJECT_DIR$/source/op/corewar_op2.c" />
         <option value="$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/ft/Makefile" />
+        <option value="$PROJECT_DIR$/include/vis/corewar_vis_color.h" />
+        <option value="$PROJECT_DIR$/include/vis/corewar_vis_prop.h" />
+        <option value="$PROJECT_DIR$/include/vis/corewar_vis.h" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis.c" />
+        <option value="$PROJECT_DIR$/include/vis/corewar_vis_def.h" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_init.c" />
+        <option value="$PROJECT_DIR$/source/vis/corewar_vis_lock.c" />
+        <option value="$PROJECT_DIR$/source/corewar_cycles.c" />
       </list>
     </option>
   </component>
@@ -471,18 +303,12 @@
             <path>
               <item name="corewar" type="b2602c69:ProjectViewProjectNode" />
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="ft" type="462c0819:PsiDirectoryNode" />
+              <item name="resource" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="corewar" type="b2602c69:ProjectViewProjectNode" />
               <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="corewar" type="b2602c69:ProjectViewProjectNode" />
-              <item name="corewar_vm" type="462c0819:PsiDirectoryNode" />
-              <item name="include" type="462c0819:PsiDirectoryNode" />
-              <item name="op" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -492,6 +318,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ToolWindowEvent Log.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -499,7 +326,7 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.CMake" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="ReadonlyStatusHandler">
     <option name="SHOW_DIALOG" value="false" />
@@ -533,7 +360,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="corewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-v helltrain.cor helltrain.cor helltrain.cor helltrain.cor " WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="corewar" TARGET_NAME="corewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="corewar" RUN_TARGET_NAME="corewar">
+    <configuration name="corewar" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="-v helltrain.cor" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="corewar" TARGET_NAME="corewar" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="corewar" RUN_TARGET_NAME="corewar">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -574,33 +401,33 @@
       <workItem from="1557325362974" duration="16666000" />
       <workItem from="1557400194242" duration="24276000" />
       <workItem from="1557484322395" duration="24714000" />
-      <workItem from="1557566444132" duration="29139000" />
+      <workItem from="1557566444132" duration="55530000" />
+      <workItem from="1557660070239" duration="7674000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="369643000" />
+    <option name="totallyTimeSpent" value="403708000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15984848" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17954545" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info active="true" anchor="bottom" x="23" y="104" width="2082" height="1079" id="Run" order="2" sideWeight="0.40289506" visible="true" weight="0.46827793" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49939686" weight="0.3882175" />
+      <window_info active="true" anchor="bottom" x="23" y="104" width="2082" height="1079" id="Run" order="2" sideWeight="0.40227273" visible="true" weight="0.5799373" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49939686" weight="0.46394983" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.59710497" weight="0.2265861" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4000804" side_tool="true" weight="0.9773585" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.59710497" weight="0.38557994" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5977273" side_tool="true" weight="0.60658306" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32981133" />
       <window_info anchor="bottom" x="252" y="311" width="932" height="940" id="CMake" order="11" weight="0.25981873" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49416968" weight="0.35649547" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49318182" weight="0.35579938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -608,22 +435,22 @@
       <window_info anchor="right" id="Database" order="4" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2590909" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2659091" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32930514" />
-      <window_info anchor="bottom" x="23" y="104" width="2082" height="1079" id="Run" order="2" sideWeight="0.40289506" visible="true" weight="0.21601209" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49939686" weight="0.3882175" />
+      <window_info active="true" anchor="bottom" x="23" y="104" width="2082" height="1079" id="Run" order="2" sideWeight="0.40227273" visible="true" weight="0.11285266" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49939686" weight="0.46394983" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.59710497" weight="0.35196376" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.4000804" side_tool="true" weight="0.9773585" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.59710497" weight="0.38557994" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5977273" side_tool="true" weight="0.60658306" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32981133" />
       <window_info anchor="bottom" x="252" y="311" width="932" height="940" id="CMake" order="11" weight="0.25981873" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49416968" weight="0.35649547" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49318182" weight="0.35579938" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -646,6 +473,8 @@
       <path value="$PROJECT_DIR$/vm_champs/champs/championships/2018/sgalasso3" />
       <path value="$PROJECT_DIR$/rm" />
       <path value="$PROJECT_DIR$/vm_champs/rm" />
+      <path value="$PROJECT_DIR$/ft" />
+      <path value="$PROJECT_DIR$/library/ft" />
     </ignored-roots>
   </component>
   <component name="XDebuggerManager">
@@ -660,11 +489,6 @@
           <url>file://$PROJECT_DIR$/../vm/sources/parse/vm_parse_champion.c</url>
           <line>92</line>
           <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/source/vis/corewar_vis.c</url>
-          <line>92</line>
-          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -726,329 +550,28 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="25" lean-forward="true" selection-start-line="35" selection-start-column="25" selection-end-line="35" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_mods2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="26" lean-forward="true" selection-start-line="33" selection-start-column="26" selection-end-line="33" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_topb.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_pc_msg.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="497">
-          <caret line="52" column="1" selection-start-line="52" selection-start-column="1" selection-end-line="52" selection-end-column="1" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_btmb.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="742">
-          <caret line="67" column="26" selection-start-line="67" selection-end-line="68" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_topb2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_arena.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="23" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_pc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_prop.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="9" selection-end-line="26" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="885">
-          <caret line="59" column="18" selection-start-line="59" selection-start-column="8" selection-end-line="59" selection-end-column="28" />
-          <folding>
-            <element signature="e#939#968#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/corewar_config.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/libraries/SDL2/cmake/SDL2/sdl2-config.cmake">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/SDL2/include/begin_code.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1017">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-          <folding>
-            <element signature="e#1283#1322#0" expanded="true" />
-            <element signature="e#4588#4659#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/SDL2_image/libSDL2_image.so">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-180" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/corewar.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="e#892#910#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_memalloc.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="14">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_memdel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_strdel.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_strjoin.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_strnew.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_gnl/include/ft_gnl_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_gnl/ft_gnl.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/include/libft_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_abs.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf_zjt.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/include/libft.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="e#927#947#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf_0_base.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="16" column="30" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_init.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="18" column="15" selection-start-line="18" selection-start-column="15" selection-end-line="18" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/turtle.cor">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#892#916#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/library/SDL2/include/begin_code.h" />
+    <entry file="file://$PROJECT_DIR$/library/SDL2_image/libSDL2_image.so" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_memalloc.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_memdel.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_strdel.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_strjoin.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_strnew.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_gnl/include/ft_gnl_def.h" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_gnl/ft_gnl.c" />
+    <entry file="file://$PROJECT_DIR$/ft/include/libft_def.h" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf_def.h" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_abs.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/include/ft_printf.h" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf_zjt.c" />
+    <entry file="file://$PROJECT_DIR$/ft/include/libft.h" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf.c" />
+    <entry file="file://$PROJECT_DIR$/ft/source/ft_printf/ft_printf_0_base.c" />
+    <entry file="file://$PROJECT_DIR$/turtle.cor" />
     <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_mods.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
           <caret line="13" column="15" selection-start-line="13" selection-start-column="15" selection-end-line="13" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
-          <folding>
-            <element signature="e#947#968#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/corewar_cycles.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="96" column="16" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="16" />
-          <folding>
-            <element signature="e#892#919#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/op/corewar_op2.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/corewar_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/source/corewar_vm.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="139" column="4" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="4" />
-          <folding>
-            <element signature="e#892#911#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,20 +582,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/op/corewar_op_utils.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="72" column="62" selection-start-line="72" selection-start-column="62" selection-end-line="72" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/include/op/corewar_op_def.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/op/corewar_op.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
@@ -1080,40 +589,232 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_lock.c">
+    <entry file="file://$PROJECT_DIR$/ft/Makefile" />
+    <entry file="file://$PROJECT_DIR$/source/parse/corewar_parse_options.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/corewar.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="87" column="16" selection-start-line="87" selection-start-column="16" selection-end-line="87" selection-end-column="16" />
+        <state relative-caret-position="195">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libft/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-768">
+          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1584">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/op/corewar_op3.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="47" column="24" selection-start-line="47" selection-start-column="24" selection-end-line="47" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/op/corewar_op_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1181">
+          <caret line="89" column="10" selection-start-line="89" selection-start-column="10" selection-end-line="89" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/corewar_config.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/op/corewar_op4.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/corewar.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <folding>
+            <element signature="e#892#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/op/corewar_op_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/corewar_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="56" column="16" selection-start-line="56" selection-start-column="16" selection-end-line="56" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/op/corewar_op2.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="38" column="40" lean-forward="true" selection-start-line="38" selection-start-column="40" selection-end-line="38" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="975">
+          <caret line="92" column="1" lean-forward="true" selection-start-line="92" selection-start-column="1" selection-end-line="92" selection-end-column="1" />
           <folding>
             <element signature="e#892#916#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_mdlb.c">
+    <entry file="file://$PROJECT_DIR$/source/op/corewar_op.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="43">
-          <caret line="20" column="22" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+        <state relative-caret-position="1575">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
           <folding>
-            <element signature="e#892#916#0" expanded="true" />
+            <element signature="e#892#912#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        <state relative-caret-position="195">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
+    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_prop.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" selection-start-line="15" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_mouse_handle.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_handle_wheel.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ft/Makefile">
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_handle_utils.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="96" column="14" lean-forward="true" selection-start-line="96" selection-start-column="14" selection-end-line="96" selection-end-column="14" />
+        <state relative-caret-position="15">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_color.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_motion_handle.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="58" column="8" selection-start-line="58" selection-start-column="8" selection-end-line="58" selection-end-column="8" />
+          <folding>
+            <element signature="e#939#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/vis/corewar_vis_def.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+          <folding>
+            <element signature="e#947#968#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_render_utils.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="67" column="30" selection-start-line="67" selection-start-column="30" selection-end-line="67" selection-end-column="30" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-234">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_init.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="61" column="27" lean-forward="true" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+          <folding>
+            <element signature="e#892#919#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/vis/corewar_vis_lock.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="82" column="27" selection-start-line="82" selection-start-column="27" selection-end-line="82" selection-end-column="27" />
+          <folding>
+            <element signature="e#892#916#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/corewar_vm.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11">
+          <caret line="138" column="13" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="13" />
+          <folding>
+            <element signature="e#892#911#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/corewar_cycles.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="12" column="27" lean-forward="true" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
     </entry>

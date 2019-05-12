@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: daniel <marvin@42.fr>                      +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2019/05/11 22:45:16 by daniel            #+#    #+#              #
+#    Updated: 2019/05/11 23:14:21 by daniel           ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 NAME =		corewar
 OBJS_PATH =	.object/
 SRCS_PATH =	source/
@@ -5,6 +17,16 @@ INCS_PATH =	include/
 CC =		clang
 CFLAGS =	-Wall -Wextra -Werror -Ofast
 RM =		rm -rf
+
+CLIBS_PATH =		/home/linuxbrew/.linuxbrew/lib/
+CLIBS_INCS_PATH =	/home/linuxbrew/.linuxbrew/include/
+CLINKER_FLAGS =		-Wl,-rpath=$(CLIBS_PATH) -L$(CLIBS_PATH)
+CLIBS =				-lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
+
+LIBFT_PATH =		libft/
+LIBFT_INCS_PATH =	$(LIBFT_PATH)$(INCS_PATH)
+CLINKER_FLAGS +=	-L$(LIBFT_PATH)
+CLIBS +=			-lft
 
 COREWAR_INCS_PATH =	$(INCS_PATH)
 COREWAR_INCS =		corewar.h \
@@ -16,7 +38,7 @@ COREWAR_SRCS =		corewar.c \
 					corewar_utils.c \
 					corewar_vm.c
 COREWAR_OBJS_PATH =	$(OBJS_PATH)
-COREWAR_OBJS =		$(LIBFT_SRCS:%.c=$(LIBFT_OBJS_PATH)%.o)
+COREWAR_OBJS =		$(COREWAR_SRCS:%.c=$(COREWAR_OBJS_PATH)%.o)
 
 VIS_INCS_PATH =	$(INCS_PATH)vis/
 VIS_INCS =		corewar_vis.h \
@@ -44,4 +66,95 @@ VIS_SRCS =		corewar_vis.c \
 				corewar_vis_render_topb2.c \
 				corewar_vis_render_utils.c
 VIS_OBJS_PATH =	$(OBJS_PATH)vis/
-VIS_OBJS =		$(LIBFT_SRCS:%.c=$(LIBFT_OBJS_PATH)%.o)
+VIS_OBJS =		$(VIS_SRCS:%.c=$(VIS_OBJS_PATH)%.o)
+
+OP_INCS_PATH =	$(INCS_PATH)op/
+OP_INCS =		corewar_op.h \
+				corewar_op_def.h
+OP_SRCS_PATH =	$(SRCS_PATH)op/
+OP_SRCS =		corewar_op.c \
+				corewar_op2.c \
+				corewar_op3.c \
+				corewar_op4.c \
+				corewar_op_utils.c
+OP_OBJS_PATH =	$(OBJS_PATH)op/
+OP_OBJS =		$(OP_SRCS:%.c=$(OP_OBJS_PATH)%.o)
+
+PARSE_INCS_PATH =	$(INCS_PATH)parse/
+PARSE_INCS =		corewar_parse.h \
+					corewar_parse_def.h
+PARSE_SRCS_PATH =	$(SRCS_PATH)parse/
+PARSE_SRCS =		corewar_parse.c \
+					corewar_parse_champion.c \
+					corewar_parse_options.c
+PARSE_OBJS_PATH =	$(OBJS_PATH)parse/
+PARSE_OBJS =		$(PARSE_SRCS:%.c=$(PARSE_OBJS_PATH)%.o)
+
+all: libft.a $(NAME)
+
+libft.a:
+	@make $@ -s -C $(LIBFT_PATH)
+
+$(NAME): $(COREWAR_OBJS) $(VIS_OBJS) $(OP_OBJS) $(PARSE_OBJS)
+	@$(CC) $(CFLAGS) -o $@ $^ $(CLINKER_FLAGS) $(CLIBS)
+
+$(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
+	@mkdir -p $(OBJS_PATH)
+	@mkdir -p $(COREWAR_OBJS_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< \
+	-I$(LIBFT_INCS_PATH) \
+	-I$(CLIBS_INCS_PATH) \
+	-I$(COREWAR_INCS_PATH) \
+	-I$(VIS_INCS_PATH) \
+	-I$(OP_INCS_PATH) \
+	-I$(PARSE_INCS_PATH)
+
+$(VIS_OBJS_PATH)%.o: $(VIS_SRCS_PATH)%.c
+	@mkdir -p $(VIS_OBJS_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< \
+	-I$(LIBFT_INCS_PATH) \
+	-I$(CLIBS_INCS_PATH) \
+	-I$(COREWAR_INCS_PATH) \
+	-I$(VIS_INCS_PATH) \
+	-I$(OP_INCS_PATH)
+
+$(OP_OBJS_PATH)%.o: $(OP_SRCS_PATH)%.c
+	@mkdir -p $(OP_OBJS_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< \
+	-I$(LIBFT_INCS_PATH) \
+	-I$(VIS_INCS_PATH) \
+	-I$(CLIBS_INCS_PATH) \
+	-I$(COREWAR_INCS_PATH) \
+	-I$(OP_INCS_PATH) \
+	-I$(PARSE_INCS_PATH)
+
+$(PARSE_OBJS_PATH)%.o: $(PARSE_SRCS_PATH)%.c
+	@mkdir -p $(PARSE_OBJS_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< \
+	-I$(LIBFT_INCS_PATH) \
+	-I$(COREWAR_INCS_PATH) \
+	-I$(PARSE_INCS_PATH)
+
+clean:
+	@make $@ -s -C $(LIBFT_PATH)
+	@$(RM) $(OBJS_PATH)
+
+fclean: clean
+	@make $@ -s -C $(LIBFT_PATH)
+	@$(RM) $(NAME)
+
+re: fclean all
+
+norm:
+	@make $@ -s -C $(LIBFT_PATH)
+	@norminette \
+	$(addprefix $(COREWAR_INCS_PATH),$(COREWAR_INCS)) \
+	$(addprefix $(COREWAR_PATH),$(COREWAR_SRCS)) \
+	$(addprefix $(VIS_INCS_PATH),$(VIS_INCS)) \
+	$(addprefix $(VIS_SRCS_PATH),$(VIS_SRCS)) \
+	$(addprefix $(OP_INCS_PATH),$(OP_INCS)) \
+	$(addprefix $(OP_SRCS_PATH),$(OP_SRCS)) \
+	$(addprefix $(PARSE_INCS_PATH),$(PARSE_INCS)) \
+	$(addprefix $(PARSE_SRCS_PATH),$(PARSE_SRCS))
+
+.PHONY: all clean fclean re norm

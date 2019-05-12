@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_render_mdlb.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 18:06:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/10 18:08:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/11 20:38:34 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,7 +94,7 @@ static void	static_render_cl(SDL_Renderer *rend, t_data *data, unsigned int i)
 
 void		corewar_vis_render_mdlb(t_data *data, t_vis *vis)
 {
-	int				i;
+	unsigned int	i;
 	static SDL_Rect	bg = {BAR_X, 0, BAR_W, P_SHADOW_H};
 	Uint8			opacity;
 	Uint8			opacity_fix;

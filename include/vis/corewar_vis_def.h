@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:41:42 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 20:24:10 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/12 15:19:13 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,9 @@
 
 # define FONT_REG "resource/font/Roboto-Regular.ttf"
 # define FONT_BOLD "resource/font/Roboto-Bold.ttf"
-# define IMG_BG "resource/image/Mob_psycho_100.jpg"
+# define IMG_BG "resource/image/Mob_psycho_100.png"
+# define IMG_GAMESTART "resource/image/game_start.png"
+# define IMG_GAMEOVER "resource/image/game_over.png"
 # define MUSIC_BG "resource/music/Smeared.mp3"
 
 # define TIMEOUT_MS 50
@@ -71,6 +73,7 @@ typedef struct		s_vis
 	bool			game_over;
 	Sint32			m_x;
 	Sint32			m_y;
+	double			scale;
 	unsigned int	timeout;
 	unsigned int	color[ARENA_SIZE];
 	t_buttons		btns;
