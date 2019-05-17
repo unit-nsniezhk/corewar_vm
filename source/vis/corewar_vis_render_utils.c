@@ -77,7 +77,7 @@ void		static_color(t_button *btn, unsigned int *msg_color,
 
 void		corewar_vis_render_button(t_vis *vis, t_button *btn)
 {
-	char			*msg;
+	const char		*msg;
 	SDL_Rect		box;
 	unsigned int	msg_color;
 	unsigned int	bg_color;

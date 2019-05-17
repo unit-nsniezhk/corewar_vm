@@ -42,13 +42,13 @@ static const t_operation	g_op_table[N_OPS] =
 		&corewar_op_xor},
 	{"zjmp", 1, {DIR}, 20, 0, IND_SIZE, &corewar_op_zjmp},
 	{"ldi", 3, {REG | DIR | IND, DIR | REG, REG}, 25, 1, IND_SIZE,
-  		&corewar_op_ldi},
+		&corewar_op_ldi},
 	{"sti", 3, {REG, REG | DIR | IND, DIR | REG}, 25, 1, IND_SIZE,
-  		&corewar_op_sti},
+		&corewar_op_sti},
 	{"fork", 1, {DIR}, 800, 0, IND_SIZE, &corewar_op_fork},
 	{"lld", 2, {DIR | IND, REG}, 10, 1, DIR_SIZE, &corewar_op_lld},
 	{"lldi", 3, {REG | DIR | IND, DIR | REG, REG}, 50, 1, IND_SIZE,
-  		&corewar_op_lldi},
+		&corewar_op_lldi},
 	{"lfork", 1, {DIR}, 1000, 0, IND_SIZE, &corewar_op_lfork},
 	{"aff", 1, {REG}, 2, 1, DIR_SIZE, &corewar_op_aff}
 };

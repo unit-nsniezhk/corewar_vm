@@ -34,7 +34,7 @@ static void	static_render_nci(SDL_Renderer *rend, int cycle, int ctc)
 {
 	static Sint32	w = 0;
 	char			*value;
-	Sint32 			tmp;
+	Sint32			tmp;
 
 	if (!w)
 		w = (Sint32)ft_strlen(TBAR_NCI_MSG);

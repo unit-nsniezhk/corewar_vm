@@ -94,5 +94,3 @@ void	corewar_vis_render_pc_timeout(SDL_Renderer *rend, t_carriage *carr,
 	(SDL_Rect){box.x + (w * S_CHAR_W) + PAD, box.y, S_CHAR_W, S_CHAR_H});
 	ft_strdel(&value);
 }
-
-

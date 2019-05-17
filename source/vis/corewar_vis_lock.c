@@ -40,7 +40,7 @@ void			corewar_vis_gameover_lock(t_buttons *btns)
 	btns->status.press = false;
 }
 
-static void 	static_render_comment(t_data *data, t_vis *vis)
+static void		static_render_comment(t_data *data, t_vis *vis)
 {
 	static SDL_Rect	box;
 	static Sint32	w = 0;
@@ -48,8 +48,8 @@ static void 	static_render_comment(t_data *data, t_vis *vis)
 	if (!w)
 	{
 		w = (Sint32)ft_strlen(data->players[data->leader - 1].comment);
-		box.x = (ARENA_W / 2) - ((w * CHAR_W) / 2);
-		box.y = (MAX_WIN_H / 2) - (L_CHAR_H / 2) + L_CHAR_H + (PAD * 10);
+		box.x = (ARENA_W - (w * CHAR_W)) / 2;
+		box.y = ((MAX_WIN_H - L_CHAR_H) / 2) + L_CHAR_H + (PAD * 10);
 		box.w = CHAR_W;
 		box.h = L_CHAR_H;
 	}
@@ -65,14 +65,14 @@ void			corewar_vis_render_gameover(t_vis *vis, t_data *data)
 
 	if (!w)
 	{
-		w = ft_strlen("Player ");
+		w = (Sint32)ft_strlen("Player ");
 		w += ft_strlen(" won !!!");
 		w += ft_strlen(data->players[data->leader - 1].name);
 		ft_strninject(&str, "Player ", 0, -1);
 		ft_strninject(&str, data->players[data->leader - 1].name, -1, -1);
 		ft_strninject(&str, " won !!!", -1, -1);
-		box.x = (ARENA_W / 2) - ((w * L_CHAR_W) / 2);
-		box.y = (MAX_WIN_H / 2) - (L_CHAR_H / 2);
+		box.x = (ARENA_W - (w * L_CHAR_W)) / 2;
+		box.y = (MAX_WIN_H - L_CHAR_H) / 2;
 		box.w = L_CHAR_W;
 		box.h = L_CHAR_H;
 	}
@@ -111,7 +111,7 @@ void			corewar_vis_render_gamestart(t_vis *vis, t_data *data)
 		ft_strninject(&str, "Weight of ", 0, -1);
 		w_tmp = (Sint32)ft_strlen(str);
 		corewar_vis_render_btext(vis->rend, str, g_color[i],
-		(SDL_Rect){box.x - (w_tmp * CHAR_W / 2), box.y ,
+		(SDL_Rect){box.x - (w_tmp * CHAR_W / 2), box.y,
 		CHAR_W, CHAR_H});
 		ft_strdel(&str);
 		++i;

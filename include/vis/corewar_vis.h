@@ -68,7 +68,4 @@ void	corewar_vis_run(t_vis *vis);
 void	corewar_vis_nxt(t_vis *vis);
 void	corewar_mousebuttondown_left(t_vis *vis, Sint32 x, Sint32 y);
 
-
-
-
 #endif

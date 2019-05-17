@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/source/corewar.c.o"
-  "CMakeFiles/corewar.dir/source/corewar_cycles.c.o"
+  "CMakeFiles/corewar.dir/source/corewar_exec_carr.c.o"
+  "CMakeFiles/corewar.dir/source/corewar_exit.c.o"
+  "CMakeFiles/corewar.dir/source/corewar_init.c.o"
   "CMakeFiles/corewar.dir/source/corewar_utils.c.o"
   "CMakeFiles/corewar.dir/source/corewar_vm.c.o"
   "CMakeFiles/corewar.dir/source/op/corewar_op.c.o"

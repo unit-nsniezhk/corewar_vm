@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 20:37:35 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 21:06:23 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,13 @@
 #include "corewar.h"
 #include "corewar_vis_color.h"
 
-void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n, int *arg)
+void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n,
+		unsigned int *arg)
 {
 	int	pos;
 
 	if (carr->args_types[n] == REG)
-	{
-		if (carr->args_values[n] < 1 || carr->args_values[n] > N_REGS)
-			return ;
 		*arg = carr->regs[carr->args_values[n]];
-	}
 	else if (carr->args_types[n] == DIR)
 		*arg = carr->args_values[n];
 	else
@@ -34,7 +31,7 @@ void	corewar_op_arg(t_data *data, t_carriage *carr, unsigned int n, int *arg)
 }
 
 void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
-		int *arg)
+		unsigned int *arg)
 {
 	int	pos;
 
@@ -48,7 +45,7 @@ void	corewar_op_larg(t_data *data, t_carriage *carr, unsigned int n,
 		*arg = carr->args_values[n];
 	else
 	{
-		pos = carr->pos + (char)(carr->args_values[n]);
+		pos = carr->pos + carr->args_values[n];
 		corewar_read_arg(data, arg, REG, data->arena[corewar_8(pos)]);
 	}
 }
@@ -83,7 +80,8 @@ void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos, int n_players)
 	unsigned int	color;
 	unsigned int	i;
 
-	if (-carr->regs[1] <= n_players && -carr->regs[1] >= MIN_PLAYERS)
+	if ((int)(carr->regs[1] * -1) <= n_players
+	&& (int)(carr->regs[1] * -1) >= MIN_PLAYERS)
 		color = g_color[(-carr->regs[1])];
 	else
 		color = g_color[0];

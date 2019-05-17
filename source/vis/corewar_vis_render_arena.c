@@ -47,7 +47,7 @@ static void	static_render_shadow(t_vis *vis, SDL_Rect rect)
 	SDL_RenderFillRect(vis->rend, &rect);
 }
 
-void	corewar_vis_render_arena(t_data *data, t_vis *vis)
+void		corewar_vis_render_arena(t_data *data, t_vis *vis)
 {
 	SDL_Rect		rect;
 	unsigned int	i;

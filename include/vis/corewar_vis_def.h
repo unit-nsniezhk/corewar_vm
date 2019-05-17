@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_def.h                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:41:42 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/12 15:19:13 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 15:27:38 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,9 +46,9 @@ typedef	struct		s_button
 	bool			press;
 	bool			hower;
 	bool			active;
-	char			*msg;
-	char			*alt_msg;
-	char			*init_msg;
+	const char		*msg;
+	const char		*alt_msg;
+	const char		*init_msg;
 	bool			bg_shown;
 	SDL_Rect		bg;
 }					t_button;
@@ -72,8 +72,9 @@ typedef struct		s_vis
 	bool			game_start;
 	bool			game_over;
 	Sint32			m_x;
+
 	Sint32			m_y;
-	double			scale;
+	float			scale;
 	unsigned int	timeout;
 	unsigned int	color[ARENA_SIZE];
 	t_buttons		btns;

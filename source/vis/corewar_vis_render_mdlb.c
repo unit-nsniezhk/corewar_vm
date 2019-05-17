@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_render_mdlb.c                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 18:06:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 20:38:34 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 15:43:56 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ static void	static_domination_bar(t_vis *vis, unsigned int player, SDL_Rect box)
 	unsigned int	i;
 
 	SDL_SetRenderDrawColor(vis->rend, R(RGBA_SHADOW), G(RGBA_SHADOW),
-	B(RGBA_SHADOW), PlAYER_BAR_OP);
+	B(RGBA_SHADOW), PLAYER_BAR_OP);
 	SDL_RenderFillRect(vis->rend, &box);
 	pct = 0;
 	i = 0;
@@ -36,11 +36,11 @@ static void	static_domination_bar(t_vis *vis, unsigned int player, SDL_Rect box)
 	box.h -= (SHADOW_SIZE * 2);
 	box.w -= (SHADOW_SIZE * 2);
 	SDL_SetRenderDrawColor(vis->rend, R(g_color[0]), G(g_color[0]),
-	B(g_color[0]), PlAYER_BAR_OP);
+	B(g_color[0]), PLAYER_BAR_OP);
 	SDL_RenderFillRect(vis->rend, &box);
 	box.w = (Sint32)(box.w * corewar_vis_pct(0, ARENA_SIZE, pct));
 	SDL_SetRenderDrawColor(vis->rend, R(g_color[player]), G(g_color[player]),
-	B(g_color[player]), PlAYER_BAR_OP);
+	B(g_color[player]), PLAYER_BAR_OP);
 	SDL_RenderFillRect(vis->rend, &box);
 }
 
@@ -108,7 +108,7 @@ void		corewar_vis_render_mdlb(t_data *data, t_vis *vis)
 			opacity_fix = PLAYER_SHADOW_OP;
 		SDL_SetRenderDrawColor(vis->rend, R(RGBA_SHADOW), G(RGBA_SHADOW),
 		B(RGBA_SHADOW), (Uint8)(opacity * (i + 1) + opacity_fix));
-		bg.y =  MID_BAR_Y(i, 0);
+		bg.y = MID_BAR_Y(i, 0);
 		SDL_RenderFillRect(vis->rend, &bg);
 		static_render_name(vis->rend, data, i);
 		static_render_lcl(vis->rend, data, i);

@@ -43,7 +43,7 @@
 # define RGBA_PLAYER3 0xFF999900u
 # define RGBA_PLAYER4 0xFFB96D40u
 # define PROCESS_INF_OP 0xD0u
-# define PlAYER_BAR_OP 0xCCu
+# define PLAYER_BAR_OP 0xCCu
 # define PLAYER_SHADOW_OP 0x30u
 
 static const unsigned int	g_color[MAX_PLAYERS + 1] =

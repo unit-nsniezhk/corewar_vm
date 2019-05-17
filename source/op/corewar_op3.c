@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op3.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:31:22 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/11 23:50:55 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:30:14 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,38 +15,34 @@
 
 void	corewar_op_lfork(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	int	arg;
-	int	pos;
+	unsigned int	arg;
+	int				pos;
 
 	(void)vis;
 	corewar_op_arg(data, carr, 0, &arg);
-	pos = carr->pos + arg;
+	pos = carr->pos + (int)arg;
 	corewar_op_new_carriage(data, carr, pos);
 }
 
 void	corewar_op_fork(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	int	arg;
-	int	pos;
+	unsigned int	arg;
+	int				pos;
 
 	(void)vis;
 	corewar_op_arg(data, carr, 0, &arg);
-	pos = carr->pos + (arg % IDX_MOD);
+	pos = carr->pos + (((int)arg) % IDX_MOD);
 	corewar_op_new_carriage(data, carr, pos);
 }
 
 void	corewar_op_lld(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	int	arg;
-	int arg1;
+	unsigned int	arg;
+	unsigned int	arg1;
 
 	(void)vis;
 	corewar_op_larg(data, carr, 0, &arg);
 	arg1 = carr->args_values[1];
-	if (arg1 < 1 || arg1 > N_REGS)
-		return ;
-	if (arg1 < 1 || arg1 > N_REGS)
-		return ;
 	carr->regs[arg1] = arg;
 	if (!arg)
 		carr->carry = true;
@@ -56,18 +52,16 @@ void	corewar_op_lld(t_data *data, t_carriage *carr, t_vis *vis)
 
 void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	int	arg;
-	int	arg1;
-	int arg2;
-	int	value;
+	unsigned int	arg;
+	unsigned int	arg1;
+	unsigned int	arg2;
+	unsigned int	value;
 
 	(void)vis;
 	corewar_op_arg(data, carr, 0, &arg);
 	corewar_op_arg(data, carr, 1, &arg1);
 	arg2 = carr->args_values[2];
 	value = arg ^ arg1;
-	if (arg2 < 1 || arg2 > N_REGS)
-		return ;
 	carr->regs[arg2] = value;
 	if (!value)
 		carr->carry = true;
@@ -77,12 +71,12 @@ void	corewar_op_xor(t_data *data, t_carriage *carr, t_vis *vis)
 
 void	corewar_op_zjmp(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	int arg;
+	unsigned int	arg;
 
 	(void)vis;
 	if (carr->carry)
 	{
 		corewar_op_arg(data, carr, 0, &arg);
-		carr->pos = corewar_8(carr->pos + (arg % IDX_MOD));
+		carr->pos = corewar_8(carr->pos + (((int)arg) % IDX_MOD));
 	}
 }

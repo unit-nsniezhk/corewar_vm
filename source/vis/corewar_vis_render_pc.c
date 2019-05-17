@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/09 14:29:14 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/10 18:08:47 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/17 18:11:32 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,7 +76,7 @@ static void	static_render_msg(SDL_Renderer *rend, t_carriage *carr,
 	corewar_vis_render_pc_id(rend, carr,
 	(SDL_Rect){box.x + PAD, box.y + PAD, 0, 0});
 	corewar_vis_render_pc_lastlive(rend, carr,
-	(SDL_Rect){box.x + PAD, box.y + (PROCESS_H * 1) + PAD, 0, 0});
+	(SDL_Rect){box.x + PAD, box.y + PROCESS_H + PAD, 0, 0});
 	corewar_vis_render_pc_carry(rend, carr,
 	(SDL_Rect){box.x + PAD, box.y + (PROCESS_H * 2) + PAD, 0, 0});
 	corewar_vis_render_pc_op(rend, carr,
@@ -103,7 +103,6 @@ static void	static_handle_msg(SDL_Renderer *rend, t_carriage *carr)
 			box.x = carr->hitbox.x - box.w;
 		else
 			box.x = carr->hitbox.x + carr->hitbox.w;
-
 		if (carr->hitbox.y > (MAX_WIN_H / 2))
 			box.y = carr->hitbox.y + carr->hitbox.h - box.h;
 		else
@@ -125,8 +124,8 @@ void		corewar_vis_render_pc(t_data *data, t_vis *vis)
 			color = g_color[-carr_tmp->regs[1]];
 		else
 			color = RGBA_CARR;
-		carr_tmp->hitbox.w = BYTE_SIZE + (BYTE_SHADOW * 2);
-		carr_tmp->hitbox.h = BYTE_SIZE + (BYTE_SHADOW * 2);
+		carr_tmp->hitbox.w = BYTE_SIZE + BYTE_SHADOW * 2;
+		carr_tmp->hitbox.h = BYTE_SIZE + BYTE_SHADOW * 2;
 		carr_tmp->hitbox.x = ((carr_tmp->pos % N_COLUMNS) * (BYTE_SIZE + PAD))
 		+ PAD - BYTE_SHADOW;
 		carr_tmp->hitbox.y = ((carr_tmp->pos / N_COLUMNS) * (BYTE_SIZE + PAD))

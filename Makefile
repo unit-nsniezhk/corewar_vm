@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: daniel <marvin@42.fr>                      +#+  +:+       +#+         #
+#    By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/11 22:45:16 by daniel            #+#    #+#              #
-#    Updated: 2019/05/11 23:14:21 by daniel           ###   ########.fr        #
+#    Updated: 2019/05/17 19:36:34 by dderevyn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,12 +15,28 @@ OBJS_PATH =	.object/
 SRCS_PATH =	source/
 INCS_PATH =	include/
 CC =		clang
+UNAME_S :=	$(shell uname -s)
 CFLAGS =	-Wall -Wextra -Werror -Ofast
 RM =		rm -rf
+
+ifeq ($(UNME_S),Linux)
 
 CLIBS_PATH =		/home/linuxbrew/.linuxbrew/lib/
 CLIBS_INCS_PATH =	/home/linuxbrew/.linuxbrew/include/
 CLINKER_FLAGS =		-Wl,-rpath=$(CLIBS_PATH) -L$(CLIBS_PATH)
+
+else ifeq ($(UNAME_S),Darwin)
+
+CLIBS_PATH =		/Users/dderevyn/.brew/lib/
+CLIBS_INCS_PATH =	/Users/dderevyn/.brew/include/
+CLINKER_FLAGS =		-Wl,-rpath,$(CLIBS_PATH) -L$(CLIBS_PATH)
+
+else
+
+$(error Error: Your system is unsupported)
+
+endif
+
 CLIBS =				-lSDL2 -lSDL2_ttf -lSDL2_image -lSDL2_mixer
 
 LIBFT_PATH =		libft/
@@ -34,7 +50,9 @@ COREWAR_INCS =		corewar.h \
 					corewar_def.h
 COREWAR_SRCS_PATH =	$(SRCS_PATH)
 COREWAR_SRCS =		corewar.c \
-					corewar_cycles.c \
+					corewar_exec_carr.c \
+					corewar_exit.c \
+					corewar_init.c \
 					corewar_utils.c \
 					corewar_vm.c
 COREWAR_OBJS_PATH =	$(OBJS_PATH)
@@ -90,16 +108,17 @@ PARSE_SRCS =		corewar_parse.c \
 PARSE_OBJS_PATH =	$(OBJS_PATH)parse/
 PARSE_OBJS =		$(PARSE_SRCS:%.c=$(PARSE_OBJS_PATH)%.o)
 
-all: libft.a $(NAME)
+all: $(NAME)
+
+$(NAME): $(COREWAR_OBJS) $(VIS_OBJS) $(OP_OBJS) $(PARSE_OBJS) | libft.a
+	@$(CC) $(CFLAGS) -o $@ $^ $(CLINKER_FLAGS) $(CLIBS)
 
 libft.a:
 	@make $@ -s -C $(LIBFT_PATH)
 
-$(NAME): $(COREWAR_OBJS) $(VIS_OBJS) $(OP_OBJS) $(PARSE_OBJS)
-	@$(CC) $(CFLAGS) -o $@ $^ $(CLINKER_FLAGS) $(CLIBS)
+ifeq ($(UNME_S),Linux)
 
 $(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
-	@mkdir -p $(OBJS_PATH)
 	@mkdir -p $(COREWAR_OBJS_PATH)
 	@$(CC) $(CFLAGS) -o $@ -c $< \
 	-I$(LIBFT_INCS_PATH) \
@@ -135,6 +154,23 @@ $(PARSE_OBJS_PATH)%.o: $(PARSE_SRCS_PATH)%.c
 	-I$(COREWAR_INCS_PATH) \
 	-I$(PARSE_INCS_PATH)
 
+else ifeq ($(UNAME_S),Darwin)
+
+$(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
+	@mkdir -p $(COREWAR_OBJS_PATH)
+	@mkdir -p $(VIS_OBJS_PATH)
+	@mkdir -p $(OP_OBJS_PATH)
+	@mkdir -p $(PARSE_OBJS_PATH)
+	@$(CC) $(CFLAGS) -o $@ -c $< \
+	-I$(LIBFT_INCS_PATH) \
+	-I$(CLIBS_INCS_PATH) \
+	-I$(COREWAR_INCS_PATH) \
+	-I$(VIS_INCS_PATH) \
+	-I$(OP_INCS_PATH) \
+	-I$(PARSE_INCS_PATH)
+
+endif
+
 clean:
 	@make $@ -s -C $(LIBFT_PATH)
 	@$(RM) $(OBJS_PATH)
@@ -149,7 +185,7 @@ norm:
 	@make $@ -s -C $(LIBFT_PATH)
 	@norminette \
 	$(addprefix $(COREWAR_INCS_PATH),$(COREWAR_INCS)) \
-	$(addprefix $(COREWAR_PATH),$(COREWAR_SRCS)) \
+	$(addprefix $(COREWAR_SRCS_PATH),$(COREWAR_SRCS)) \
 	$(addprefix $(VIS_INCS_PATH),$(VIS_INCS)) \
 	$(addprefix $(VIS_SRCS_PATH),$(VIS_SRCS)) \
 	$(addprefix $(OP_INCS_PATH),$(OP_INCS)) \

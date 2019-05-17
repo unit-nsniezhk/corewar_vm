@@ -6,7 +6,7 @@
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/28 15:34:32 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 00:04:54 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/17 18:53:19 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,7 @@ static bool	static_extension(const char *file)
 	if (file[i - 4] != '.' || file[i - 3] != 'c' || file[i - 2] != 'o'
 	|| file[i - 1] != 'r')
 	{
-		ft_printf("[redError:~] %s [yellowFile %s~]\n",
-		"Invalid extension of a champion", file);
+		ft_printf("[redError:~] Invalid extension of a champion ");
 		return (false);
 	}
 	return (true);
@@ -34,7 +33,7 @@ static bool	static_valid(t_parse *parse)
 
 	if (parse->n_champs < MIN_CHAMPIONS)
 	{
-		ft_printf("[redError:] Less than [yellow%u~] champions specified\n",
+		ft_printf("[redError:~] Less than [yellow%u~] champions specified\n",
 		MIN_CHAMPIONS);
 		return (false);
 	}

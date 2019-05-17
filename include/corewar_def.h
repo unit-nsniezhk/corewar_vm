@@ -38,9 +38,9 @@ typedef struct			s_carriage
 	unsigned int		timeout;
 	int					pos;
 	unsigned int		delta_pos;
-	int					args_values[3];
+	unsigned int		args_values[3];
 	unsigned char		args_types[3];
-	int					regs[N_REGS + 1];
+	unsigned int		regs[N_REGS + 1];
 	struct s_carriage	*next;
 }						t_carriage;
 

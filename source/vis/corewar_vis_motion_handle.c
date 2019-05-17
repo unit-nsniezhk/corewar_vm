@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_motion_handle.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/08 21:21:54 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/12 14:43:28 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 15:38:06 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,22 +18,17 @@ void	corewar_vis_resize(t_vis *vis, SDL_Event *event)
 	int w;
 	int h;
 
-	if(event->window.event == SDL_WINDOWEVENT_RESIZED)
+	if (event->window.event == SDL_WINDOWEVENT_RESIZED)
 	{
-		w = event->window.data1;
-		h = event->window.data2;
-		if (w > MAX_WIN_W)
-			w = MAX_WIN_W;
-		if (h > MAX_WIN_H)
-			h = MAX_WIN_H;
-		if ((double)(MAX_WIN_W - w) / MAX_WIN_W
-		> (double)(MAX_WIN_H - h) / MAX_WIN_H)
-			vis->scale = (double)w / MAX_WIN_W;
+		w = (event->window.data1 > MAX_WIN_W) ? MAX_WIN_W : event->window.data1;
+		h = (event->window.data2 > MAX_WIN_H) ? MAX_WIN_H : event->window.data2;
+		if ((float)w / MAX_WIN_W < (float)h / MAX_WIN_H)
+			vis->scale = (float)w / MAX_WIN_W;
 		else
-			vis->scale = (double)h / MAX_WIN_H;
+			vis->scale = (float)h / MAX_WIN_H;
 		SDL_RenderSetScale(vis->rend, vis->scale, vis->scale);
 		SDL_SetWindowSize(vis->win, (int)(vis->scale * MAX_WIN_W),
-		 (int)(vis->scale * MAX_WIN_H));
+		(int)(vis->scale * MAX_WIN_H));
 	}
 }
 

@@ -17,7 +17,7 @@
 static void	static_render_tips(SDL_Renderer *rend)
 {
 	corewar_vis_render_btext(rend, BBAR_TIP_MSG,
-	RGBA_TEXT2, (SDL_Rect){BAR_X,BBAR_TIP_MSG_Y, XS_CHAR_W, S_CHAR_H});
+	RGBA_TEXT2, (SDL_Rect){BAR_X, BBAR_TIP_MSG_Y, XS_CHAR_W, S_CHAR_H});
 	corewar_vis_render_btext(rend, BBAR_SPEEDUP_MSG, RGBA_TEXT2,
 	(SDL_Rect){BTM_BAR_MSG_X, BBAR_SPEEDUP_MSG_Y, XS_CHAR_W, S_CHAR_H});
 	corewar_vis_render_btext(rend, BBAR_SLOWDOWN_MSG, RGBA_TEXT2,

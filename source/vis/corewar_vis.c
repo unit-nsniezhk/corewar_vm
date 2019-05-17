@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/03 20:29:49 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/12 15:28:38 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 17:53:48 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,9 +41,9 @@ static void	static_handle_events(t_data *data, t_vis *vis)
 	corewar_vis_pc_shown(vis, data->carr);
 }
 
-void	static_cover_arena(t_vis *vis, t_data *data)
+static void	static_cover_arena(t_vis *vis, t_data *data)
 {
-	static SDL_Rect	box = {0, 0, ARENA_W + PAD, MAX_WIN_H};
+	static SDL_Rect		box = {0, 0, ARENA_W + PAD, MAX_WIN_H};
 	static SDL_Texture	*bg_start = NULL;
 	static SDL_Texture	*bg_end = NULL;
 
@@ -63,7 +63,7 @@ void	static_cover_arena(t_vis *vis, t_data *data)
 	}
 }
 
-static void static_render_bg(t_vis *vis)
+static void	static_render_bg(t_vis *vis)
 {
 	static SDL_Rect		box = {ARENA_W, 0, MAX_WIN_W - ARENA_W, MAX_WIN_H};
 	static SDL_Texture	*bg = NULL;

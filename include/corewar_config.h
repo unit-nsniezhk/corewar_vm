@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   corewar_settings.h                                 :+:      :+:    :+:   */
+/*   corewar_config.h                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:19:12 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/03 19:25:12 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/17 17:51:40 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COREWAR_SETTINGS_H
+#ifndef COREWAR_CONFIG_H
 
-# define COREWAR_SETTINGS_H
+# define COREWAR_CONFIG_H
 
 # define N_OPS 16
 # define N_REGS 16

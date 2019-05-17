@@ -3,13 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_vis_init.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
+/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/10 16:38:19 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/12 15:41:03 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/17 19:23:35 by dderevyn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "corewar_config.h"
 #include "corewar_vis_def.h"
 #include "corewar_vis_content.h"
@@ -76,26 +77,45 @@ static bool	static_scale(t_vis *vis)
 	SDL_GetDisplayUsableBounds(0, &display);
 	SDL_GetDisplayBounds(0, &display);
 	display.h -= STANDARD_BORDER_H;
-	if (display.w >= MAX_WIN_W && display.h >= MAX_WIN_H)
-	{
-		display.w = MAX_WIN_W;
-		display.h = MAX_WIN_H;
-	}
+	display.w = (display.w > MAX_WIN_W) ? MAX_WIN_W : display.w;
+	display.h = (display.h > MAX_WIN_H) ? MAX_WIN_H : display.h;
 	if ((double)(MAX_WIN_W - display.w) / MAX_WIN_W
 	> (double)(MAX_WIN_H - display.h) / MAX_WIN_H)
-		vis->scale = (double)display.w / MAX_WIN_W;
+		vis->scale = (float)display.w / MAX_WIN_W;
 	else
-		vis->scale = (double)display.h / MAX_WIN_H;
+		vis->scale = (float)display.h / MAX_WIN_H;
+	return (true);
+}
+
+static bool	static_init_libs(void)
+{
+	if (SDL_Init(SDL_INIT_EVERYTHING))
+	{
+		ft_printf("[redError:~] Initialisation failed [yellowSDL2~]\n");
+		return (false);
+	}
+	if (TTF_Init())
+	{
+		ft_printf("[redError:~] Initialisation failed [yellowSDL2_ttf~]\n");
+		return (false);
+	}
+	if (!IMG_Init(IMG_INIT_PNG))
+	{
+		ft_printf("[redError:~] Initialisation failed [yellowSDL2_image~]\n");
+		return (false);
+	}
+	if (Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096)
+	|| Mix_Init(MIX_INIT_MP3))
+	{
+		ft_printf("[redError:~] Initialisation failed [yellowSDL2_mix~]\n");
+		return (false);
+	}
 	return (true);
 }
 
 bool		corewar_vis_init(t_vis *vis)
 {
-	if (SDL_Init(SDL_INIT_EVERYTHING)
-	|| TTF_Init()
-	|| !IMG_Init(IMG_INIT_PNG)
-	|| Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096)
-	|| Mix_Init(MIX_INIT_MP3))
+	if (!static_init_libs())
 		return (false);
 	static_scale(vis);
 	if (!(vis->win = SDL_CreateWindow(WIN_NAME, 0, 0,
