@@ -1,3 +1,0 @@
-/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/corewar.dir
-/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles/edit_cache.dir
