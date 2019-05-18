@@ -19,7 +19,7 @@ UNAME_S :=	$(shell uname -s)
 CFLAGS =	-Wall -Wextra -Werror -Ofast
 RM =		rm -rf
 
-ifeq ($(UNME_S),Linux)
+ifeq ($(UNAME_S),Linux)
 
 CLIBS_PATH =		/home/linuxbrew/.linuxbrew/lib/
 CLIBS_INCS_PATH =	/home/linuxbrew/.linuxbrew/include/

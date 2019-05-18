@@ -61,7 +61,7 @@ static void	static_introduction(t_parse *parse)
 static void	static_print_usage(void)
 {
 	ft_printf("[greenUsage:~] [cyan./corewar~] [red-v~][yellow %s %s %s~]\n",
-	"ourchamp.cor", "champs/helltrain.cor", "champs/zork.cor");
+	"ourchamp.cor", "champ/helltrain.cor", "champ/zork.cor");
 }
 
 int			main(int argc, char **argv)
