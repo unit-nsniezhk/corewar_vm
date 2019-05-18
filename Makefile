@@ -116,46 +116,6 @@ $(NAME): $(COREWAR_OBJS) $(VIS_OBJS) $(OP_OBJS) $(PARSE_OBJS) | libft.a
 libft.a:
 	@make $@ -s -C $(LIBFT_PATH)
 
-ifeq ($(UNME_S),Linux)
-
-$(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
-	@mkdir -p $(COREWAR_OBJS_PATH)
-	@$(CC) $(CFLAGS) -o $@ -c $< \
-	-I$(LIBFT_INCS_PATH) \
-	-I$(CLIBS_INCS_PATH) \
-	-I$(COREWAR_INCS_PATH) \
-	-I$(VIS_INCS_PATH) \
-	-I$(OP_INCS_PATH) \
-	-I$(PARSE_INCS_PATH)
-
-$(VIS_OBJS_PATH)%.o: $(VIS_SRCS_PATH)%.c
-	@mkdir -p $(VIS_OBJS_PATH)
-	@$(CC) $(CFLAGS) -o $@ -c $< \
-	-I$(LIBFT_INCS_PATH) \
-	-I$(CLIBS_INCS_PATH) \
-	-I$(COREWAR_INCS_PATH) \
-	-I$(VIS_INCS_PATH) \
-	-I$(OP_INCS_PATH)
-
-$(OP_OBJS_PATH)%.o: $(OP_SRCS_PATH)%.c
-	@mkdir -p $(OP_OBJS_PATH)
-	@$(CC) $(CFLAGS) -o $@ -c $< \
-	-I$(LIBFT_INCS_PATH) \
-	-I$(VIS_INCS_PATH) \
-	-I$(CLIBS_INCS_PATH) \
-	-I$(COREWAR_INCS_PATH) \
-	-I$(OP_INCS_PATH) \
-	-I$(PARSE_INCS_PATH)
-
-$(PARSE_OBJS_PATH)%.o: $(PARSE_SRCS_PATH)%.c
-	@mkdir -p $(PARSE_OBJS_PATH)
-	@$(CC) $(CFLAGS) -o $@ -c $< \
-	-I$(LIBFT_INCS_PATH) \
-	-I$(COREWAR_INCS_PATH) \
-	-I$(PARSE_INCS_PATH)
-
-else ifeq ($(UNAME_S),Darwin)
-
 $(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
 	@mkdir -p $(COREWAR_OBJS_PATH)
 	@mkdir -p $(VIS_OBJS_PATH)
@@ -168,8 +128,6 @@ $(COREWAR_OBJS_PATH)%.o: $(COREWAR_SRCS_PATH)%.c
 	-I$(VIS_INCS_PATH) \
 	-I$(OP_INCS_PATH) \
 	-I$(PARSE_INCS_PATH)
-
-endif
 
 clean:
 	@make $@ -s -C $(LIBFT_PATH)

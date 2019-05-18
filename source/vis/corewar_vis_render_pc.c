@@ -33,7 +33,7 @@ static void	static_render_rg_value(SDL_Renderer *rend, t_carriage *carr,
 	w_tmp = w + (Sint32)ft_nbrlen(i, 10);
 	if (i <= 9)
 		++w_tmp;
-	value = ft_itoabase(DEC, carr->regs[i]);
+	value = ft_itoabase(DEC, (int)carr->regs[i]);
 	corewar_vis_render_btext(rend, value, RGBA_TEXT2,
 	(SDL_Rect){box->x + (w_tmp * XS_CHAR_W) + PAD, box->y, S_CHAR_W, S_CHAR_H});
 	ft_strdel(&value);

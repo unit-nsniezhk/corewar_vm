@@ -57,7 +57,7 @@ void	corewar_vis_render_pc_op(SDL_Renderer *rend, t_carriage *carr,
 		w = (Sint32)ft_strlen("Operation");
 	corewar_vis_render_btext(rend, "Operation", RGBA_TEXT,
 	(SDL_Rect){box.x, box.y, S_CHAR_W, S_CHAR_H});
-	if (carr->op > 0)
+	if (carr->op > 0 && carr->op <= N_OPS)
 		corewar_vis_render_btext(rend, g_op_table[carr->op - 1].name,
 		RGBA_TEXT2, (SDL_Rect){box.x + (w * S_CHAR_W) + PAD, box.y, S_CHAR_W,
 		S_CHAR_H});

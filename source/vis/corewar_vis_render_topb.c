@@ -38,7 +38,7 @@ static void	static_render_nci(SDL_Renderer *rend, int cycle, int ctc)
 
 	if (!w)
 		w = (Sint32)ft_strlen(TBAR_NCI_MSG);
-	tmp = (ctc - (cycle % ctc));
+	tmp = (ctc == 0) ? 0 : ctc - (cycle % ctc);
 	corewar_vis_render_btext(rend, TBAR_NCI_MSG, RGBA_TEXT2,
 	(SDL_Rect){BAR_X, TBAR_NCI_Y, S_CHAR_W, M_CHAR_H});
 	value = ft_itoabase(DEC, tmp);
@@ -67,7 +67,7 @@ static void	static_render_lc(SDL_Renderer *rend, int n_live)
 	corewar_vis_render_btext(rend, TBAR_LC_MSG, RGBA_TEXT2,
 	(SDL_Rect){BAR_X, TBAR_LC_Y, S_CHAR_W, M_CHAR_H});
 	value = ft_itoabase(DEC, n_live);
-	tmp = (n_live < MIN_LIVE ? RGBA_TEXT3 : RGBA_TEXTS);
+	tmp = (n_live < (int)MIN_LIVE ? RGBA_TEXT3 : RGBA_TEXTS);
 	corewar_vis_render_btext(rend, value, (unsigned int)tmp,
 	(SDL_Rect){BAR_X + (w * S_CHAR_W) + PAD, TBAR_LC_Y, S_CHAR_W, M_CHAR_H});
 	ft_strdel(&value);

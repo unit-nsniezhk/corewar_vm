@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/29 18:48:20 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/12 00:18:27 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/18 20:14:10 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,8 @@
 typedef struct			s_player
 {
 	unsigned int		pos;
-	char				*name;
-	char				*comment;
+	const char			*name;
+	const char			*comment;
 	unsigned int		code_size;
 	unsigned int		last_live;
 	unsigned int		n_lives;

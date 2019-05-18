@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_op_utils.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:19:52 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/17 21:06:23 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/18 20:51:45 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ void	corewar_op_vis(t_carriage *carr, t_vis *vis, int pos, int n_players)
 	unsigned int	i;
 
 	if ((int)(carr->regs[1] * -1) <= n_players
-	&& (int)(carr->regs[1] * -1) >= MIN_PLAYERS)
+	&& (int)(carr->regs[1] * -1) >= (int)MIN_PLAYERS)
 		color = g_color[(-carr->regs[1])];
 	else
 		color = g_color[0];

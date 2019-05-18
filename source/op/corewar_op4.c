@@ -10,18 +10,24 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "corewar.h"
 #include "corewar_op_def.h"
 
 void	corewar_op_ld(t_data *data, t_carriage *carr, t_vis *vis)
 {
-	unsigned int	arg;
-	unsigned int	arg1;
+	unsigned int	value;
+	int				pos;
 
 	(void)vis;
-	corewar_op_arg(data, carr, 0, &arg);
-	arg1 = carr->args_values[1];
-	carr->regs[arg1] = arg;
-	if (!arg)
+	if (carr->args_types[0] == DIR)
+		value = carr->args_values[0];
+	else
+	{
+		pos = carr->pos + (((int)carr->args_values[0]) % IDX_MOD);
+		corewar_read_arg(data, &value, REG_SIZE, pos);
+	}
+	carr->regs[carr->args_values[1]] = value;
+	if (value == 0)
 		carr->carry = true;
 	else
 		carr->carry = false;

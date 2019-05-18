@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/02 23:17:04 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/17 20:54:42 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/18 17:58:59 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,28 +25,43 @@ void	corewar_read_arg(t_data *data, unsigned int *value, unsigned char size,
 		int pos)
 {
 	unsigned int	i;
+	unsigned short	v;
 
-	*value = 0;
 	i = 0;
-	while (i < size)
+	if (size == 2)
 	{
-		if (i)
-			*value = *value << 8;
-		*value = *value | data->arena[corewar_8(pos + i)];
-		++i;
+		v = 0;
+		while (i < size)
+		{
+			if (i)
+				v = v << 8u;
+			v = v | data->arena[corewar_8(pos + i)];
+			++i;
+		}
+		*value = (signed short)v;
+	}
+	else
+	{
+		*value = 0;
+		while (i < size)
+		{
+			if (i)
+				*value = (*value) << 8u;
+			*value = *value | data->arena[corewar_8(pos + i)];
+			++i;
+		}
 	}
 }
 
-void	corewar_write_arg(t_data *data, unsigned int value, unsigned char size,
-		int pos)
+void	corewar_write_arg(t_data *data, unsigned int value, int pos)
 {
 	unsigned int	i;
 
 	i = 0;
-	while (i < size)
+	while (i < REG_SIZE)
 	{
 		data->arena[corewar_8(pos + i)] =
-		(unsigned char)(value >> (8 * (size - i - 1)));
+		(unsigned char)(value >> (8 * (REG_SIZE - i - 1)));
 		++i;
 	}
 }

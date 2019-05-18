@@ -64,7 +64,7 @@ void		corewar_vis_render_arena(t_data *data, t_vis *vis)
 		if (i < ARENA_SIZE)
 			color = vis->color[i];
 		else
-			color = RGBA_PLAYER0;
+			color = vis->color[ARENA_SIZE - 1];
 		SDL_SetRenderDrawColor(vis->rend, R(color), G(color), B(color),
 		A(color));
 		SDL_RenderFillRect(vis->rend, &rect);

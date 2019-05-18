@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   corewar_exec_carr.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dderevyn <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/17 18:47:08 by dderevyn         ###   ########.fr       */
+/*   Updated: 2019/05/18 20:20:57 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,25 +16,40 @@
 static bool	static_arg_type(t_data *data, t_carriage *carr,
 			const t_operation *op, unsigned int i)
 {
-	bool	ret;
-
-	ret = true;
 	if (op->t_arg)
 	{
-		carr->args_types[i] =
-		(unsigned char)(data->arena[corewar_8(carr->pos + OP_SIZE)]
-		>> (8 - ((i + 1) * 2)) & TYPE_SIZE);
-		if (!(op->args[i] & carr->args_types[i]))
-			ret = false;
+		carr->args_types[i] = (unsigned char)(
+		(data->arena[corewar_8(carr->pos + OP_SIZE)] >> (8 - ((i + 1) * 2))) & TYPE_SIZE);
+		if (!(op->args[i][0] && carr->args_types[i] == REG)
+		&& !(op->args[i][1] && carr->args_types[i] == DIR)
+		&& !(op->args[i][2] && carr->args_types[i] == IND))
+			return (false);
 	}
 	else
-		carr->args_types[i] = op->args[i];
-	if (carr->args_types[i] == DIR)
-		carr->args_values[i] = op->dir_size;
-	else if (carr->args_types[i] == IND)
-		carr->args_values[i] = IND_SIZE;
-	else
+	{
+		if (op->args[i][0])
+			carr->args_types[i] = REG;
+		else if (op->args[i][1])
+			carr->args_types[i] = DIR;
+		else
+			carr->args_types[i] = IND;
+	}
+	return (true);
+
+}
+
+static bool	static_arg_size(t_data *data, t_carriage *carr,
+			const t_operation *op, unsigned int i)
+{
+	bool	ret;
+
+	ret = static_arg_type(data, carr, op, i);
+	if (carr->args_types[i] == REG)
 		carr->args_values[i] = REG_LINK_SIZE;
+	else if (carr->args_types[i] == DIR)
+		carr->args_values[i] = op->dir_size;
+	else
+		carr->args_values[i] = IND_SIZE;
 	return (ret);
 }
 
@@ -44,12 +59,13 @@ static bool	static_valid_arg(t_data *data, t_carriage *carr,
 	unsigned char	arg_size;
 	bool			ret;
 
-	ret = static_arg_type(data, carr, op, i);
+	ret = static_arg_size(data, carr, op, i);
 	arg_size = (unsigned char)carr->args_values[i];
 	corewar_read_arg(data, &(carr->args_values[i]), arg_size,
 	carr->pos + carr->delta_pos);
 	if (ret && carr->args_types[i] == REG
-	&& ((int)carr->args_values[i] < 1 || (int)carr->args_values[i] > N_REGS))
+	&& ((int)carr->args_values[i] < 1
+	|| (int)carr->args_values[i] > (int)N_REGS))
 		ret = false;
 	carr->delta_pos += arg_size;
 	return (ret);

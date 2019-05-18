@@ -26,7 +26,7 @@ static void	static_render_fc(SDL_Renderer *rend, int check)
 	corewar_vis_render_btext(rend, TBAR_FC_MSG, RGBA_TEXT2,
 	(SDL_Rect){BAR_X, TBAR_FC_Y, S_CHAR_W, M_CHAR_H});
 	value = ft_itoabase(DEC, check);
-	tmp = (check < MAX_CHECKS ? RGBA_TEXT3 : RGBA_TEXTS);
+	tmp = (check < (int)MAX_CHECKS ? RGBA_TEXT3 : RGBA_TEXTS);
 	corewar_vis_render_btext(rend, value, (unsigned int)tmp,
 	(SDL_Rect){BAR_X + (w * S_CHAR_W) + PAD, TBAR_FC_Y, S_CHAR_W, M_CHAR_H});
 	ft_strdel(&value);
