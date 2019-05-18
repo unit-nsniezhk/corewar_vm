@@ -14,7 +14,6 @@ set(OLD_GLOB
   "/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op2.c"
   "/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op3.c"
   "/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op4.c"
-  "/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op_utils.c"
   "/home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse.c"
   "/home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse_champion.c"
   "/home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse_options.c"

@@ -126,9 +126,6 @@
 		<Unit filename="/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op4.c">
 			<Option target="corewar"/>
 		</Unit>
-		<Unit filename="/home/daniel/CLionProjects/corewar_vm/source/op/corewar_op_utils.c">
-			<Option target="corewar"/>
-		</Unit>
 		<Unit filename="/home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse.c">
 			<Option target="corewar"/>
 		</Unit>

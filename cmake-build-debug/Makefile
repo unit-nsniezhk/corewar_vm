@@ -394,33 +394,6 @@ source/op/corewar_op4.c.s:
 	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/source/op/corewar_op4.c.s
 .PHONY : source/op/corewar_op4.c.s
 
-source/op/corewar_op_utils.o: source/op/corewar_op_utils.c.o
-
-.PHONY : source/op/corewar_op_utils.o
-
-# target to build an object file
-source/op/corewar_op_utils.c.o:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o
-.PHONY : source/op/corewar_op_utils.c.o
-
-source/op/corewar_op_utils.i: source/op/corewar_op_utils.c.i
-
-.PHONY : source/op/corewar_op_utils.i
-
-# target to preprocess a source file
-source/op/corewar_op_utils.c.i:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.i
-.PHONY : source/op/corewar_op_utils.c.i
-
-source/op/corewar_op_utils.s: source/op/corewar_op_utils.c.s
-
-.PHONY : source/op/corewar_op_utils.s
-
-# target to generate assembly for a file
-source/op/corewar_op_utils.c.s:
-	$(MAKE) -f CMakeFiles/corewar.dir/build.make CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.s
-.PHONY : source/op/corewar_op_utils.c.s
-
 source/parse/corewar_parse.o: source/parse/corewar_parse.c.o
 
 .PHONY : source/parse/corewar_parse.o
@@ -1027,9 +1000,6 @@ help:
 	@echo "... source/op/corewar_op4.o"
 	@echo "... source/op/corewar_op4.i"
 	@echo "... source/op/corewar_op4.s"
-	@echo "... source/op/corewar_op_utils.o"
-	@echo "... source/op/corewar_op_utils.i"
-	@echo "... source/op/corewar_op_utils.s"
 	@echo "... source/parse/corewar_parse.o"
 	@echo "... source/parse/corewar_parse.i"
 	@echo "... source/parse/corewar_parse.s"

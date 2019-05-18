@@ -93,8 +93,7 @@ OP_SRCS_PATH =	$(SRCS_PATH)op/
 OP_SRCS =		corewar_op.c \
 				corewar_op2.c \
 				corewar_op3.c \
-				corewar_op4.c \
-				corewar_op_utils.c
+				corewar_op4.c
 OP_OBJS_PATH =	$(OBJS_PATH)op/
 OP_OBJS =		$(OP_SRCS:%.c=$(OP_OBJS_PATH)%.o)
 

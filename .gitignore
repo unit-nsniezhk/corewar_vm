@@ -10,7 +10,8 @@ cmake-build-debug
 author
 
 # Compiled #
-libft.a
+corewar
+.object
 
 # Test files #
 *test*

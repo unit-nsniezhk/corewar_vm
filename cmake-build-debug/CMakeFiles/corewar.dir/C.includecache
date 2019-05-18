@@ -6,6 +6,12 @@
 
 #IncludeRegexTransform: 
 
+../include/corewar.h
+corewar_def.h
+../include/corewar_def.h
+corewar_parse_def.h
+../include/corewar_parse_def.h
+
 ../include/corewar_config.h
 
 ../include/corewar_def.h
@@ -14,13 +20,19 @@ corewar_config.h
 corewar_vis_def.h
 ../include/corewar_vis_def.h
 
-../include/vis/corewar_vis.h
-corewar_vis_def.h
-../include/vis/corewar_vis_def.h
+../include/op/corewar_op.h
 corewar_def.h
-../include/vis/corewar_def.h
+../include/op/corewar_def.h
 
-../include/vis/corewar_vis_color.h
+../include/op/corewar_op_def.h
+corewar_op.h
+../include/op/corewar_op.h
+
+../include/parse/corewar_parse_def.h
+stdbool.h
+-
+corewar_config.h
+../include/parse/corewar_config.h
 
 ../include/vis/corewar_vis_def.h
 stdbool.h
@@ -30,35 +42,11 @@ SDL2/SDL.h
 corewar_config.h
 ../include/vis/corewar_config.h
 
-../include/vis/corewar_vis_prop.h
-
-../libft/include/libft.h
-stddef.h
--
-libft_def.h
-../libft/include/libft_def.h
-
-../libft/include/libft_def.h
-
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_arena.c
-corewar_vis.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis.h
-libft.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/libft.h
-corewar_vis_color.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_color.h
-corewar_vis_prop.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_prop.h
-
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_pc.c
-corewar_vis.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis.h
-libft.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/libft.h
-corewar_vis_prop.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_prop.h
-corewar_vis_color.h
-/home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_color.h
+/home/daniel/CLionProjects/corewar_vm/source/corewar_exec_carr.c
+corewar_op_def.h
+/home/daniel/CLionProjects/corewar_vm/source/corewar_op_def.h
+corewar.h
+/home/daniel/CLionProjects/corewar_vm/source/corewar.h
 
 /home/linuxbrew/.linuxbrew/include/SDL2/SDL.h
 SDL_main.h

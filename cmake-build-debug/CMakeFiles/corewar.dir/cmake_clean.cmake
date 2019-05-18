@@ -9,7 +9,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/corewar.dir/source/op/corewar_op2.c.o"
   "CMakeFiles/corewar.dir/source/op/corewar_op3.c.o"
   "CMakeFiles/corewar.dir/source/op/corewar_op4.c.o"
-  "CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o"
   "CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o"
   "CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o"
   "CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o"

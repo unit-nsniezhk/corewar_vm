@@ -33,8 +33,7 @@ void	corewar_read_arg(t_data *data, unsigned int *value, unsigned char size,
 		v = 0;
 		while (i < size)
 		{
-			if (i)
-				v = v << 8u;
+			v = v << 8u;
 			v = v | data->arena[corewar_8(pos + i)];
 			++i;
 		}
@@ -45,8 +44,7 @@ void	corewar_read_arg(t_data *data, unsigned int *value, unsigned char size,
 		*value = 0;
 		while (i < size)
 		{
-			if (i)
-				*value = (*value) << 8u;
+			*value = (*value) << 8u;
 			*value = *value | data->arena[corewar_8(pos + i)];
 			++i;
 		}

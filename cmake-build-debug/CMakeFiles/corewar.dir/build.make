@@ -187,22 +187,9 @@ CMakeFiles/corewar.dir/source/op/corewar_op4.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/source/op/corewar_op4.c.s"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniel/CLionProjects/corewar_vm/source/op/corewar_op4.c -o CMakeFiles/corewar.dir/source/op/corewar_op4.c.s
 
-CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o: CMakeFiles/corewar.dir/flags.make
-CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o: ../source/op/corewar_op_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/op/corewar_op_utils.c
-
-CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.i"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/daniel/CLionProjects/corewar_vm/source/op/corewar_op_utils.c > CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.i
-
-CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.s"
-	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/daniel/CLionProjects/corewar_vm/source/op/corewar_op_utils.c -o CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.s
-
 CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o: ../source/parse/corewar_parse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse.c
 
 CMakeFiles/corewar.dir/source/parse/corewar_parse.c.i: cmake_force
@@ -215,7 +202,7 @@ CMakeFiles/corewar.dir/source/parse/corewar_parse.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o: ../source/parse/corewar_parse_champion.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse_champion.c
 
 CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.i: cmake_force
@@ -228,7 +215,7 @@ CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o: ../source/parse/corewar_parse_options.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/parse/corewar_parse_options.c
 
 CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.i: cmake_force
@@ -241,7 +228,7 @@ CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o: ../source/vis/corewar_vis.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis.c.i: cmake_force
@@ -254,7 +241,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o: ../source/vis/corewar_vis_handle_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_handle_utils.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.i: cmake_force
@@ -267,7 +254,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_utils.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o: ../source/vis/corewar_vis_handle_wheel.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_handle_wheel.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.i: cmake_force
@@ -280,7 +267,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_handle_wheel.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o: ../source/vis/corewar_vis_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_init.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.i: cmake_force
@@ -293,7 +280,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_init.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o: ../source/vis/corewar_vis_key_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_key_handle.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.i: cmake_force
@@ -306,7 +293,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_key_handle.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o: ../source/vis/corewar_vis_lock.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_lock.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.i: cmake_force
@@ -319,7 +306,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_lock.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o: ../source/vis/corewar_vis_mods.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_mods.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.i: cmake_force
@@ -332,7 +319,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_mods.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o: ../source/vis/corewar_vis_mods2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_mods2.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.i: cmake_force
@@ -345,7 +332,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_mods2.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o: ../source/vis/corewar_vis_motion_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_motion_handle.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.i: cmake_force
@@ -358,7 +345,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_motion_handle.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o: ../source/vis/corewar_vis_mouse_handle.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_mouse_handle.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.i: cmake_force
@@ -371,7 +358,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_mouse_handle.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o: ../source/vis/corewar_vis_render_arena.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_arena.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.i: cmake_force
@@ -384,7 +371,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_arena.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o: ../source/vis/corewar_vis_render_btmb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_btmb.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.i: cmake_force
@@ -397,7 +384,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_btmb.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o: ../source/vis/corewar_vis_render_mdlb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_mdlb.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.i: cmake_force
@@ -410,7 +397,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_mdlb.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o: ../source/vis/corewar_vis_render_pc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_pc.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.i: cmake_force
@@ -423,7 +410,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o: ../source/vis/corewar_vis_render_pc_msg.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_pc_msg.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.i: cmake_force
@@ -436,7 +423,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_pc_msg.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o: ../source/vis/corewar_vis_render_topb.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_topb.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.i: cmake_force
@@ -449,7 +436,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o: ../source/vis/corewar_vis_render_topb2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_topb2.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.i: cmake_force
@@ -462,7 +449,7 @@ CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.s: cmake_force
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o: CMakeFiles/corewar.dir/flags.make
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o: ../source/vis/corewar_vis_render_utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building C object CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o"
 	clang $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o   -c /home/daniel/CLionProjects/corewar_vm/source/vis/corewar_vis_render_utils.c
 
 CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.i: cmake_force
@@ -485,7 +472,6 @@ corewar_OBJECTS = \
 "CMakeFiles/corewar.dir/source/op/corewar_op2.c.o" \
 "CMakeFiles/corewar.dir/source/op/corewar_op3.c.o" \
 "CMakeFiles/corewar.dir/source/op/corewar_op4.c.o" \
-"CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o" \
 "CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o" \
 "CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o" \
 "CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o" \
@@ -521,7 +507,6 @@ corewar: CMakeFiles/corewar.dir/source/op/corewar_op.c.o
 corewar: CMakeFiles/corewar.dir/source/op/corewar_op2.c.o
 corewar: CMakeFiles/corewar.dir/source/op/corewar_op3.c.o
 corewar: CMakeFiles/corewar.dir/source/op/corewar_op4.c.o
-corewar: CMakeFiles/corewar.dir/source/op/corewar_op_utils.c.o
 corewar: CMakeFiles/corewar.dir/source/parse/corewar_parse.c.o
 corewar: CMakeFiles/corewar.dir/source/parse/corewar_parse_champion.c.o
 corewar: CMakeFiles/corewar.dir/source/parse/corewar_parse_options.c.o
@@ -545,7 +530,7 @@ corewar: CMakeFiles/corewar.dir/source/vis/corewar_vis_render_topb2.c.o
 corewar: CMakeFiles/corewar.dir/source/vis/corewar_vis_render_utils.c.o
 corewar: CMakeFiles/corewar.dir/build.make
 corewar: CMakeFiles/corewar.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Linking C executable corewar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/daniel/CLionProjects/corewar_vm/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Linking C executable corewar"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/corewar.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

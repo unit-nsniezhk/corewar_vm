@@ -6,7 +6,7 @@
 /*   By: daniel <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/05/01 16:50:46 by dderevyn          #+#    #+#             */
-/*   Updated: 2019/05/18 20:20:57 by daniel           ###   ########.fr       */
+/*   Updated: 2019/05/18 23:57:02 by daniel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,12 @@
 static bool	static_arg_type(t_data *data, t_carriage *carr,
 			const t_operation *op, unsigned int i)
 {
+	unsigned char	type;
 	if (op->t_arg)
 	{
-		carr->args_types[i] = (unsigned char)(
-		(data->arena[corewar_8(carr->pos + OP_SIZE)] >> (8 - ((i + 1) * 2))) & TYPE_SIZE);
+		type = data->arena[corewar_8(carr->pos + OP_SIZE)];
+		carr->args_types[i] = (unsigned char)(type >> (8 - ((i + 1) * 2)))
+		& TYPE_SIZE;
 		if (!(op->args[i][0] && carr->args_types[i] == REG)
 		&& !(op->args[i][1] && carr->args_types[i] == DIR)
 		&& !(op->args[i][2] && carr->args_types[i] == IND))
@@ -35,7 +37,6 @@ static bool	static_arg_type(t_data *data, t_carriage *carr,
 			carr->args_types[i] = IND;
 	}
 	return (true);
-
 }
 
 static bool	static_arg_size(t_data *data, t_carriage *carr,
